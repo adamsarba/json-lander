@@ -16,7 +16,7 @@
  var redirect       = settings.redirect
  var pageMenu       = settings.menu
 
-// Tem-dev App Settings
+// Temp-dev App Settings
 const appUrl         = '/json-lander/'
 const appLocaleUrl   = appUrl + 'locale/' + lang + '/app.js'
 
@@ -31,9 +31,8 @@ const itemsLocalUrl  = appUrl + 'locale/' + lang + '/items.json'
 var develop = settings.develop
 // if in Develop Mode
 if (develop && develop == true) {
-  console.log('\n🚧 You are now in Develop Mode. Have fun! 😉\n\nCurrent page language: ' + langShort + ' (' + lang + ')\n\n')
-  // console.log('Server Time: ', getServerTime());
-  // console.log('Locale Time: ', new Date(getServerTime()));
+  console.log('\nYou are now in Develop Mode. Have fun! ;)\n\nCurrent page language: ' + langShort + ' (' + lang + ')\n\n')
+  // console.log('Server Time: ', getServerTime()); console.log('Locale Time: ', new Date(getServerTime()));
   console.log('Loading files:')
   console.log(contentUrl)
   console.log(appLocaleUrl)
@@ -49,7 +48,7 @@ $(document).ready(function() {
 
   document.body.id = pageId
 
-  // 🚧 BETTER SOULTION for jQuery getScript ?
+  // Better solution for jQuery getScript ?
   // jQuery.loadScript = function (url, callback) {
   //     jQuery.ajax({
   //         url: url,
@@ -98,14 +97,13 @@ $(document).ready(function() {
       $('#side_btns').prepend(` <a href="${facebookUrl}" target="_blank" rel="nofollow" class="btn--fb">Facebook</a> `)
     }
 
-    // RUN CONTENT BUILDER ⚠️ if contentUrl exists
+    // RUN CONTENT BUILDER if ! contentUrl exists
     if (contentUrl) {
     // Load items database
     $.getJSON(itemsGlobalUrl, function (itemsGlobal, status, xhr) {
-
-      console.log( 'Database Request Success. Got this data:' ); console.log(itemsGlobal) // 🚧 Dev log
-
+      /* Dev log */ if (develop && develop == true) { console.log('Global Database Request Success') }
       $.getJSON(itemsLocalUrl, function (itemsLocal, status, xhr) {
+        /* Dev log */ if (develop && develop == true) { console.log('Local Database Request Success'); console.log('Merging items...') }
 
         // Merging function
         function mergeItems(arrayOne, arrayTwo) {
@@ -117,16 +115,12 @@ $(document).ready(function() {
           ]
         }
 
-        console.log( 'Database Request Success. Got this data:' ); console.log(itemsLocal) // 🚧 Dev log
-
         // Merge items
         const itemsMerged = mergeItems(itemsGlobal, itemsLocal)
-        // console.log(itemsMerged) // 🚧 Dev log
 
         // Load dynamic content
         var getContent = $.getJSON(contentUrl, function(content, status, xhr ) {
-
-          console.log( 'Content Request Success. Got this data:' ); console.log(content) // 🚧 Dev log
+          /* Dev log */ if (develop && develop == true) { console.log('Content Request Success. Got this data:'); console.log(content); console.log('Rendering Content...'); }
 
           // Remove loading animation
           $('#page_loader').remove()
@@ -149,8 +143,6 @@ $(document).ready(function() {
 
               const section      = this
               const items        = section.items
-
-              // console.log(section) // 🚧 Dev log
 
               if (section.menu) { sectionMenuCounter++ } // Count sections
 
@@ -198,8 +190,6 @@ $(document).ready(function() {
                 // LOOP
                 $.each(items, function () {
                   const item = this
-
-                  // console.log(item) // 🚧 Dev log
 
                   // Create and mount new element for each item
                   var singleItemEl  = document.createElement( 'div' )
@@ -454,33 +444,33 @@ $(document).ready(function() {
 
         })
         .fail(function( getContent, textStatus, error ) {
-          console.log( 'Content Request Failed: ' + textStatus + ', ' + error ) // 🚧 Dev log
-
           if (develop && develop == true) {
-            $('#page_loader').remove()
-            $('#content').append(` &#10060; Error found while parsing JSON. Check console for more information. `)
+            console.log( 'Content Request Failed: ' + textStatus + ', ' + error )
+            $('#page_loader').remove(); $('#content').append(` &#10060; Error found while parsing Content. Check console for more information. `)
           }
 
         })
         .always(function( getContent, status ) {
-          console.log( 'Content Request Complete' ) // 🚧 Dev log
+          if (develop && develop == true) { console.log( 'Content Rendering Complete' ) }
         })
         // end getContent
 
       })
       .fail(function( getContent, textStatus, error ) {
-        console.log( 'Local Database Request Failed: ' + textStatus + ', ' + error ) // 🚧 Dev log
+        /* Dev log */ if (develop && develop == true) { console.log( 'Local Database Request Failed: ' + textStatus + ', ' + error ) }
       })
       .always(function( getContent, status ) {
-        console.log( 'LocalDatabase Request Complete' ) // 🚧 Dev log
+        /* Dev log */ if (develop && develop == true) { console.log( 'Local Database Request Complete' ) }
       })
-    }) /* end getJSON */
+    }) /* end getJSON(itemsLocal) */
+
     .fail(function( getContent, textStatus, error ) {
-      console.log( 'Global Database Request Failed: ' + textStatus + ', ' + error ) // 🚧 Dev log
+      /* Dev log */ if (develop && develop == true) { console.log( 'Global Database Request Failed: ' + textStatus + ', ' + error ) }
     })
     .always(function( getContent, status ) {
-      console.log( 'Global Database Request Complete' ) // 🚧 Dev log
-    })
+      /* Dev log */ if (develop && develop == true) { console.log( 'Global Database Request Complete' ) }
+    }) /* end getJSON(itemsGlobal) */
+
     } // end if contentUrl exists
 
   }) // end getScript (App Localizations)
