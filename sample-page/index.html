@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl-PL" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- General SEO meta tags -->
+	<title>JSON Lander</title>
+	<meta name="description" 				content="Page description - 120-158 characters (the most important informations must be in the first 120 characters)">
+	<meta name="keywords" 					content="Page keywords - as many unique words as possible regarding a given event, after commas">
+	<!-- Mobile & Social Media meta tags -->
+	<meta property="og:type" 				content="website">
+	<meta property="og:title" 			content="Mobile & SM Page Title - up to 55 characters">
+	<meta property="og:description" content="Mobile & SM Page Description - 60-120 characters (the most important information must be in the first 60 characters)">
+	<meta property="og:url" 				content="Direct URL to the page">
+	<meta property="og:image" 			content="Direct URL to Mobile & SM preview of the page">
+
+  <script>
+    // PAGE SETTINGS
+    const settings = {
+      "contentUrl": "http://localhost:8080/json-lander/sample-page/content.json",
+      "pageUrl": "sample-page",
+      "utmTags": "?utm_source=mi-home&utm_medium=landing-page&utm_campaign=sample-page-2021",
+      "header": {
+        "content": [
+          { "headerText": "e.g. Header Text as first. Content order included" },
+          { "headerTitle": "Header Title" },
+          { "headerSubtitle": "Header Subtitle" }
+        ],
+        "contentAlign": "center",
+        "imgDesktop": "",
+        "imgMobile": ""
+      },
+      "logo": "orange",
+      "menu": true,
+      "redirect": false,
+      "develop": true
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- JSON Lander -->
+  <link rel="shortcut icon" href="/json-lander/assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet"    href="/json-lander/assets/style.css" />
+  <script src="/json-lander/app.js"></script>
+
+  <script src="https://kit.fontawesome.com/49488b20df.js" crossorigin="anonymous"></script>
+
+  <!-- Custom style -->
+  <link rel="stylesheet" href="/json-lander/assets/style.css" />
+
+  <!-- Google Analytics -->
+  <!-- <script data-keepinline="true">
+    (function(a,b,d,c,e){a[c]=a[c]||[];a[c].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});a=b.getElementsByTagName(d)[0];b=b.createElement(d);b.async=!0;b.src="https://www.googletagmanager.com/gtm.js?id="+e+("dataLayer"!=c?"&l="+c:"");a.parentNode.insertBefore(b,a)})
+    (window,document,"script","dataLayer","GTM-TSNS8WZ");
+	</script> -->
+
+</head>
+<body>
+
+  <div id="side_btns"></div>
+  <header>
+    <div id="header--links"></div>
+    <div id="header--content"></div>
+  </header>
+  <main id="content"></main>
+  <footer></footer>
+  <!-- Content will be injected by JSON Lander -->
+
+  <noscript>
+    We're sorry but this page doesn't work properly without JavaScript enabled. Please enable it to continue.
+  </noscript>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+[
+  {
+    "title": "1st Section Title",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "type": "standard",
+    "menu": "Section 1",
+    "items": [{
+        "id": "mi-band-5",
+        "soldOut": true,
+        "price": {
+          "regular": 999,
+          "promo": 99
+        },
+        "labelName": "Bestseller",
+        "labelIcon": "fire",
+        "gift": {
+          "name": "Mi Band 4",
+          "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
+          "url": "https://mi-home.pl"
+        },
+        "customName": "Custom Mi Band 5 Name",
+        "utmTags": false,
+        "customUrl": "https://mi-home.pl/akcesoria/mi-4k-action-camera-tripod?own-utm-tag",
+        "text": "Additional paragraph under item description"
+      },
+      {
+        "id": "mi-desktop-monitor-1c-24",
+        "soon": true,
+        "price": {
+          "regular": 15
+        },
+        "gift": {
+          "name": "Mi Watch Lite",
+          "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
+          "url": "https://mi-home.pl"
+        },
+        "text": "NOW WITH GIFT!"
+      },
+      {
+        "id": "redmi-note-10-4g",
+        "price": {
+          "regular": 199,
+          "promo": 99,
+          "from": true,
+          "discount": "200",
+          "percent": true
+        },
+        "nameLabel": "(4+64GB) (6+128GB)"
+      },
+      {
+        "id": "mi-10t",
+        "price": {
+          "regular": 190,
+          "promo": 99,
+          "percent": false
+        },
+        "nameLabel": "(4+32GB)",
+        "gift": {
+          "name": "Gift Name",
+          "img": "img/redmi-note-10-pro-mff-edition.png",
+          "url": "../../gift-url"
+        }
+      },
+      {
+        "id":"mi-4k-laser-projector-150",
+        "price":{"regular":199}
+      },
+      {
+        "id": "manual-item-id-1",
+        "name": "Manual Item Title",
+        "category": "Manual Item Category",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit (Manual Item Desc)",
+        "img": "img/redmi-note-10-pro-mff-edition.png",
+        "url": "../../manual-url-1",
+        "price": {
+          "regular": 420,
+          "percent": true,
+          "from": true
+        },
+        "labelName": "Manual test",
+        "labelIcon": "leaf"
+      },
+      {
+        "id": "custom-html-item-3",
+        "type": "custom",
+        "content": "Hello world! I'm <code>HTML</code> 'custom' type item 😎"
+      }
+    ]
+  },
+  {
+    "title": "2nd Section Title",
+    "type": "small",
+    "items": [
+      {
+        "id": "mi-air-purifier-pro-h",
+        "price": {
+          "regular": 399,
+          "promo": 99,
+          "percent": false
+        },
+        "labelName": "Label without <code>labeLicon</code>"
+      },
+      {
+        "id": "mi-air-purifier-pro",
+        "price": {
+          "regular": 399,
+          "promo": 99,
+          "percent": false
+        },
+        "labelName": "Label without <code>labeLicon</code>"
+      },
+      {
+        "id": "custom-html-item-0",
+        "type": "custom",
+        "content": "Hello world! I'm <code>HTML</code> 'custom' type item 😎"
+      },
+      {
+        "id": "custom-html-item-36",
+        "type": "custom",
+        "content": "Hello world! I'm <code>HTML</code> 'custom' type item 😎"
+      }
+    ]
+  },
+  {
+    "title": "3rd Section Title",
+    "type": "featured",
+    "menu": "Section 3",
+    "items": [
+      {
+        "id": "mi-10t-lite",
+        "price": {
+          "regular": 199,
+          "promo": 99,
+          "percent": false
+        },
+        "labelName": "Special Offer",
+        "labelIcon": "star"
+      },
+      {
+        "id": "custom-html-item-420",
+        "type": "custom",
+        "content": "Hello world! I'm <code>HTML</code> 'custom' type item & I'm featured 😎"
+      }
+    ],
+    "content": "Content key doesn't work here, only in custom sections :)"
+  },
+  {
+    "title": "4th Section Title (img)",
+    "customId": "wide-banner-1",
+    "type": "img",
+    "img": {
+      "desktop": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg",
+      "mobile": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg"
+    },
+    "url": "https://mi-home.pl",
+    "text": "Hello World! I'm img type section 🙂"
+  },
+  {
+    "title": "5th Section Title (Custom, without content)",
+    "type": "custom",
+    "text": "This is text in empty section"
+  },
+  {
+    "title": "6th Section Title (Custom, title only)",
+    "type": "custom"
+  },
+  {
+    "type": "custom",
+    "menu": "Section 7",
+    "text": "This is text in another custom section, without title but with content.",
+    "content": "And this is custom section's content.<br><strong>Look at this shit</strong>:<br /><code style='color: #ff6900'>HTML & CSS</code><br /> :)"
+  },
+  {
+    "title": "8th Section Title",
+    "menu": "Section 8 (YouTube)",
+    "text": "This is additional text to iframe section. Put video ID (dQw4w9WgXcQ) in &quot;youtube&quot string",
+    "type": "embed",
+    "embed": {
+      "youtube": ""
+    }
+  },
+  {
+    "type": "disclaimer",
+    "text": "*This is last section type - Disclaimer<br />**Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+]

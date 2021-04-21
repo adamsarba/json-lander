@@ -1,0 +1,10 @@
+# Always-ignore extensions
+*.css.map
+
+# OS or Editor folders
+._*
+.DS_Store
+Thumbs.db
+
+# Folders to ignore
+sample-page/img
