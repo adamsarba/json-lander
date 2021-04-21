@@ -1,0 +1,596 @@
+[
+  {
+    "title": "1st Section Title",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "type": "standard",
+    "menu": "Section 1",
+    "items": [{
+        "id": "mi-band-5",
+        "soldOut": true,
+        "price": {
+          "regular": 999,
+          "promo": 99
+        },
+        "labelName": "Bestseller",
+        "labelIcon": "fire",
+        "gift": {
+          "name": "Mi Band 4",
+          "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
+          "url": "https://mi-home.pl"
+        },
+        "customName": "Custom Mi Band 5 Name",
+        "utmTags": false,
+        "customUrl": "https://mi-home.pl/akcesoria/mi-4k-action-camera-tripod?own-utm-tag",
+        "text": "Additional paragraph under item description"
+      },
+      {
+        "id": "mi-desktop-monitor-1c-24",
+        "soon": true,
+        "price": {
+          "regular": 15
+        },
+        "gift": {
+          "name": "Mi Watch Lite",
+          "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
+          "url": "https://mi-home.pl"
+        },
+        "text": "NOW WITH GIFT!"
+      },
+      {
+        "id": "redmi-note-10-4g",
+        "price": {
+          "regular": 199,
+          "promo": 99,
+          "from": true,
+          "discount": "200",
+          "percent": true
+        },
+        "nameLabel": "(4+64GB) (6+128GB)"
+      },
+      {
+        "id": "mi-10t",
+        "price": {
+          "regular": 190,
+          "promo": 99,
+          "percent": false
+        },
+        "nameLabel": "(4+32GB)",
+        "gift": {
+          "name": "Gift Name",
+          "img": "img/redmi-note-10-pro-mff-edition.png",
+          "url": "../../gift-url"
+        }
+      },
+      {
+        "id":"mi-4k-laser-projector-150",
+        "price":{"regular":199}
+      },
+      {
+        "id": "manual-item-id-1",
+        "name": "Manual Item Title",
+        "category": "Manual Item Category",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit (Manual Item Desc)",
+        "img": "img/redmi-note-10-pro-mff-edition.png",
+        "url": "../../manual-url-1",
+        "price": {
+          "regular": 420,
+          "percent": true,
+          "from": true
+        },
+        "labelName": "Manual test",
+        "labelIcon": "leaf"
+      },
+      {
+        "id": "custom-html-item-3",
+        "type": "custom",
+        "content": "Hello world! I'm <code>HTML</code> 'custom' type item 😎"
+      }
+    ]
+  },
+  {
+    "title": "2nd Section Title",
+    "type": "small",
+    "items": [
+      {
+        "id": "mi-air-purifier-pro-h",
+        "price": {
+          "regular": 399,
+          "promo": 99,
+          "percent": false
+        },
+        "labelName": "Label without <code>labeLicon</code>"
+      },
+      {
+        "id": "mi-air-purifier-pro",
+        "price": {
+          "regular": 399,
+          "promo": 99,
+          "percent": false
+        },
+        "labelName": "Label without <code>labeLicon</code>"
+      },
+      {
+        "id": "custom-html-item-0",
+        "type": "custom",
+        "content": "Hello world! I'm <code>HTML</code> 'custom' type item 😎"
+      },
+      {
+        "id": "custom-html-item-36",
+        "type": "custom",
+        "content": "Hello world! I'm <code>HTML</code> 'custom' type item 😎"
+      }
+    ]
+  },
+  {
+    "title": "3rd Section Title",
+    "type": "featured",
+    "menu": "Section 3",
+    "items": [
+      {
+        "id": "mi-10t-lite",
+        "price": {
+          "regular": 199,
+          "promo": 99,
+          "percent": false
+        },
+        "labelName": "Special Offer",
+        "labelIcon": "star"
+      },
+      {
+        "id": "custom-html-item-420",
+        "type": "custom",
+        "content": "Hello world! I'm <code>HTML</code> 'custom' type item & I'm featured 😎"
+      }
+    ],
+    "content": "Content key doesn't work here, only in custom sections :)"
+  },
+  {
+    "title": "4th Section Title (img)",
+    "customId": "wide-banner-1",
+    "type": "img",
+    "img": {
+      "desktop": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg",
+      "mobile": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg"
+    },
+    "url": "https://mi-home.pl",
+    "text": "Hello World! I'm img type section 🙂"
+  },
+  {
+    "title": "6th Section Title<br />🚧 STRESS TEST 🚧",
+    "type": "standard",
+    "items": [
+        {
+            "id": "mi-10",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-10-lite",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-10t",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-10t-lite",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-10t-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-4k-laser-projector-150",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-air-purifier-2h",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-air-purifier-3c",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-air-purifier-3h",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-air-purifier-antibacterial-filter",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-air-purifier-filter-hepa",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-air-purifier-formaldehyde-filter",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-air-purifier-formaldehyde-filter-s1",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-air-purifier-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-air-purifier-pro-h",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-band-3-strap-orange",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-band-4",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-band-4c",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-band-5",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-band-5-straps-1",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-band-5-straps-2",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-body-composition-scale-2",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-box-s",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-dash-cam-1s",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-desktop-monitor-1c-24",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-electric-kettle",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-electric-scooter-1s",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-electric-scooter-pro-2",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-electric-scooter-pro-2-amg",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-electric-shaver-s500",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-electric-toothbrush-head-sensitive",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-electric-toothbrush-t500",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-handheld-cleaner",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-handheld-cleaner-1c",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-handheld-cleaner-g10",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-home-security-camera-1080p-magnetic",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-ionic-hair-dryer",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-laser-projector-screen-100",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-led-smart-bulb-warm-white",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-led-smart-bulb-white-color-2-pack",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-led-tv-4a-32",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-led-tv-4s-43",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-led-tv-4s-55",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-led-tv-4s-65",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-luggage-classic-20",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-metal-carry-on-luggage-20",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-note-10",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-note-10-lite",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-note-10-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-portable-electric-air-pump",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-portable-photo-printer",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-power-bank-3-10000mah-18w",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-robot-vacuum-essential",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-robot-vacuum-mop",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-robot-vacuum-mop-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-router-4a",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-router-4a-giga",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-router-4c",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-router-ac2350",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-router-ax1800",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-router-ax3600",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-antibacterial-humidifier",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-compact-projector",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-home-hub",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-kettle",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-led-ceiling-light",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-led-desk-lamp-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-power-plug-wi-fi",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-scale-2",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-sensor-set",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-space-heater-s",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-smart-standing-fan-1c",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-temperature-humidity-monitor-2",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-tw-earbuds-basic-2",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-tw-earphones",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-tw-earphones-2",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-tw-earphones-2-basic",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-tw-earphones-lite",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-vacuum-cleaner-mini",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-watch",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-watch-lite",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-wi-fi-range-extender-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-wiha-8-in-1",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-wireless-car-charger",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-wireless-charging-pad",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-wireless-power-bank-10000",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "poco-f2-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "poco-m3",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "poco-x3-nfc",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-8a",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-9",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-9a",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-9c-nfc",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-9t",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-10-4g",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-10-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-10-pro-mff-edition",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-8",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-8-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-8t",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-9",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-9-pro",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-9s",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-note-9t",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-power-bank-10000",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "redmi-power-bank-20000",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "yeelight-portable-led-desk-lamp",
+            "price": { "regular": 199 }
+        }
+    ]
+  },
+  {
+    "type": "disclaimer",
+    "text": "*This is last section type - Disclaimer<br />**Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+]
