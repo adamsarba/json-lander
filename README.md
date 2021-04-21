@@ -93,7 +93,7 @@ Items Section Example:
   "text":"Lorem ipsum dolor sit amet",
   "menu":"Short Title",
   "type":"standard",
-  "items": [ ... ]
+  "items": [ ]
 }
 ```
 
@@ -192,7 +192,8 @@ Rich Item Example:
 If you want to add the item manually - create unique `id` and add required strings: `name`, `category`, `desc`, `url` and `img`.
 
 #### Item Name Labels
-Parentheses `(*)` in values of `name` and `nameLabel` strings are replaced with HTML tag: `<span class="name--label">*</span>`.
+Parentheses `(*)` in values of `name` and `nameLabel` strings are replaced with HTML tag:
+`<span class="name--label">*</span>`
 
 ### New data item
 To add a new item to the existing database just add another array to *items.json* in *data* and your *locale* directory.
