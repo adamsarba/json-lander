@@ -490,3 +490,17 @@ $(document).on('click', 'a[href^="#"]', function(event) {
     }, 1000);
   }
 })
+
+// Easer Egg
+
+console.log(`%c
+MMMMMMMMMMMMMMMMMm     IIII
+MMMMMMMMMMMMMMMMMMMm   IIII
+MMMM           mMMMM   IIII
+MMMM    MMMM    MMMM   IIII
+MMMM    MMMM    MMMM   IIII
+MMMM    MMMM    MMMM   IIII
+MMMM    MMMM    MMMM   IIII
+MMMM    MMMM    MMMM   IIII
+MMMM    MMMM    MMMM   IIII
+`, 'color: #ff6900')
