@@ -6,28 +6,28 @@
 
 var pagesUrl        = 'https://mi-home.ro/event/'
 var facebookUrl     = 'https://www.facebook.com/mihomeromania'
-var instagramUrl    = 'https://www.instagram.com/xiaomi.global/'
+var instagramUrl    = 'https://www.instagram.com/mihomeromania'
 
 var currency        = 'RON'
 
-var back_to_store   = 'Back to store'
+var back_to_store   = 'Înapoi la magazin'
 
-var price_from      = 'from'
-var up_to           = 'up to'
+var price_from      = 'de la'
+var up_to           = 'până la'
 
-var add_to_cart     = 'Add to cart'
-var available       = 'Available'
-var not_available   = 'Not available'
-var sold_out        = 'Sold out'
-var soon            = 'Soon'
-var sign_in         = 'Sign in'
+var add_to_cart     = 'Adaugă în coș'
+var available       = 'Disponibil'
+var not_available   = 'Indisponibil'
+var sold_out        = 'Stoc epuizat'
+var soon            = 'În curând'
+var sign_in         = 'Loghează-te'
 
-var discount_title  = 'Save'
-var gift_included   = 'Included'
+var discount_title  = 'Reducere'
+var gift_included   = 'Cadou'
 
-var check_it_out    = 'Check it out'
-var more            = 'More'
-var show_more       = 'Show more'
-var find_out        = 'Find out more'
+var check_it_out    = 'Vezi'
+var more            = 'Mai multe'
+var show_more       = 'Afișați mai multe'
+var find_out        = 'Află mai multe'
 
 var copyrights      = 'Mi-Home.ro. All Rights Reserved.'
