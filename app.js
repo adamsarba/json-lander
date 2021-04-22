@@ -273,10 +273,9 @@ $(document).ready(function() {
 
                     // Mount item description
                     $(itemElId + ' .item--desc').html( `<p>${item.desc}</p>` )
-
                     // Mount additional text
                     if (item.text) {
-                      $(itemElId + ' .item--desc').append( `<p class="item--text">${item.text}</p>` )
+                      setTimeout(() => { $(itemElId + ' .item--desc').append( `<p class="item--text">${item.text}</p>` ) }, 0)
                     }
 
                     // Mount item label
