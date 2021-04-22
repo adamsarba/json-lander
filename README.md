@@ -3,7 +3,7 @@
 
 Simple JavaScript application that mounts content written in JSON into static HTML file.
 
-Easy way to distribute and magane light static sales webpages.
+Easy way to distribute and manage light static sales webpages.
 
 ## Technologies
 * JS + jQuery

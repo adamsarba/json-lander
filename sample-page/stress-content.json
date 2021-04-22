@@ -88,6 +88,33 @@
     ]
   },
   {
+    "type": "featured",
+    "mountIn": "section_1",
+    "items": [
+      {
+        "id": "custom-html-item-420420",
+        "type": "custom",
+        "content": "Hello world! I'm item in mounted featured section"
+      }
+    ]
+  },
+  {
+    "type": "small",
+    "mountIn": "section_1",
+    "items": [
+      {
+        "id": "custom-html-item-420420",
+        "type": "custom",
+        "content": "Hello world!"
+      },
+      {
+        "id": "custom-html-item-420420",
+        "type": "custom",
+        "content": "Hello world!"
+      }
+    ]
+  },
+  {
     "title": "2nd Section Title",
     "type": "small",
     "items": [

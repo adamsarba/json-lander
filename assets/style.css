@@ -159,7 +159,7 @@ pre.error {
     background: #212121;
   }
 
-  section .section__items .section--item {
+  section .content__items .section--item {
     background: #212121 !important;
   }
 }

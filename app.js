@@ -128,319 +128,318 @@ $(document).ready(function() {
           // Mount Page Menu
           if (pageMenu == true) { $('header').after('<nav><div class="nav--wrapper"><ul class="nav--items"></ul></div></nav>') }
 
-          // Call Content Builder
-          contentBuilder(content)
+          // Mount Content
+          const container = document.getElementById('content')
 
-          // Content Builder function
-          function contentBuilder(data) {
+          let sectionMenuCounter = 0 // Set sections counter
 
-            const container = document.getElementById('content')
+          // SECTIONS LOOP
+          $.each(content, function (sectionId) {
 
-            let sectionMenuCounter = 0 // Set sections counter
+            const section      = this
+            const items        = section.items
 
-            // SECTIONS LOOP
-            $.each(content, function (sectionId) {
+            if (section.menu) { sectionMenuCounter++ } // Count sections
 
-              const section      = this
-              const items        = section.items
+            // Mount section element
+            var sectionEl = document.createElement( 'section' )
+            container.appendChild( sectionEl )
 
-              if (section.menu) { sectionMenuCounter++ } // Count sections
+            // Mount unique ID for every section from its index number
+            sectionId = sectionId+1
 
-              // Mount section element
-              var sectionEl = document.createElement( 'section' )
-              container.appendChild( sectionEl )
+            sectionEl.id = 'section_' + sectionId
+            sectionElId  = '#section_' + sectionId
 
-              // Mount unique ID for every section from its index number
-              sectionId = sectionId+1
+            // Sections basic info
+            // Mount section Title attr
+            if (section.title) {
+              var sectionTitle = document.createElement( 'h3' )
+              sectionTitle.innerHTML = section.title;
+              sectionEl.appendChild( sectionTitle )
+            }
+            // Mount section Text attr
+            if (section.text) {
+              var sectionText = document.createElement( 'p' )
+              sectionText.innerHTML = section.text;
+              sectionEl.appendChild( sectionText )
+            }
+            // end Sections info
 
-              sectionEl.id = 'section_' + sectionId
-              sectionElId  = '#section_' + sectionId
+            // ITEMS LOOP
+            // Check if items exists
+            if (items) {
+              mergeItems(items, itemsMerged)
 
-              // Sections basic info
-              // Mount section Title attr
-              if (section.title) {
-                var sectionTitle = document.createElement( 'h3' )
-                sectionTitle.innerHTML = section.title;
-                sectionEl.appendChild( sectionTitle )
+              // Create items container
+              var itemsEl  = document.createElement( 'div' )
+              sectionEl.appendChild( itemsEl )
+              itemsEl.classList.add('content__items')
+              // Mount into specified section
+              if (section.mountIn) {
+                $('#' + section.mountIn).append( itemsEl )
+                itemsEl.id = 'section_' + sectionId
+                $(sectionEl).remove()
               }
-              // Mount section Text attr
-              if (section.text) {
-                var sectionText = document.createElement( 'p' )
-                sectionText.innerHTML = section.text;
-                sectionEl.appendChild( sectionText )
+              // Add classes to the content
+              if (section.type == 'featured') {
+                itemsEl.classList.add('__featured')
+              } else if (section.type == 'small') {
+                itemsEl.classList.add('__small')
               }
-              // end Sections info
 
-              // ITEMS LOOP
-              // Check if items exists
-              if (items) {
-                mergeItems(items, itemsMerged)
+              // LOOP
+              $.each(items, function () {
+                const item = this
 
-                // Create items container and add suitable classes
-                var itemsEl  = document.createElement( 'div' )
-                sectionEl.appendChild( itemsEl )
-                itemsEl.classList.add('content__items')
-
-                if (section.type == 'featured') {
-                  itemsEl.classList.add('__featured')
-                } else if (section.type == 'small') {
-                  itemsEl.classList.add('__small')
-                }
-
-                // LOOP
-                $.each(items, function () {
-                  const item = this
-
-                  // Create and mount new element for each item
-                  var singleItemEl  = document.createElement( 'div' )
-                  singleItemEl.classList.add('section--item')
-                  itemsEl.appendChild( singleItemEl )
-                  $('.section--item').html ( `
-                    <div class="item--head">
-                      <a href="" target="_blank">
-                        <img src="" />
+                // Create and mount new element for each item
+                var singleItemEl  = document.createElement( 'div' )
+                singleItemEl.classList.add('section--item')
+                itemsEl.appendChild( singleItemEl )
+                $('.section--item').html ( `
+                  <div class="item--head">
+                    <a href="" target="_blank">
+                      <img src="" />
+                    </a>
+                    <div class="item--benefits">
+                      <div class="item--discount"></div>
+                    </div>
+                  </div>
+                  <div class="item--info">
+                    <h3 class="item--name"></h3>
+                    <div class="item--desc"></div>
+                    <div class="item--footer">
+                      <div class="item--price"></div>
+                      <a href="" class="item--btn" target="_blank">
+                        ${check_it_out}
                       </a>
-                      <div class="item--benefits">
-                        <div class="item--discount"></div>
-                      </div>
                     </div>
-                    <div class="item--info">
-                      <h3 class="item--name"></h3>
-                      <div class="item--desc"></div>
-                      <div class="item--footer">
-                        <div class="item--price"></div>
-                        <a href="" class="item--btn" target="_blank">
-                          ${check_it_out}
-                        </a>
-                      </div>
-                    </div>
-                  ` )
+                  </div>
+                ` )
 
-                  var itemId = item.id
-                  singleItemEl.id = itemId // Adds itemId to singleItemEl
-                  var itemElId = '.section--item' + '#' + itemId
+                var itemId = item.id
+                singleItemEl.id = itemId // Adds itemId to singleItemEl
+                var itemElId = '.section--item' + '#' + itemId
 
-                  // Mount item info
-                  if ( item.type != 'custom' ) { // Mount REGULAR item
-                    setTimeout(() => {
+                // Mount item info
+                if ( item.type != 'custom' ) { // Mount REGULAR item
+                  setTimeout(() => {
 
-                      // Mount item URL, custom item URL or custom item URL without global utm tags
-                      var itemElImgLink = $(itemElId + ' .item--head a')
-                      var itemElBtnLink = $(itemElId + ' .item--footer a')
-                      if (item.utmTags === false) {
-                        itemElImgLink.attr('href', item.customUrl)
-                        itemElBtnLink.attr('href', item.customUrl)
+                    // Mount item URL, custom item URL or custom item URL without global utm tags
+                    var itemElImgLink = $(itemElId + ' .item--head a')
+                    var itemElBtnLink = $(itemElId + ' .item--footer a')
+                    if (item.utmTags === false) {
+                      itemElImgLink.attr('href', item.customUrl)
+                      itemElBtnLink.attr('href', item.customUrl)
+                    } else {
+                      var itemUrl = item.url + utmTags
+                      if (item.customUrl === undefined) {
+                        itemElImgLink.attr('href', itemUrl)
+                        itemElBtnLink.attr('href', itemUrl)
                       } else {
-                        var itemUrl = item.url + utmTags
-                        if (item.customUrl === undefined) {
-                          itemElImgLink.attr('href', itemUrl)
-                          itemElBtnLink.attr('href', itemUrl)
-                        } else {
-                          var itemUrl = item.customUrl + utmTags
-                          itemElImgLink.attr('href', itemUrl)
-                          itemElBtnLink.attr('href', itemUrl)
+                        var itemUrl = item.customUrl + utmTags
+                        itemElImgLink.attr('href', itemUrl)
+                        itemElBtnLink.attr('href', itemUrl)
+                      }
+                    }
+
+                    // Mount item img URL to img source
+                    $(itemElId + ' .item--head img').attr('src', item.img)
+
+                    // Mount item category & name
+                    var itemName = item.name
+                    itemName     = itemName.replaceAll('(', '<span class="name--label">')
+                    itemName     = itemName.replaceAll(')', '</span>')
+                    if (item.customName === undefined) {
+                      $(itemElId + ' .item--name').html(`
+                        <span class="item--category">${item.category}</span><br />${itemName}
+                      `)
+                    } else if (item.customName) {
+                      itemName = item.customName
+                      $(itemElId + ' .item--name').html(`
+                        <span class="item--category">${item.category}</span><br />${itemName}
+                      `)
+                    }
+
+                    // Mount additional nameLabel
+                    if (item.nameLabel) {
+                      var itemNameLabel = item.nameLabel
+                      itemNameLabel     = itemNameLabel.replaceAll('(', '<span class="name--label">')
+                      itemNameLabel     = itemNameLabel.replaceAll(')', '</span>')
+                      $(itemElId + ' .item--name').append(`
+                        ${itemNameLabel}
+                      `)
+                    }
+
+                    // Mount item description
+                    $(itemElId + ' .item--desc').html( `<p>${item.desc}</p>` )
+
+                    // Mount additional text
+                    if (item.text) {
+                      $(itemElId + ' .item--desc').append( `<p class="item--text">${item.text}</p>` )
+                    }
+
+                    // Mount item label
+                    if (item.labelName && !item.labelIcon) {
+                      $(itemElId + ' .item--head').prepend(`
+                        <div class="item--label">${item.labelName}</div>
+                      `)
+                    } else if (item.labelName && item.labelIcon) {
+                      $(itemElId + ' .item--head').prepend(`
+                        <div class="item--label"><i class="fas fa-${item.labelIcon}"></i> ${item.labelName}</div>
+                      `)
+                    }
+
+                    // Item price & discount
+                    if (item.price) {
+
+                      var itemDiscount = item.price.regular - item.price.promo
+                      var itemPercentDiscount = Math.round(((item.price.regular - item.price.promo) / item.price.regular) * 100)
+
+                      // Mount item prices
+                      if (item.price.regular && item.price.promo) {
+                        item.discount = item.price.regular - item.price.promo
+                        $(itemElId + ' .item--price').html(`
+                          ${item.price.promo}<small> ${currency}</small>
+                          <span class="__crossed">${item.price.regular} ${currency}</span>
+                        `)
+                        if (item.price.from) {
+                          $(itemElId + ' .item--price').prepend(`<small>${price_from}</small>`)
+                          $(itemElId + ' .item--price .__crossed').prepend(`${price_from} `)
                         }
-                      }
-
-                      // Mount item img URL to img source
-                      $(itemElId + ' .item--head img').attr('src', item.img)
-
-                      // Mount item category & name
-                      var itemName = item.name
-                      itemName     = itemName.replaceAll('(', '<span class="name--label">')
-                      itemName     = itemName.replaceAll(')', '</span>')
-                      if (item.customName === undefined) {
-                        $(itemElId + ' .item--name').html(`
-                          <span class="item--category">${item.category}</span><br />${itemName}
-                        `)
-                      } else if (item.customName) {
-                        itemName = item.customName
-                        $(itemElId + ' .item--name').html(`
-                          <span class="item--category">${item.category}</span><br />${itemName}
-                        `)
-                      }
-
-                      // Mount additional nameLabel
-                      if (item.nameLabel) {
-                        var itemNameLabel = item.nameLabel
-                        itemNameLabel     = itemNameLabel.replaceAll('(', '<span class="name--label">')
-                        itemNameLabel     = itemNameLabel.replaceAll(')', '</span>')
-                        $(itemElId + ' .item--name').append(`
-                          ${itemNameLabel}
-                        `)
-                      }
-
-                      // Mount item description
-                      $(itemElId + ' .item--desc').html( `<p>${item.desc}</p>` )
-
-                      // Mount additional text
-                      if (item.text) {
-                        $(itemElId + ' .item--desc').append( `<p class="item--text">${item.text}</p>` )
-                      }
-
-                      // Mount item label
-                      if (item.labelName && !item.labelIcon) {
-                        $(itemElId + ' .item--head').prepend(`
-                          <div class="item--label">${item.labelName}</div>
-                        `)
-                      } else if (item.labelName && item.labelIcon) {
-                        $(itemElId + ' .item--head').prepend(`
-                          <div class="item--label"><i class="fas fa-${item.labelIcon}"></i> ${item.labelName}</div>
-                        `)
-                      }
-
-                      // Item price & discount
-                      if (item.price) {
-
-                        var itemDiscount = item.price.regular - item.price.promo
-                        var itemPercentDiscount = Math.round(((item.price.regular - item.price.promo) / item.price.regular) * 100)
-
-                        // Mount item prices
-                        if (item.price.regular && item.price.promo) {
-                          item.discount = item.price.regular - item.price.promo
-                          $(itemElId + ' .item--price').html(`
-                            ${item.price.promo}<small> ${currency}</small>
-                            <span class="__crossed">${item.price.regular} ${currency}</span>
+                        // Mount discount
+                        if (item.price.percent == false) {
+                          $(itemElId + ' .item--discount').append(`
+                            <span class="benefit--title">${discount_title}</span>
+                            <strong>${itemDiscount}<small> ${currency}</small></strong>
                           `)
-                          if (item.price.from) {
-                            $(itemElId + ' .item--price').prepend(`<small>${price_from}</small>`)
-                            $(itemElId + ' .item--price .__crossed').prepend(`${price_from} `)
+                          if (item.price.discount) {
+                            $(itemElId + ' .item--discount strong').html(`<small>${up_to} </small>${item.price.discount}<small> ${currency}</small>`)
                           }
-                          // Mount discount
-                          if (item.price.percent == false) {
-                            $(itemElId + ' .item--discount').append(`
-                              <span class="benefit--title">${discount_title}</span>
-                              <strong>${itemDiscount}<small> ${currency}</small></strong>
-                            `)
-                            if (item.price.discount) {
-                              $(itemElId + ' .item--discount strong').html(`<small>${up_to} </small>${item.price.discount}<small> ${currency}</small>`)
-                            }
-                          } else {
-                            $(itemElId + ' .item--discount').append(`
-                              <span class="benefit--title">${discount_title}</span>
-                              <strong>${itemPercentDiscount}<small>%</small></strong>
-                            `)
-                            if (item.price.discount) {
-                              $(itemElId + ' .item--discount strong').html(`<small>${up_to} </small>${item.price.discount}<small>%</small>`)
-                            }
-                          }
-                        } else if (!item.price.promo) {
-                          $(itemElId + ' .item--price').html(`${item.price.regular}<small> ${currency}</small>`)
-                          if (item.price.from) {
-                            $(itemElId + ' .item--price').prepend(`<small>${price_from} </small>`)
+                        } else {
+                          $(itemElId + ' .item--discount').append(`
+                            <span class="benefit--title">${discount_title}</span>
+                            <strong>${itemPercentDiscount}<small>%</small></strong>
+                          `)
+                          if (item.price.discount) {
+                            $(itemElId + ' .item--discount strong').html(`<small>${up_to} </small>${item.price.discount}<small>%</small>`)
                           }
                         }
-
+                      } else if (!item.price.promo) {
+                        $(itemElId + ' .item--price').html(`${item.price.regular}<small> ${currency}</small>`)
+                        if (item.price.from) {
+                          $(itemElId + ' .item--price').prepend(`<small>${price_from} </small>`)
+                        }
                       }
 
-                      // Mount item gift
-                      if (item.gift) {
-                        $(itemElId + ' .item--benefits').addClass('benefit--gift')
-                        $(itemElId + ' .item--benefits').append(`
-                          <div class="item--gift">
-                            <a href="${item.gift.url}" target="_blank" title="${item.gift.name}">
-                              <img src="${item.gift.img}" />
-                            </a>
-                            <span class="benefit--title">${gift_included}</span>
-                          </div>
-                        `)
-                      }
+                    }
 
-                    }, 0)
-                  } else if (item.type == 'custom') { // Mount CUSTOM item
-                    $(itemElId).addClass('item__custom')
-                    setTimeout(() => {
-                      $('.item__custom' + itemElId).html ( `${item.content}` )
-                    }, 0)
-                  }
-                  // end item info
+                    // Mount item gift
+                    if (item.gift) {
+                      $(itemElId + ' .item--benefits').addClass('benefit--gift')
+                      $(itemElId + ' .item--benefits').append(`
+                        <div class="item--gift">
+                          <a href="${item.gift.url}" target="_blank" title="${item.gift.name}">
+                            <img src="${item.gift.img}" />
+                          </a>
+                          <span class="benefit--title">${gift_included}</span>
+                        </div>
+                      `)
+                    }
 
-                  // Check if Sold Out
-                  if (item.soldOut === true ) {
-                    setTimeout(() => {
-                      $(itemElId).addClass('item__sold_out')
-                      $(itemElId + ' .item--footer a').html(sold_out)
-                    }, 0)
-                  }
-                  // Check if Soon
-                  if (item.soon === true ) {
-                    setTimeout(() => {
-                      $(itemElId).addClass('item__soon')
-                      $(itemElId + ' .item--footer a').html(soon)
-                    }, 0)
-                  }
-
-                }) // end LOOP
-              } // end ITEMS
-
-              // if Page Menu // Mount specified sections in menu
-              if (pageMenu == true) {
-                if (section.menu) {
-                  $('nav .nav--items').append(`<li class="nav--item"><a href="${sectionElId}" rel="nofollow">${section.menu}</a></li>`)
+                  }, 0)
+                } else if (item.type == 'custom') { // Mount CUSTOM item
+                  $(itemElId).addClass('item__custom')
+                  setTimeout(() => {
+                    $('.item__custom' + itemElId).html ( `${item.content}` )
+                  }, 0)
                 }
-              }
+                // end item info
 
-              // Mount IMG type item if exists
-              if (section.type == 'img') {
-                var imgEl = document.createElement( 'div' )
-                sectionEl.appendChild( imgEl )
-                imgEl.classList.add('content__img')
-
-                var sectionContent = sectionElId + ' .content__img'
-                var imgDesktopEl = '<img src="' + section.img.desktop + '" class="img__desktop">'
-                var imgMobileEl  = '<img src="' + section.img.mobile + '"  class="img__mobile">'
-
-                if (section.url) {
-                  $(sectionContent).html(` <a href="${section.url}" target="_blank" title="${find_out}"></a> `)
-                  $(sectionContent + ' a').html( imgDesktopEl + imgMobileEl )
-                  if(section.img.mobile === undefined) { $(sectionContent + ' a').html( imgMobileEl ) }
-                } else {
-                  $(sectionContent).html( imgDesktopEl + imgMobileEl )
-                  if(section.img.mobile === undefined) { $(sectionContent).html( imgMobileEl ) }
+                // Check if Sold Out
+                if (item.soldOut === true ) {
+                  setTimeout(() => {
+                    $(itemElId).addClass('item__sold_out')
+                    $(itemElId + ' .item--footer a').html(sold_out)
+                  }, 0)
                 }
-              }
-
-              // Custom type section
-              if (section.type == 'custom') {
-                var customEl = document.createElement( 'div' )
-                sectionEl.appendChild( customEl )
-                customEl.classList.add('content__custom')
-
-                $(sectionElId + ' .content__custom').html(section.content)
-              }
-
-              // embed type section
-              if (section.type === 'embed') {
-                var embedEl = document.createElement( 'div' )
-                sectionEl.appendChild( embedEl )
-                embedEl.classList.add('content__embed_iframe')
-
-                // YouTube iframe
-                if (section.embed.youtube) {
-                  $(sectionElId + ' .content__embed_iframe').html(`
-                    <iframe
-                      src="https://www.youtube.com/embed/${section.embed.youtube}"
-                      frameborder="1" autoplay="1" rel="0" controls="0"
-                      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen="">
-                    </iframe>
-                  `)
+                // Check if Soon
+                if (item.soon === true ) {
+                  setTimeout(() => {
+                    $(itemElId).addClass('item__soon')
+                    $(itemElId + ' .item--footer a').html(soon)
+                  }, 0)
                 }
-              }
 
-              // Disclaimer type section - The Last Stand :)
-              if (section.type === 'disclaimer') {
-                $(sectionElId).prop('id', 'page_disclaimer')
-              }
+              }) // end LOOP
+            } // end ITEMS
 
-            }) // end SECTIONS
-
-            // if Page Menu // Mount number of columns in menu
+            // if Page Menu // Mount specified sections in menu
             if (pageMenu == true) {
-              $('nav .nav--items').addClass('col__' + sectionMenuCounter)
+              if (section.menu) {
+                $('nav .nav--items').append(`<li class="nav--item"><a href="${sectionElId}" rel="nofollow">${section.menu}</a></li>`)
+              }
             }
 
-          } // end Content Builder function
+            // Mount IMG type item if exists
+            if (section.type == 'img') {
+              var imgEl = document.createElement( 'div' )
+              sectionEl.appendChild( imgEl )
+              imgEl.classList.add('content__img')
+
+              var sectionContent = sectionElId + ' .content__img'
+              var imgDesktopEl = '<img src="' + section.img.desktop + '" class="img__desktop">'
+              var imgMobileEl  = '<img src="' + section.img.mobile + '"  class="img__mobile">'
+
+              if (section.url) {
+                $(sectionContent).html(` <a href="${section.url}" target="_blank" title="${find_out}"></a> `)
+                $(sectionContent + ' a').html( imgDesktopEl + imgMobileEl )
+                if(section.img.mobile === undefined) { $(sectionContent + ' a').html( imgMobileEl ) }
+              } else {
+                $(sectionContent).html( imgDesktopEl + imgMobileEl )
+                if(section.img.mobile === undefined) { $(sectionContent).html( imgMobileEl ) }
+              }
+            }
+
+            // Custom type section
+            if (section.type == 'custom') {
+              var customEl = document.createElement( 'div' )
+              sectionEl.appendChild( customEl )
+              customEl.classList.add('content__custom')
+
+              $(sectionElId + ' .content__custom').html(section.content)
+            }
+
+            // embed type section
+            if (section.type === 'embed') {
+              var embedEl = document.createElement( 'div' )
+              sectionEl.appendChild( embedEl )
+              embedEl.classList.add('content__embed_iframe')
+
+              // YouTube iframe
+              if (section.embed.youtube) {
+                $(sectionElId + ' .content__embed_iframe').html(`
+                  <iframe
+                    src="https://www.youtube.com/embed/${section.embed.youtube}"
+                    frameborder="1" autoplay="1" rel="0" controls="0"
+                    allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen="">
+                  </iframe>
+                `)
+              }
+            }
+
+            // Disclaimer type section - The Last Stand :)
+            if (section.type === 'disclaimer') {
+              $(sectionElId).prop('id', 'page_disclaimer')
+            }
+
+          }) // end SECTIONS
+
+          // if Page Menu // Mount number of columns in menu
+          if (pageMenu == true) {
+            $('nav .nav--items').addClass('col__' + sectionMenuCounter)
+          }
 
         })
         .fail(function( getContent, textStatus, error ) {
