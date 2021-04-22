@@ -103,14 +103,14 @@
     "mountIn": "section_1",
     "items": [
       {
-        "id": "custom-html-item-420420",
+        "id": "custom-html-item-420421",
         "type": "custom",
-        "content": "Hello world!"
+        "content": "Hello world! I'm item in mounted small section!"
       },
       {
-        "id": "custom-html-item-420420",
+        "id": "custom-html-item-420422",
         "type": "custom",
-        "content": "Hello world!"
+        "content": "Hello world! I'm item in mounted small section!"
       }
     ]
   },
