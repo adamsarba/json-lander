@@ -492,15 +492,4 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 })
 
 // Easer Egg
-
-console.log(`%c
-MMMMMMMMMMMMMMMMMm     IIII
-MMMMMMMMMMMMMMMMMMMm   IIII
-MMMM           mMMMM   IIII
-MMMM    MMMM    MMMM   IIII
-MMMM    MMMM    MMMM   IIII
-MMMM    MMMM    MMMM   IIII
-MMMM    MMMM    MMMM   IIII
-MMMM    MMMM    MMMM   IIII
-MMMM    MMMM    MMMM   IIII
-`, 'color: #ff6900')
+console.log('%c\nMMMMMMMMMMMMMMMMMm     IIII\nMMMMMMMMMMMMMMMMMMMm   IIII\nMMMM           mMMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\n','color: #ff6900');
