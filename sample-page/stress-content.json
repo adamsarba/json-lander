@@ -18,7 +18,7 @@
           "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
           "url": "https://mi-home.pl"
         },
-        "editName": "Custom Mi Band 5 Name",
+        "editName": "Edited Mi Band 5 Name",
         "utmTags": false,
         "editUrl": "https://mi-home.pl/akcesoria/mi-4k-action-camera-tripod?own-utm-tag",
         "text": "Additional paragraph under item description"
@@ -256,10 +256,6 @@
         },
         {
             "id": "mi-band-4c",
-            "price": { "regular": 199 }
-        },
-        {
-            "id": "mi-band-5",
             "price": { "regular": 199 }
         },
         {
