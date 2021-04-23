@@ -2,7 +2,7 @@
   {
     "title": "1st Section Title",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "type": "standard",
+    "type": "items",
     "menu": "Section 1",
     "items": [{
         "id": "mi-band-5",
@@ -16,11 +16,11 @@
         "gift": {
           "name": "Mi Band 4",
           "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
-          "url": "https://mi-home.pl"
+          "url": "/"
         },
-        "customName": "Custom Mi Band 5 Name",
+        "editName": "Edited Mi Band 5 Name",
         "utmTags": false,
-        "customUrl": "https://mi-home.pl/akcesoria/mi-4k-action-camera-tripod?own-utm-tag",
+        "editUrl": "https://mi-home.pl/akcesoria/mi-4k-action-camera-tripod?own-utm-tag",
         "text": "Additional paragraph under item description"
       },
       {
@@ -32,7 +32,7 @@
         "gift": {
           "name": "Mi Watch Lite",
           "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
-          "url": "https://mi-home.pl"
+          "url": "/"
         },
         "text": "NOW WITH GIFT!"
       },
@@ -57,7 +57,7 @@
         "nameLabel": "(4+32GB)",
         "gift": {
           "name": "Gift Name",
-          "img": "img/redmi-note-10-pro-mff-edition.png",
+          "img": "img/earbuds-basic-2-72px.png",
           "url": "../../gift-url"
         }
       },
@@ -70,7 +70,7 @@
         "name": "Manual Item Title",
         "category": "Manual Item Category",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit (Manual Item Desc)",
-        "img": "img/redmi-note-10-pro-mff-edition.png",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-4k-laser-projector-150.png",
         "url": "../../manual-url-1",
         "price": {
           "regular": 420,
@@ -84,6 +84,41 @@
         "id": "custom-html-item-3",
         "type": "custom",
         "content": "Hello world! I'm <code>HTML</code> 'custom' type item 😎"
+      }
+    ]
+  },
+  {
+    "type": "featured",
+    "mountIn": "section_1",
+    "items": [
+      {
+        "id": "custom-html-item-420420",
+        "type": "custom",
+        "content": "Hello world! I'm item in mounted featured section"
+      }
+    ]
+  },
+  {
+    "type": "small",
+    "mountIn": "section_1",
+    "items": [
+      {
+        "id": "custom-html-item-420421",
+        "type": "custom",
+        "content": "Hello world! I'm item in mounted small section!"
+      },
+      {
+        "id": "custom-html-item-420422",
+        "type": "custom",
+        "content": "Hello world! I'm item in mounted small section!"
+      },
+      {
+          "id": "mi-band-5",
+          "price": { "regular": 199 }
+      },
+      {
+          "id": "mi-air-purifier-pro-h",
+          "price": { "regular": 199 }
       }
     ]
   },
@@ -146,13 +181,13 @@
   },
   {
     "title": "4th Section Title (img)",
-    "customId": "wide-banner-1",
+    "id": "wide-banner-1",
     "type": "img",
     "img": {
       "desktop": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg",
       "mobile": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg"
     },
-    "url": "https://mi-home.pl",
+    "url": "/",
     "text": "Hello World! I'm img type section 🙂"
   },
   {

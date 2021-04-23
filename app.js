@@ -82,9 +82,9 @@ $(document).ready(function() {
       var headerAlign    = settings.header.contentAlign
       $('#header--content').addClass('__' + headerAlign).append(` <div class="header--wrapper"></div> `)
       $.each(settings.header.content, function () {
-        if (this.headerTitle)    { $('.header--wrapper').append(` <h1 class="txt__heavy">${this.headerTitle}</h1> `) }
-        if (this.headerSubtitle) { $('.header--wrapper').append(` <h2 class="txt__bold">${this.headerSubtitle}</h2> `) }
-        if (this.headerText)     { $('.header--wrapper').append(` <p class="txt__regular">${this.headerText}</p> `) }
+        if (this.headerTitle)    { $('.header--wrapper').append(` <h1>${this.headerTitle}</h1> `) }
+        if (this.headerSubtitle) { $('.header--wrapper').append(` <h2>${this.headerSubtitle}</h2> `) }
+        if (this.headerText)     { $('.header--wrapper').append(` <p>${this.headerText}</p> `) }
       })
     }
 
@@ -152,7 +152,7 @@ $(document).ready(function() {
             // Sections basic info
             // Mount section Title attr
             if (section.title) {
-              var sectionTitle = document.createElement( 'h3' )
+              var sectionTitle = document.createElement( 'h2' )
               sectionTitle.innerHTML = section.title;
               sectionEl.appendChild( sectionTitle )
             }

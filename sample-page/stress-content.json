@@ -191,7 +191,31 @@
     "text": "Hello World! I'm img type section 🙂"
   },
   {
-    "title": "6th Section Title<br />🚧 STRESS TEST 🚧",
+    "title": "5th Section Title (Custom, without content)",
+    "type": "custom",
+    "text": "This is text in empty section"
+  },
+  {
+    "title": "6th Section Title (Custom, title only)",
+    "type": "custom"
+  },
+  {
+    "type": "custom",
+    "text": "This is text in another custom section, without title but with content.",
+    "content": "And this is custom section's content.<br><strong>Look at this shit</strong>:<br /><code style='color: #ff6900'>HTML & CSS</code><br /> :)"
+  },
+  {
+    "title": "8th Section Title",
+    "menu": "Section 8 (YouTube)",
+    "text": "This is additional text to iframe section. Put video ID (dQw4w9WgXcQ) in &quot;youtube&quot string",
+    "type": "embed",
+    "embed": {
+      "youtube": ""
+    }
+  },
+  {
+    "title": "🚧 STRESS TEST 🚧",
+    "menu": "Stress test",
     "type": "items",
     "items": [
         {
