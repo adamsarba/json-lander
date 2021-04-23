@@ -80,11 +80,11 @@ $(document).ready(function() {
     $('.header--logo').addClass('logo__' + settings.logo)
     if (settings.header.content) {
       var headerAlign    = settings.header.contentAlign
-      $('#header--content').addClass('__' + headerAlign).append(` <div class="header--wrapper"></div> `)
+      $('#header--content').addClass('__' + headerAlign).append(` <div class="content--wrapper"></div> `)
       $.each(settings.header.content, function () {
-        if (this.headerTitle)    { $('.header--wrapper').append(` <h1>${this.headerTitle}</h1> `) }
-        if (this.headerSubtitle) { $('.header--wrapper').append(` <h2>${this.headerSubtitle}</h2> `) }
-        if (this.headerText)     { $('.header--wrapper').append(` <p>${this.headerText}</p> `) }
+        if (this.headerTitle)    { $('.content--wrapper').append(` <h1 class="header--title">${this.headerTitle}</h1> `) }
+        if (this.headerSubtitle) { $('.content--wrapper').append(` <h2 class="header--sub_title">${this.headerSubtitle}</h2> `) }
+        if (this.headerText)     { $('.content--wrapper').append(` <p class="header--text">${this.headerText}</p> `) }
       })
     }
 
@@ -150,18 +150,24 @@ $(document).ready(function() {
             sectionElId  = '#section_' + sectionId
 
             // Sections basic info
-            // Mount section Title attr
-            if (section.title) {
-              var sectionTitle = document.createElement( 'h2' )
-              sectionTitle.innerHTML = section.title;
-              sectionEl.appendChild( sectionTitle )
+            if (section.title || section.text) {
+              var sectionHeader = document.createElement( 'div' )
+              sectionHeader.classList.add('section--header')
+              sectionEl.appendChild( sectionHeader )
+              // Mount section Title attr
+              if (section.title) {
+                var sectionTitle = document.createElement( 'h2' )
+                sectionTitle.innerHTML = section.title;
+                sectionHeader.appendChild( sectionTitle )
+              }
+              // Mount section Text attr
+              if (section.text) {
+                var sectionText = document.createElement( 'p' )
+                sectionText.innerHTML = section.text;
+                sectionHeader.appendChild( sectionText )
+              }
             }
-            // Mount section Text attr
-            if (section.text) {
-              var sectionText = document.createElement( 'p' )
-              sectionText.innerHTML = section.text;
-              sectionEl.appendChild( sectionText )
-            }
+
             // end Sections info
 
             // ITEMS LOOP
