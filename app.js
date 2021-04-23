@@ -490,5 +490,10 @@ $(document).on('click', 'a[href^="#"]', function(event) {
   }
 })
 
+// Images Error [Test]
+// $('img').on('error', function() {
+//   $(this).attr('src', '/json-lander/assets/placeholder.png')
+// })
+
 // Easer Egg
 console.log('%c\nMMMMMMMMMMMMMMMMMm     IIII\nMMMMMMMMMMMMMMMMMMMm   IIII\nMMMM           mMMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\n','color: #ff6900');

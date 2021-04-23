@@ -16,7 +16,7 @@
         "gift": {
           "name": "Mi Band 4",
           "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
-          "url": "https://mi-home.pl"
+          "url": "/"
         },
         "editName": "Edited Mi Band 5 Name",
         "utmTags": false,
@@ -32,7 +32,7 @@
         "gift": {
           "name": "Mi Watch Lite",
           "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
-          "url": "https://mi-home.pl"
+          "url": "/"
         },
         "text": "NOW WITH GIFT!"
       },
@@ -57,7 +57,7 @@
         "nameLabel": "(4+32GB)",
         "gift": {
           "name": "Gift Name",
-          "img": "img/redmi-note-10-pro-mff-edition.png",
+          "img": "img/earbuds-basic-2-72px.png",
           "url": "../../gift-url"
         }
       },
@@ -70,7 +70,7 @@
         "name": "Manual Item Title",
         "category": "Manual Item Category",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit (Manual Item Desc)",
-        "img": "img/redmi-note-10-pro-mff-edition.png",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-4k-laser-projector-150.png",
         "url": "../../manual-url-1",
         "price": {
           "regular": 420,
@@ -187,7 +187,7 @@
       "desktop": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg",
       "mobile": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg"
     },
-    "url": "https://mi-home.pl",
+    "url": "/",
     "text": "Hello World! I'm img type section 🙂"
   },
   {
