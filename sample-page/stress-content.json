@@ -16,7 +16,7 @@
         "gift": {
           "name": "Mi Band 4",
           "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
-          "url": "https://mi-home.pl"
+          "url": "/"
         },
         "editName": "Edited Mi Band 5 Name",
         "utmTags": false,
@@ -32,7 +32,7 @@
         "gift": {
           "name": "Mi Watch Lite",
           "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
-          "url": "https://mi-home.pl"
+          "url": "/"
         },
         "text": "NOW WITH GIFT!"
       },
@@ -57,7 +57,7 @@
         "nameLabel": "(4+32GB)",
         "gift": {
           "name": "Gift Name",
-          "img": "img/redmi-note-10-pro-mff-edition.png",
+          "img": "img/earbuds-basic-2-72px.png",
           "url": "../../gift-url"
         }
       },
@@ -70,7 +70,7 @@
         "name": "Manual Item Title",
         "category": "Manual Item Category",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit (Manual Item Desc)",
-        "img": "img/redmi-note-10-pro-mff-edition.png",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-4k-laser-projector-150.png",
         "url": "../../manual-url-1",
         "price": {
           "regular": 420,
@@ -111,6 +111,14 @@
         "id": "custom-html-item-420422",
         "type": "custom",
         "content": "Hello world! I'm item in mounted small section!"
+      },
+      {
+          "id": "mi-band-5",
+          "price": { "regular": 199 }
+      },
+      {
+          "id": "mi-air-purifier-pro-h",
+          "price": { "regular": 199 }
       }
     ]
   },
@@ -179,11 +187,35 @@
       "desktop": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg",
       "mobile": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg"
     },
-    "url": "https://mi-home.pl",
+    "url": "/",
     "text": "Hello World! I'm img type section 🙂"
   },
   {
-    "title": "6th Section Title<br />🚧 STRESS TEST 🚧",
+    "title": "5th Section Title (Custom, without content)",
+    "type": "custom",
+    "text": "This is text in empty section"
+  },
+  {
+    "title": "6th Section Title (Custom, title only)",
+    "type": "custom"
+  },
+  {
+    "type": "custom",
+    "text": "This is text in another custom section, without title but with content.",
+    "content": "And this is custom section's content.<br><strong>Look at this shit</strong>:<br /><code style='color: #ff6900'>HTML & CSS</code><br /> :)"
+  },
+  {
+    "title": "8th Section Title",
+    "menu": "Section 8 (YouTube)",
+    "text": "This is additional text to iframe section. Put video ID (dQw4w9WgXcQ) in &quot;youtube&quot string",
+    "type": "embed",
+    "embed": {
+      "youtube": ""
+    }
+  },
+  {
+    "title": "🚧 STRESS TEST 🚧",
+    "menu": "Stress test",
     "type": "items",
     "items": [
         {
@@ -256,6 +288,10 @@
         },
         {
             "id": "mi-band-4c",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-band-5",
             "price": { "regular": 199 }
         },
         {

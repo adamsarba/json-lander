@@ -80,11 +80,11 @@ $(document).ready(function() {
     $('.header--logo').addClass('logo__' + settings.logo)
     if (settings.header.content) {
       var headerAlign    = settings.header.contentAlign
-      $('#header--content').addClass('__' + headerAlign).append(` <div class="header--wrapper"></div> `)
+      $('#header--content').addClass('__' + headerAlign).append(` <div class="content--wrapper"></div> `)
       $.each(settings.header.content, function () {
-        if (this.headerTitle)    { $('.header--wrapper').append(` <h1 class="txt__heavy">${this.headerTitle}</h1> `) }
-        if (this.headerSubtitle) { $('.header--wrapper').append(` <h2 class="txt__bold">${this.headerSubtitle}</h2> `) }
-        if (this.headerText)     { $('.header--wrapper').append(` <p class="txt__regular">${this.headerText}</p> `) }
+        if (this.headerTitle)    { $('.content--wrapper').append(` <h1 class="header--title">${this.headerTitle}</h1> `) }
+        if (this.headerSubtitle) { $('.content--wrapper').append(` <h2 class="header--sub_title">${this.headerSubtitle}</h2> `) }
+        if (this.headerText)     { $('.content--wrapper').append(` <p class="header--text">${this.headerText}</p> `) }
       })
     }
 
@@ -135,7 +135,6 @@ $(document).ready(function() {
 
           // SECTIONS LOOP
           $.each(content, function (sectionId) {
-
             const section      = this
             const items        = section.items
 
@@ -145,25 +144,30 @@ $(document).ready(function() {
             var sectionEl = document.createElement( 'section' )
             container.appendChild( sectionEl )
 
-            // Mount unique ID for every section from its index number
+            // Mount unique ID to every section element
             sectionId = sectionId+1
-
             sectionEl.id = 'section_' + sectionId
             sectionElId  = '#section_' + sectionId
 
             // Sections basic info
-            // Mount section Title attr
-            if (section.title) {
-              var sectionTitle = document.createElement( 'h3' )
-              sectionTitle.innerHTML = section.title;
-              sectionEl.appendChild( sectionTitle )
+            if (section.title || section.text) {
+              var sectionHeader = document.createElement( 'div' )
+              sectionHeader.classList.add('section--header')
+              sectionEl.appendChild( sectionHeader )
+              // Mount section Title attr
+              if (section.title) {
+                var sectionTitle = document.createElement( 'h2' )
+                sectionTitle.innerHTML = section.title;
+                sectionHeader.appendChild( sectionTitle )
+              }
+              // Mount section Text attr
+              if (section.text) {
+                var sectionText = document.createElement( 'p' )
+                sectionText.innerHTML = section.text;
+                sectionHeader.appendChild( sectionText )
+              }
             }
-            // Mount section Text attr
-            if (section.text) {
-              var sectionText = document.createElement( 'p' )
-              sectionText.innerHTML = section.text;
-              sectionEl.appendChild( sectionText )
-            }
+
             // end Sections info
 
             // ITEMS LOOP
@@ -189,7 +193,7 @@ $(document).ready(function() {
               }
 
               // LOOP
-              $.each(items, function () {
+              $.each(items, function (itemIndx) {
                 const item = this
 
                 // Create and mount new element for each item
@@ -217,7 +221,9 @@ $(document).ready(function() {
                   </div>
                 ` )
 
-                var itemId = item.id
+                // Mount unique ID to item element
+                itemIndx = itemIndx+1
+                var itemId = 'item_' + itemIndx + '-' + item.id
                 singleItemEl.id = itemId // Adds itemId to singleItemEl
                 var itemElId = '.section--item' + '#' + itemId
 
@@ -489,6 +495,11 @@ $(document).on('click', 'a[href^="#"]', function(event) {
     }, 1000);
   }
 })
+
+// Images Error [Test]
+// $('img').on('error', function() {
+//   $(this).attr('src', '/json-lander/assets/placeholder.png')
+// })
 
 // Easer Egg
 console.log('%c\nMMMMMMMMMMMMMMMMMm     IIII\nMMMMMMMMMMMMMMMMMMMm   IIII\nMMMM           mMMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\nMMMM    MMMM    MMMM   IIII\n','color: #ff6900');
