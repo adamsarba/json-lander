@@ -135,7 +135,6 @@ $(document).ready(function() {
 
           // SECTIONS LOOP
           $.each(content, function (sectionId) {
-
             const section      = this
             const items        = section.items
 
@@ -145,9 +144,8 @@ $(document).ready(function() {
             var sectionEl = document.createElement( 'section' )
             container.appendChild( sectionEl )
 
-            // Mount unique ID for every section from its index number
+            // Mount unique ID to every section element
             sectionId = sectionId+1
-
             sectionEl.id = 'section_' + sectionId
             sectionElId  = '#section_' + sectionId
 
@@ -189,7 +187,7 @@ $(document).ready(function() {
               }
 
               // LOOP
-              $.each(items, function () {
+              $.each(items, function (itemIndx) {
                 const item = this
 
                 // Create and mount new element for each item
@@ -217,7 +215,9 @@ $(document).ready(function() {
                   </div>
                 ` )
 
-                var itemId = item.id
+                // Mount unique ID to item element
+                itemIndx = itemIndx+1
+                var itemId = 'item_' + itemIndx + '-' + item.id
                 singleItemEl.id = itemId // Adds itemId to singleItemEl
                 var itemElId = '.section--item' + '#' + itemId
 

@@ -111,6 +111,14 @@
         "id": "custom-html-item-420422",
         "type": "custom",
         "content": "Hello world! I'm item in mounted small section!"
+      },
+      {
+          "id": "mi-band-5",
+          "price": { "regular": 199 }
+      },
+      {
+          "id": "mi-air-purifier-pro-h",
+          "price": { "regular": 199 }
       }
     ]
   },
@@ -256,6 +264,10 @@
         },
         {
             "id": "mi-band-4c",
+            "price": { "regular": 199 }
+        },
+        {
+            "id": "mi-band-5",
             "price": { "regular": 199 }
         },
         {
