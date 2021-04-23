@@ -229,15 +229,15 @@ $(document).ready(function() {
                     var itemElImgLink = $(itemElId + ' .item--head a')
                     var itemElBtnLink = $(itemElId + ' .item--footer a')
                     if (item.utmTags === false) {
-                      itemElImgLink.attr('href', item.customUrl)
-                      itemElBtnLink.attr('href', item.customUrl)
+                      itemElImgLink.attr('href', item.editUrl)
+                      itemElBtnLink.attr('href', item.editUrl)
                     } else {
                       var itemUrl = item.url + utmTags
-                      if (item.customUrl === undefined) {
+                      if (item.editUrl === undefined) {
                         itemElImgLink.attr('href', itemUrl)
                         itemElBtnLink.attr('href', itemUrl)
                       } else {
-                        var itemUrl = item.customUrl + utmTags
+                        var itemUrl = item.editUrl + utmTags
                         itemElImgLink.attr('href', itemUrl)
                         itemElBtnLink.attr('href', itemUrl)
                       }
@@ -250,12 +250,12 @@ $(document).ready(function() {
                     var itemName = item.name
                     itemName     = itemName.replaceAll('(', '<span class="name--label">')
                     itemName     = itemName.replaceAll(')', '</span>')
-                    if (item.customName === undefined) {
+                    if (item.editName === undefined) {
                       $(itemElId + ' .item--name').html(`
                         <span class="item--category">${item.category}</span><br />${itemName}
                       `)
-                    } else if (item.customName) {
-                      itemName = item.customName
+                    } else if (item.editName) {
+                      itemName = item.editName
                       $(itemElId + ' .item--name').html(`
                         <span class="item--category">${item.category}</span><br />${itemName}
                       `)

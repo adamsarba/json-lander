@@ -2,7 +2,7 @@
   {
     "title": "1st Section Title",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    "type": "standard",
+    "type": "items",
     "menu": "Section 1",
     "items": [{
         "id": "mi-band-5",
@@ -18,9 +18,9 @@
           "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
           "url": "https://mi-home.pl"
         },
-        "customName": "Custom Mi Band 5 Name",
+        "editName": "Custom Mi Band 5 Name",
         "utmTags": false,
-        "customUrl": "https://mi-home.pl/akcesoria/mi-4k-action-camera-tripod?own-utm-tag",
+        "editUrl": "https://mi-home.pl/akcesoria/mi-4k-action-camera-tripod?own-utm-tag",
         "text": "Additional paragraph under item description"
       },
       {
@@ -173,7 +173,7 @@
   },
   {
     "title": "4th Section Title (img)",
-    "customId": "wide-banner-1",
+    "id": "wide-banner-1",
     "type": "img",
     "img": {
       "desktop": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg",
@@ -184,7 +184,7 @@
   },
   {
     "title": "6th Section Title<br />🚧 STRESS TEST 🚧",
-    "type": "standard",
+    "type": "items",
     "items": [
         {
             "id": "mi-10",

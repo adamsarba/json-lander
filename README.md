@@ -76,7 +76,7 @@ menu | boolean | true | Toggles sections menu under the header
 #### Create section
 Option | Type | Default | Description
 ---- | ---- | ---- | ----------
-type | string | standard | Specifies section type. Available parameters: `standard`,  `featured`, `small`,  `img`, `embed`, `custom`, `disclaimer`
+type | string | standard | Specifies section type. Available parameters: `items`,  `featured`, `small`,  `img`, `embed`, `custom`, `disclaimer`
 title | string | null | Section title
 text | string | null | Text under the section title
 menu | string | null | Short menu title. Only if [`menu` is enabled in page settings](#page-settings).
@@ -148,10 +148,10 @@ gift | array | null | Optional array of strings containing information about add
 gift.name | string | '' | Name of the item's gift
 gift.img | string | '' | Image of the item's gift
 gift.url | string | '' | URL to the item's gift page
-customName | string | null | Edits the item name
-customCategory | string | null | Edits the item category (not yet supported)
-customImg | string | null | Edits the item image (not yet supported)
-customUrl | string | null | Edits the item URL (Required if `utmTags` is set to `false`)
+editName | string | null | Edits the item name
+editCategory | string | null | Edits the item category (not yet supported)
+editImg | string | null | Edits the item image (not yet supported)
+editUrl | string | null | Edits the item URL (Required if `utmTags` is set to `false`)
 utmTags | boolean | true | Toggles page UTM tags attachment to the item URLs
 type | string | null  | Specifies item type. Set to `custom` in order to enable Custom HTML Item
 content | string | null | `custom` item content.
@@ -174,7 +174,7 @@ Rich Item Example:
     "from":true,
     "percent":true
   },
-  "customName":"Edited Database Item Name",
+  "editName":"Edited Database Item Name",
   "nameLabel":"(Special Edition)",
   "text":"Lorem ipsum folie sit smet",
   "labelName":"Bestseller",
@@ -185,7 +185,7 @@ Rich Item Example:
     "url":"//yourpage.com/gift-page-url"
   },
   "utmTags":false,
-  "customUrl":"//examplepage.com/custom-item-url?my-own-utm"
+  "editUrl":"//examplepage.com/items-custom-url?my-own-utm"
 }
 ```
 #### Manual item
