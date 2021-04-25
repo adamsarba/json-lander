@@ -6,48 +6,48 @@
  * Date: 2021-04-21
  *
  */
-@font-face {
-  font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Thin.woff") format("woff");
-  font-weight: 100; }
 .txt__thin {
   font-weight: 100; }
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Light.woff") format("woff");
-  font-weight: 300; }
+  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Thin.woff") format("woff");
+  font-weight: 100; }
 .txt__light {
   font-weight: 300; }
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Regular.woff") format("woff");
-  font-weight: 400; }
+  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Light.woff") format("woff");
+  font-weight: 300; }
 .txt__regular {
   font-weight: 400; }
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Medium.woff") format("woff");
-  font-weight: 600; }
+  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Regular.woff") format("woff");
+  font-weight: 400; }
 .txt__medium, strong {
   font-weight: 600; }
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Bold.woff") format("woff");
-  font-weight: 700; }
+  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Medium.woff") format("woff");
+  font-weight: 600; }
 .txt__bold {
   font-weight: 700; }
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Heavy.woff") format("woff");
-  font-weight: 900; }
+  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Bold.woff") format("woff");
+  font-weight: 700; }
 .txt__heavy {
   font-weight: 900; }
 
+@font-face {
+  font-family: 'CamphorPro';
+  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Heavy.woff") format("woff");
+  font-weight: 900; }
 /* ===============
    GENERAL STYLING
    =============== */
@@ -251,7 +251,8 @@ nav {
 section {
   width: 100%;
   max-width: 1164px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  /* Image Section */ }
   section .section--header {
     margin: 2em 0 1.5em;
     text-align: center;
@@ -262,6 +263,8 @@ section {
     section .section--header h2, section .section--header p {
       margin-top: .3em;
       margin-bottom: 0; }
+  section .content__img img {
+    display: block; }
 
 /* ==========
 * ITEMS
@@ -274,7 +277,6 @@ section .content__items {
   /* ==========
   * SINGLE ITEM
   */
-  /* end Item */
   /* ==========
   * FEATURED ITEM
   */
@@ -285,27 +287,62 @@ section .content__items {
     width: 49.5%;
     margin: 0.5% 0;
     background: #fff;
+    /* ===== ITEM HEAD */
+    /* Item Label */
     /* Item Benefits */
     /* Benefit: Discount */
-    /* Benefit: Gift */ }
+    /* Benefit: Gift */
+    /* ===== ITEM INFO */
+    /* ==========
+    * CUSTOM ITEM
+    */ }
     section .content__items .section--item .item--head {
-      background: #e3e5ea; }
+      position: relative;
+      background: #E8EAEE; }
       section .content__items .section--item .item--head img {
         display: block;
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
         max-width: 404px; }
+    section .content__items .section--item .item--label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom-right-radius: 18px;
+      color: #fff;
+      background: #c0c7d3;
+      padding: 10px 30px;
+      font-size: 18px;
+      font-weight: 700; }
+    section .content__items .section--item .item--benefits {
+      position: absolute;
+      bottom: 0;
+      right: 0; }
     section .content__items .section--item .item--gift img {
       max-width: 72px !important; }
+    section .content__items .section--item .item--info {
+      padding: 20px; }
+      section .content__items .section--item .item--info h3 {
+        margin-top: 0;
+        font-size: 21px; }
+        section .content__items .section--item .item--info h3 .item--category {
+          font-size: 14px; }
+    section .content__items .section--item.item__custom {
+      padding: 20px; }
   section .content__items.__featured .section--item {
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    section .content__items.__featured .section--item .item--head {
+      width: 65.15%; }
+    section .content__items.__featured .section--item .item--info {
+      width: 39.85%; }
   section .content__items.__small .section--item {
     width: 24.5%; }
     @media (max-width: 768px) {
       section .content__items.__small .section--item {
         width: 50%; } }
 
-/* end Items */
 /* ==========
 * Disclaimer - The Last Stand :)
 */
@@ -327,7 +364,8 @@ footer {
 #side_btns {
   position: fixed;
   bottom: 15px;
-  right: 15px; }
+  right: 15px;
+  z-index: 9999; }
   #side_btns a {
     display: block;
     margin-top: 10px;
