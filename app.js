@@ -89,12 +89,12 @@ $(document).ready(function() {
     }
 
     // Mount side buttons
-    $('#side_btns').html(` <a href="#${pageId}" target="_blank" rel="nofollow" class="btn--top">Top</a> `)
+    $('#side_btns').html(` <a href="#${pageId}" target="_blank" rel="nofollow" class="btn--top">&nbsp;</a> `)
     if (instagramUrl !== null && instagramUrl !== '') {
-      $('#side_btns').prepend(` <a href="${instagramUrl}" target="_blank" rel="nofollow" class="btn--ig">Instagram</a> `)
+      $('#side_btns').prepend(` <a href="${instagramUrl}" target="_blank" rel="nofollow" class="btn--ig">&nbsp;</a> `)
     }
     if (facebookUrl !== null && facebookUrl !== '') {
-      $('#side_btns').prepend(` <a href="${facebookUrl}" target="_blank" rel="nofollow" class="btn--fb">Facebook</a> `)
+      $('#side_btns').prepend(` <a href="${facebookUrl}" target="_blank" rel="nofollow" class="btn--fb">&nbsp;</a> `)
     }
 
     // RUN CONTENT BUILDER if ! contentUrl exists
