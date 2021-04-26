@@ -219,16 +219,38 @@ nav {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: #fff; }
-  nav li {
-    margin: 0;
-    padding: 10px 0; }
-  nav .col__2 > li {
-    width: 50%; }
-  nav .col__3 > li {
-    width: calc(100% / 3); }
-  nav .col__4 > li {
-    width: 25%; }
+  text-align: center;
+  text-transform: uppercase; }
+  nav .nav--wrapper {
+    margin: 0 auto;
+    max-width: 1164px; }
+  nav .nav--items {
+    display: flex; }
+    nav .nav--items.col__2 > li {
+      width: 50%; }
+    nav .nav--items.col__3 > li {
+      width: calc(100% / 3); }
+    nav .nav--items.col__4 > li {
+      width: 25%; }
+    nav .nav--items li {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 600; }
+      nav .nav--items li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 64px;
+        padding: 0 5px;
+        color: #424242;
+        transition: all 200ms linear; }
+        nav .nav--items li a:hover {
+          text-decoration: none;
+          background: rgba(255, 255, 255, 0.6); }
+  nav.__sticky {
+    background: #fff;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.1); }
 
 /* ===============
    CONTENT
@@ -249,9 +271,9 @@ section {
   /* Image Section */
   /* Embed iframes */ }
   section .section--header {
-    margin: 2em 0 1.5em;
+    margin-top: 1em;
     text-align: center;
-    padding: 0 10px; }
+    padding: 1em 10px 1.5em; }
     @media screen and (max-width: 768px) {
       section .section--header h2 {
         font-size: 1.6rem; } }
@@ -308,7 +330,7 @@ section {
     */ }
     .content__items .section--item .item--head {
       position: relative;
-      background: #E8EAEE; }
+      background: #e8eaee; }
     .content__items .section--item .item--img {
       display: block;
       margin: 0 auto;
@@ -322,7 +344,7 @@ section {
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 999;
+      z-index: 100;
       border-bottom-right-radius: 18px;
       color: #fff;
       background: #c0c7d3;

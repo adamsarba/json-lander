@@ -508,6 +508,17 @@ $(document).on('click', 'a[href^="#"]', function(event) {
   }
 })
 
+// Sticky menu
+if (settings.menu) {
+  $(document).scroll(function(){
+    if($(this).scrollTop() >= $('nav').offset().top) {
+      $('nav').addClass('__sticky')
+    } else {
+      $('nav').removeClass('__sticky')
+    }
+  })
+}
+
 // Images Error [Test]
 // $('img').on('error', function() {
 //   $(this).attr('src', '/json-lander/assets/placeholder.png')
