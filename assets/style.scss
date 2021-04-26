@@ -468,8 +468,7 @@ section {
       min-width: 40px;
       height: 60px;
       border-top-left-radius: 22px;
-      padding-left: 15px;
-      padding-right: 10px;
+      padding: 10px 10px 8px 15px;
 
       color: #fff;
       background: linear-gradient(90deg,#f2952b,#f6cc61);
@@ -480,8 +479,7 @@ section {
         justify-content: flex-end;
         position: relative;
 
-        height: 60px;
-        padding-bottom: 8px;
+        height: calc(60px - 10px - 8px);
       }
 
       &:before {
@@ -501,14 +499,23 @@ section {
 
       .benefit--title {
         display: block;
+        font-size: 12px;
+      }
+
+      &.benefit--gift {
+        .item--discount {
+          border-right: 1px solid #fff;
+        }
       }
     }
     /* Benefit: Discount */
     .item--discount {
       text-align: right;
-      font-size: 12px;
       strong {
+        margin-top: 3px;
+        margin-bottom: -2px;
         font-size: 24px;
+        line-height: 1;
         small {
           font-size: 16px
         }
@@ -516,7 +523,7 @@ section {
     }
     /* Benefit: Gift */
     .item--gift {
-
+      text-align: center;
       img {
         max-width: 72px !important;
       }
