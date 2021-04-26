@@ -460,6 +460,8 @@ section {
 
     /* Item Benefits */
     .item--benefits {
+      display: flex;
+      flex-flow: row wrap;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -471,6 +473,16 @@ section {
 
       color: #fff;
       background: linear-gradient(90deg,#f2952b,#f6cc61);
+
+      > div {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        position: relative;
+
+        height: 60px;
+        padding-bottom: 8px;
+      }
 
       &:before {
         position: absolute;
@@ -486,9 +498,6 @@ section {
         border-top-color: transparent;
         border-left-color: transparent;
       }
-      > div {
-        position: relative;
-      }
 
       .benefit--title {
         display: block;
@@ -496,7 +505,6 @@ section {
     }
     /* Benefit: Discount */
     .item--discount {
-      padding-top: 10px;
       text-align: right;
       font-size: 12px;
       strong {

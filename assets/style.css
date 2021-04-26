@@ -339,6 +339,8 @@ section {
       font-weight: 700;
       line-height: 1; }
     .content__items .section--item .item--benefits {
+      display: flex;
+      flex-flow: row wrap;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -349,6 +351,13 @@ section {
       padding-right: 10px;
       color: #fff;
       background: linear-gradient(90deg, #f2952b, #f6cc61); }
+      .content__items .section--item .item--benefits > div {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        position: relative;
+        height: 60px;
+        padding-bottom: 8px; }
       .content__items .section--item .item--benefits:before {
         position: absolute;
         left: -14px;
@@ -362,12 +371,9 @@ section {
         border-color: #f2952b;
         border-top-color: transparent;
         border-left-color: transparent; }
-      .content__items .section--item .item--benefits > div {
-        position: relative; }
       .content__items .section--item .item--benefits .benefit--title {
         display: block; }
     .content__items .section--item .item--discount {
-      padding-top: 10px;
       text-align: right;
       font-size: 12px; }
       .content__items .section--item .item--discount strong {

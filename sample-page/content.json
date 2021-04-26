@@ -10,8 +10,7 @@
         "price": {
           "regular": 199,
           "promo": 99,
-          "from": true,
-          "percent": false
+          "from": true
         },
         "labelName": "Bestseller",
         "labelIcon": "fire",
