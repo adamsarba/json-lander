@@ -65,7 +65,7 @@ $(document).ready(function() {
   $.getScript(appLocaleUrl, function() {
 
     // Mount loading animation
-    $('#content').append(`<div id="page_loader"></div>`)
+    $('#content').append(`<div id="page_loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>`)
 
     // Mount footer
     $('footer').html( `Copyright 2021 &copy; ${copyrights}` )
@@ -178,7 +178,7 @@ $(document).ready(function() {
               // Create items container
               var itemsEl  = document.createElement( 'div' )
               sectionEl.appendChild( itemsEl )
-              itemsEl.classList.add('content__items')
+              itemsEl.classList.add('section--content', 'content__items')
               // Mount into specified section
               if (section.mountIn) {
                 $('#' + section.mountIn).append( itemsEl )
@@ -250,21 +250,18 @@ $(document).ready(function() {
                     }
 
                     // Mount item img URL to img source
-                    $(itemElId + ' .item--head img').attr('src', item.img)
+                    $(itemElId + ' .item--head img').attr('src', item.img).addClass('item--img')
 
                     // Mount item category & name
                     var itemName = item.name
                     itemName     = itemName.replaceAll('(', '<span class="name--label">')
                     itemName     = itemName.replaceAll(')', '</span>')
+                    itemNameEl   = $(itemElId + ' .item--name').html(` <span class="item--category">${item.category}</span>${itemName} `)
                     if (item.editName === undefined) {
-                      $(itemElId + ' .item--name').html(`
-                        <span class="item--category">${item.category}</span><br />${itemName}
-                      `)
+                      itemNameEl
                     } else if (item.editName) {
                       itemName = item.editName
-                      $(itemElId + ' .item--name').html(`
-                        <span class="item--category">${item.category}</span><br />${itemName}
-                      `)
+                      itemNameEl
                     }
 
                     // Mount additional nameLabel
@@ -309,11 +306,11 @@ $(document).ready(function() {
                           <span class="__crossed">${item.price.regular} ${currency}</span>
                         `)
                         if (item.price.from) {
-                          $(itemElId + ' .item--price').prepend(`<small>${price_from}</small>`)
+                          $(itemElId + ' .item--price').prepend(`<small>${price_from} </small>`)
                           $(itemElId + ' .item--price .__crossed').prepend(`${price_from} `)
                         }
                         // Mount discount
-                        if (item.price.percent == false) {
+                        if (item.price.percent === false) {
                           $(itemElId + ' .item--discount').append(`
                             <span class="benefit--title">${discount_title}</span>
                             <strong>${itemDiscount}<small> ${currency}</small></strong>
@@ -390,7 +387,7 @@ $(document).ready(function() {
             if (section.type == 'img') {
               var imgEl = document.createElement( 'div' )
               sectionEl.appendChild( imgEl )
-              imgEl.classList.add('content__img')
+              imgEl.classList.add('section--content', 'content__img')
 
               var sectionContent = sectionElId + ' .content__img'
               var imgDesktopEl = '<img src="' + section.img.desktop + '" class="img__desktop">'
@@ -410,7 +407,7 @@ $(document).ready(function() {
             if (section.type == 'custom') {
               var customEl = document.createElement( 'div' )
               sectionEl.appendChild( customEl )
-              customEl.classList.add('content__custom')
+              customEl.classList.add('section--content', 'content__custom')
 
               $(sectionElId + ' .content__custom').html(section.content)
             }
@@ -419,7 +416,7 @@ $(document).ready(function() {
             if (section.type === 'embed') {
               var embedEl = document.createElement( 'div' )
               sectionEl.appendChild( embedEl )
-              embedEl.classList.add('content__embed_iframe')
+              embedEl.classList.add('section--content', 'content__embed_iframe')
 
               // YouTube iframe
               if (section.embed.youtube) {
@@ -437,6 +434,12 @@ $(document).ready(function() {
             // Disclaimer type section - The Last Stand :)
             if (section.type === 'disclaimer') {
               $(sectionElId).prop('id', 'page_disclaimer')
+
+              var contentEl = document.createElement( 'div' )
+              sectionEl.appendChild( contentEl )
+              contentEl.classList.add('section--content')
+
+              $('#page_disclaimer .section--content').html( `<p>${section.content}</p>` )
             }
 
           }) // end SECTIONS
@@ -450,7 +453,7 @@ $(document).ready(function() {
         .fail(function( getContent, textStatus, error ) {
           if (develop && develop == true) {
             console.log( 'Content Request Failed: ' + textStatus + ', ' + error )
-            $('#page_loader').remove(); $('#content').append(` &#10060; Error found while parsing Content. Check console for more information. `)
+            $('#page_loader').remove(); $('#content').append(` <div class="app_error">&#10060; Error found while generating Content. Check console for more information.</div> `)
           }
 
         })

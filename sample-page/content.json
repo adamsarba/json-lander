@@ -8,20 +8,16 @@
         "id": "mi-band-5",
         "soldOut": true,
         "price": {
-          "regular": 999,
-          "promo": 99
+          "regular": 199,
+          "promo": 99,
+          "from": true
         },
         "labelName": "Bestseller",
         "labelIcon": "fire",
-        "gift": {
-          "name": "Mi Band 4",
-          "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
-          "url": "/"
-        },
         "editName": "Edited Mi Band 5 Name",
         "utmTags": false,
         "editUrl": "https://mi-home.pl/akcesoria/mi-4k-action-camera-tripod?own-utm-tag",
-        "text": "Additional paragraph under item description"
+        "text": "<i class='fad fa-rocket-launch'></i> Additional paragraph under item description"
       },
       {
         "id": "mi-desktop-monitor-1c-24",
@@ -39,11 +35,8 @@
       {
         "id": "redmi-note-10-4g",
         "price": {
-          "regular": 199,
-          "promo": 99,
-          "from": true,
-          "discount": "200",
-          "percent": true
+          "regular": 999,
+          "promo": 99
         },
         "nameLabel": "(4+64GB) (6+128GB)"
       },
@@ -52,6 +45,7 @@
         "price": {
           "regular": 190,
           "promo": 99,
+          "discount": "200",
           "percent": false
         },
         "nameLabel": "(4+32GB)",
@@ -133,7 +127,8 @@
           "promo": 99,
           "percent": false
         },
-        "labelName": "Simple label"
+        "labelName": "Simple label",
+        "text": "Additional text in small item"
       },
       {
         "id": "mi-air-purifier-pro",
@@ -185,10 +180,10 @@
     "type": "img",
     "img": {
       "desktop": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg",
-      "mobile": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg"
+      "mobile": "https://mi-home.pl/event/mff-2021/img/mobile-preview-pl.jpg"
     },
     "url": "/",
-    "text": "Hello World! I'm img type section 🙂"
+    "text": "Hello World! I'm img type section 🙂 & I have pc and mobile versions of myself. Try under 768px."
   },
   {
     "title": "5th Section Title (Custom, without content)",
@@ -216,6 +211,6 @@
   },
   {
     "type": "disclaimer",
-    "text": "*This is last section type - Disclaimer<br />**Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "content": "*This is last section type - Disclaimer<br />**Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   }
 ]
