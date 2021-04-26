@@ -205,9 +205,6 @@ $(document).ready(function() {
                     <a href="" target="_blank">
                       <img src="" />
                     </a>
-                    <div class="item--benefits">
-                      <div class="item--discount"></div>
-                    </div>
                   </div>
                   <div class="item--info">
                     <h3 class="item--name"></h3>
@@ -295,9 +292,6 @@ $(document).ready(function() {
                     // Item price & discount
                     if (item.price) {
 
-                      var itemDiscount = item.price.regular - item.price.promo
-                      var itemPercentDiscount = Math.round(((item.price.regular - item.price.promo) / item.price.regular) * 100)
-
                       // Mount item prices
                       if (item.price.regular && item.price.promo) {
                         item.discount = item.price.regular - item.price.promo
@@ -309,8 +303,16 @@ $(document).ready(function() {
                           $(itemElId + ' .item--price').prepend(`<small>${price_from} </small>`)
                           $(itemElId + ' .item--price .__crossed').prepend(`${price_from} `)
                         }
+
                         // Mount discount
-                        if (item.price.percent === false) {
+                        var itemDiscount        = item.price.regular - item.price.promo
+                        var itemPercentDiscount = Math.round(((item.price.regular - item.price.promo) / item.price.regular) * 100)
+
+                        $(itemElId + ' .item--head').append(`<div class="item--benefits"></div>`)
+                        var itemBenefits = $(itemElId + ' .item--benefits')
+
+                        if (!item.price.percent || item.price.percent === false) {
+                          itemBenefits.append(`<div class="item--discount"></div>`)
                           $(itemElId + ' .item--discount').append(`
                             <span class="benefit--title">${discount_title}</span>
                             <strong>${itemDiscount}<small> ${currency}</small></strong>
@@ -319,6 +321,7 @@ $(document).ready(function() {
                             $(itemElId + ' .item--discount strong').html(`<small>${up_to} </small>${item.price.discount}<small> ${currency}</small>`)
                           }
                         } else {
+                          itemBenefits.append(`<div class="item--discount"></div>`)
                           $(itemElId + ' .item--discount').append(`
                             <span class="benefit--title">${discount_title}</span>
                             <strong>${itemPercentDiscount}<small>%</small></strong>
@@ -327,6 +330,7 @@ $(document).ready(function() {
                             $(itemElId + ' .item--discount strong').html(`<small>${up_to} </small>${item.price.discount}<small>%</small>`)
                           }
                         }
+
                       } else if (!item.price.promo) {
                         $(itemElId + ' .item--price').html(`${item.price.regular}<small> ${currency}</small>`)
                         if (item.price.from) {
@@ -334,19 +338,24 @@ $(document).ready(function() {
                         }
                       }
 
-                    }
+                    } // end item price & discount
 
                     // Mount item gift
                     if (item.gift) {
-                      $(itemElId + ' .item--benefits').addClass('benefit--gift')
-                      $(itemElId + ' .item--benefits').append(`
-                        <div class="item--gift">
-                          <a href="${item.gift.url}" target="_blank" title="${item.gift.name}">
-                            <img src="${item.gift.img}" />
-                          </a>
-                          <span class="benefit--title">${gift_included}</span>
-                        </div>
-                      `)
+                      var itemBenefits = $(itemElId + ' .item--benefits')
+                      var itemGiftEl   = `<div class="item--gift">
+                                            <a href="${item.gift.url}" target="_blank" title="${item.gift.name}">
+                                              <img src="${item.gift.img}" />
+                                            </a>
+                                            <span class="benefit--title">${gift_included}</span>
+                                          </div>`
+
+                      if ( itemBenefits.length > 0 ) {
+                        itemBenefits.append( itemGiftEl )
+                      } else {
+                        $(itemElId + ' .item--head').append(`<div class="item--benefits"></div>`)
+                        $(itemElId + ' .item--benefits').append( itemGiftEl )
+                      }
                     }
 
                   }, 0)

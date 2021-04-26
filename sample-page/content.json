@@ -9,8 +9,7 @@
         "soldOut": true,
         "price": {
           "regular": 199,
-          "promo": 99,
-          "from": true
+          "promo": 99
         },
         "labelName": "Bestseller",
         "labelIcon": "fire",
@@ -57,7 +56,11 @@
       },
       {
         "id":"mi-4k-laser-projector-150",
-        "price":{"regular":199}
+        "price":{
+          "regular":199,
+          "promo":9,
+          "percent": true
+        }
       },
       {
         "id": "manual-item-id-1",
