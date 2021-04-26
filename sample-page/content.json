@@ -3,7 +3,7 @@
     "title": "1st Section Title",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     "type": "items",
-    "menu": "Section 1",
+    "menu": "Bestsellers",
     "items": [{
         "id": "mi-band-5",
         "soldOut": true,
@@ -121,7 +121,7 @@
     ]
   },
   {
-    "title": "2nd Section Title",
+    "title": "4th Section Title",
     "type": "small",
     "items": [
       {
@@ -156,9 +156,9 @@
     ]
   },
   {
-    "title": "3rd Section Title",
+    "title": "5th Section Title",
     "type": "featured",
-    "menu": "Section 3",
+    "menu": "Section 5",
     "items": [
       {
         "id": "mi-10t-lite",
@@ -179,7 +179,7 @@
     "content": "Content key doesn't work here, only in custom sections :)"
   },
   {
-    "title": "4th Section Title (img)",
+    "title": "6th Section Title (img)",
     "id": "wide-banner-1",
     "type": "img",
     "img": {
@@ -190,23 +190,14 @@
     "text": "Hello World! I'm img type section 🙂 & I have pc and mobile versions of myself. Try under 768px."
   },
   {
-    "title": "5th Section Title (Custom, without content)",
+    "title": "7th Section Title (Custom)",
     "type": "custom",
-    "text": "This is text in empty section"
-  },
-  {
-    "title": "6th Section Title (Custom, title only)",
-    "type": "custom"
-  },
-  {
-    "type": "custom",
-    "menu": "Section 7",
-    "text": "This is text in another custom section, without title but with content.",
-    "content": "And this is custom section's content.<br><strong>Look at this shit</strong>:<br /><code style='color: #ff6900'>HTML & CSS</code><br /> :)"
+    "text": "This is text in custom section, with text and HTML content.",
+    "content": "<div class='__center'><strong>Look at this shit</strong>:<br /><br /><code style='color: #ff6900'>HTML & CSS, even JS</code><br /><br />😎</div>"
   },
   {
     "title": "8th Section Title",
-    "menu": "Section 8 (YouTube)",
+    "menu": "YouTube",
     "text": "This is additional text to iframe section. Put video ID (dQw4w9WgXcQ) in &quot;youtube&quot string",
     "type": "embed",
     "embed": {

@@ -170,16 +170,20 @@ hr {
   border-bottom: 1px solid $grey_4;
 }
 
-.__crossed {
-  text-decoration: line-through;
-}
-
 img {
   display: block;
   width: 100%;
 }
 
 iframe { border: 0 }
+
+
+
+/* Text classes */
+.__left   { text-align: left }
+.__center { text-align: center }
+.__right  { text-align: right }
+.__crossed { text-decoration: line-through }
 
 
 
@@ -209,7 +213,7 @@ header {
   flex-flow: column;
   width: 100%;
   height: 400px;
-  background: url('header-pc.jpg') center;
+  background: #ffb400 url('header-pc.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -231,17 +235,12 @@ header {
   }
 
   #header--content {
-
-    &.__left   { text-align: left; }
-    &.__center { text-align: center; }
-    &.__right  { text-align: right; }
-
-    height: 100%;
-
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+
+    height: 100%;
 
     margin-top: -85px;
     @media screen and (max-width: $tablet) {
@@ -361,6 +360,12 @@ nav {
         &:hover {
           text-decoration: none;
           background: rgba(255,255,255,.6);
+        }
+      }
+      @media screen and (max-width: $tablet) {
+        font-size: 13px;
+        a {
+          height: 54px;
         }
       }
     }
@@ -691,6 +696,7 @@ section {
         &:hover {
           text-decoration: none;
           box-shadow: 0 5px 15px rgba(0,0,0,.15);
+          background: $orange_2;
         }
 
         @media screen and (max-width: $tabletS) {
@@ -716,14 +722,18 @@ section {
         color: $grey_3;
         background:  $grey_4;
         &:hover {
-          box-shadow: 0 5px 5px rgba(0,0,0,.05)
+          box-shadow: 0 5px 5px rgba(0,0,0,.05);
+          background:  #e0e0e0;
         }
       }
     }
     /* Soon */
     &.item__soon {
       .item--btn {
-        background: $green
+        background: $green;
+        &:hover {
+          background: #79b647;
+        }
       }
     }
 
