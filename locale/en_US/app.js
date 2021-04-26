@@ -23,7 +23,8 @@ var soon            = 'Soon'
 var sign_in         = 'Sign in'
 
 var discount_title  = 'Save'
-var gift_included   = 'Included'
+var gift            = 'Gift'
+var included        = 'included'
 
 var check_it_out    = 'Check it out'
 var more            = 'More'

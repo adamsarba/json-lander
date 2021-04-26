@@ -344,10 +344,10 @@ $(document).ready(function() {
                     if (item.gift) {
                       var itemBenefits = $(itemElId + ' .item--benefits')
                       var itemGiftEl   = `<div class="item--gift">
-                                            <a href="${item.gift.url}" target="_blank" title="${item.gift.name}">
+                                            <a href="${item.gift.url}" target="_blank" title="${item.gift.name} ${included}">
                                               <img src="${item.gift.img}" />
                                             </a>
-                                            <span class="benefit--title">${gift_included}</span>
+                                            <span class="benefit--title">+ ${item.gift.name}</span>
                                           </div>`
 
                       if ( itemBenefits.length > 0 ) {

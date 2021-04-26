@@ -23,7 +23,8 @@ var soon            = 'În curând'
 var sign_in         = 'Loghează-te'
 
 var discount_title  = 'Reducere'
-var gift_included   = 'Cadou'
+var gift            = 'Cadou'
+var included        = 'inclus'
 
 var check_it_out    = 'Vezi'
 var more            = 'Mai multe'

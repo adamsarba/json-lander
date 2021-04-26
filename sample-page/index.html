@@ -2,7 +2,7 @@
 <html lang="pl-PL" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 
   <!-- General SEO meta tags -->
 	<title>JSON Lander</title>
@@ -18,23 +18,23 @@
   <script>
     // PAGE SETTINGS
     const settings = {
-      "contentUrl": "/json-lander/sample-page/content.json",
-      "pageUrl": "sample-page",
-      "utmTags": "?utm_source=mi-home&utm_medium=landing-page&utm_campaign=sample-page-2021",
-      "header": {
-        "content": [
+      contentUrl: "/json-lander/sample-page/content.json",
+      pageUrl: "sample-page",
+      utmTags: "?utm_source=mi-home&utm_medium=landing-page&utm_campaign=sample-page-2021",
+      header: {
+        content: [
           { "headerTitle": "Header Title" },
           { "headerSubtitle": "Header Subtitle" },
           { "headerText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit." }
         ],
-        "contentAlign": "center",
-        "imgDesktop": "",
-        "imgMobile": ""
+        contentAlign: "center",
+        imgDesktop: "",
+        imgMobile: ""
       },
-      "logo": "white",
-      // "menu": true,
-      "redirect": false,
-      "develop": true
+      logo: "white",
+      menu: true,
+      redirect: false,
+      develop: true
     }
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -67,7 +67,10 @@
   <!-- Content will be injected by JSON Lander -->
 
   <noscript>
-    We're sorry but this page doesn't work properly without JavaScript enabled. Please enable it to continue.
+    <div>
+      <span></span>
+      We're sorry but this page doesn't work properly without JavaScript enabled. Please enable it to continue.
+    </div>
   </noscript>
 
 </body>

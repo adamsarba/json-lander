@@ -23,7 +23,8 @@ var soon            = 'Wkrótce'
 var sign_in         = 'Zapisz się'
 
 var discount_title  = 'Oszczędź'
-var gift_included   = 'W zestawie'
+var gift            = 'Prezent'
+var included        = 'w zestawie'
 
 var check_it_out    = 'Sprawdź'
 var more            = 'Więcej'

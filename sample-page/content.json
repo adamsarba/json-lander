@@ -22,7 +22,7 @@
         "id": "mi-desktop-monitor-1c-24",
         "soon": true,
         "price": {
-          "regular": 15
+          "regular": 1599
         },
         "gift": {
           "name": "Mi Watch Lite",
@@ -34,8 +34,11 @@
       {
         "id": "redmi-note-10-4g",
         "price": {
-          "regular": 999,
-          "promo": 99
+          "regular": 9999,
+          "promo": 9999,
+          "from": true,
+          "discount": "999",
+          "percent": false
         },
         "nameLabel": "(4+64GB) (6+128GB)"
       },
@@ -43,9 +46,7 @@
         "id": "mi-10t",
         "price": {
           "regular": 190,
-          "promo": 99,
-          "discount": "200",
-          "percent": false
+          "promo": 99
         },
         "nameLabel": "(4+32GB)",
         "gift": {
@@ -130,7 +131,7 @@
           "promo": 99,
           "percent": false
         },
-        "labelName": "Simple label",
+        "labelName": "Simple but long label",
         "text": "Additional text in small item"
       },
       {
@@ -162,8 +163,8 @@
       {
         "id": "mi-10t-lite",
         "price": {
-          "regular": 199,
-          "promo": 99,
+          "regular": 9999,
+          "promo": 9998,
           "percent": false
         },
         "labelName": "Special Offer",

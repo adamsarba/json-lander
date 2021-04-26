@@ -28,19 +28,21 @@ $yellow:  #ffac13;
 $blue:    #2196f3;
 
 // Breakpoints
-$laptop:  1024px;
-$tablet:  768px;
-$mobile:  425px;
+$laptop:   1024px;
+$tablet:   768px;
+$tabletS:  640px;
+$mobile:   425px;
+$mobileM:  375px;
 
 // Widths
 $main_width: 1164px;
 
 // Fonts
-.txt__thin { font-weight: 100 }
-@font-face {
-  font-family: 'CamphorPro'; src: url('//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Thin.woff') format('woff');
-  font-weight: 100
-}
+// .txt__thin { font-weight: 100 }
+// @font-face {
+//   font-family: 'CamphorPro'; src: url('//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Thin.woff') format('woff');
+//   font-weight: 100
+// }
 .txt__light { font-weight: 300 }
 @font-face {
   font-family: 'CamphorPro'; src: url('//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Light.woff') format('woff');
@@ -443,6 +445,7 @@ section {
     }
     /* Item Label */
     .item--label {
+      max-width: 90%;
       position: absolute;
       top: 0;
       left: 0;
@@ -455,7 +458,13 @@ section {
       padding: 10px 30px;
       font-size: 18px;
       font-weight: 700;
-      line-height: 1
+      line-height: 1;
+
+      @media screen and (max-width: $tabletS) {
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: 600;
+      }
     }
 
     /* Item Benefits */
@@ -480,6 +489,11 @@ section {
         position: relative;
 
         height: calc(60px - 10px - 8px);
+
+        &:nth-of-type(2) {
+          margin-left: 10px;
+          border-left: 1px solid rgba(255,255,255,.8);
+        }
       }
 
       &:before {
@@ -501,31 +515,72 @@ section {
         display: block;
         font-size: 12px;
       }
-    }
-    /* Benefit: Discount */
-    .item--discount {
-      text-align: right;
-      strong {
-        margin-top: 3px;
-        margin-bottom: -2px;
-        font-size: 24px;
-        line-height: 1;
-        small {
-          font-size: 16px
+
+      /* Benefit: Discount */
+      .item--discount {
+        text-align: right;
+        strong {
+          margin-top: 3px;
+          margin-bottom: -2px;
+          font-size: 24px;
+          line-height: 1.1;
+          small {
+            font-size: 16px
+          }
         }
       }
-    }
-    /* Benefit: Gift */
-    .item--gift {
-      text-align: center;
-      img {
-        max-width: 72px !important;
+      /* Benefit: Gift */
+      .item--gift {
+        padding-left: 5px;
+        text-align: center;
+        img {
+          margin: 0 auto;
+          max-width: 72px !important;
+        }
       }
+
+      @media screen and (max-width: $tabletS) {
+        height: 48px;
+        padding: 5px 5px 5px 10px;
+
+        > div {
+          height: calc(48px - 5px - 5px);
+        }
+
+        &:before {
+          left: -8px;
+          border-width: 17.5px 5px;
+        }
+
+        .benefit--title {
+          font-size: 11px;
+          font-weight: 300;
+        }
+
+        .item--discount {
+          strong {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 21px;
+            line-height: 1
+          }
+        }
+        .item--gift {
+          img {
+            max-width: 48px !important;
+            margin-bottom: 3px;
+          }
+        }
+      }
+
     }
 
     /* ===== ITEM INFO */
     .item--info {
       padding: 20px;
+      @media screen and (max-width: $mobile) {
+        padding: 15px 12px !important
+      }
 
       .item--name {
         margin-top: 0;
@@ -545,7 +600,11 @@ section {
         p {
           margin-top: 0;
           margin-bottom: .5em;
-          font-weight: 300
+          font-weight: 300;
+
+          @media screen and (max-width: $mobile) {
+            font-size: 13px;
+          }
         }
         margin-bottom: 1em;
         // Additional text
@@ -561,10 +620,11 @@ section {
       align-items: center;
 
       .item--price {
-        margin-right: 10px;
+        margin-right: 5px;
         color: $orange_2;
         font-size: 29px;
         font-weight: 700;
+        line-height: .8;
         small,
         .__crossed {
           font-size: 16px;
@@ -572,6 +632,15 @@ section {
         .__crossed {
           color: $grey_3;
           font-weight: 400;
+          white-space: nowrap;
+        }
+
+        @media screen and (max-width: $tablet) {
+          font-size: 24px;
+          small,
+          .__crossed {
+            font-size: 14px;
+          }
         }
       }
 
@@ -581,16 +650,34 @@ section {
         color: #fff;
         background: $orange_3;
         padding: 10px 25px;
+
+        text-align: center;
         font-size: 16px;
         font-weight: 600;
         line-height: 1;
+        white-space: nowrap;
 
         transition: all .2s linear;
         &:hover {
           text-decoration: none;
           box-shadow: 0 5px 15px rgba(0,0,0,.15);
         }
+
+        @media screen and (max-width: $tabletS) {
+          max-width: 148px;
+          width: 100%;
+          margin-top: 1em;
+          padding: 10px 5px;
+          // font-size: 14px;
+          align-self: center;
+        }
       }
+
+      @media screen and (max-width: $tabletS) {
+        flex-flow: column;
+        align-items: flex-start;
+      }
+
     }
 
     /* Sold Out */
@@ -633,6 +720,32 @@ section {
     .item--info {
       width: 39.85%;
     }
+    @media screen and (max-width: $tablet - 1px) {
+      flex-flow: wrap;
+      .item--head,
+      .item--info {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: $tabletS) {
+      .item--footer {
+        flex-flow: row nowrap;
+        align-items: center;
+        .item--btn {
+          margin-top: 0;
+        }
+      }
+    }
+    @media screen and (max-width: $mobileM) {
+      .item--footer {
+        flex-flow: column;
+        align-items: flex-start;
+        .item--btn {
+          margin-top: 10px;
+          align-self: center;
+        }
+      }
+    }
   }
 
   /* ==========
@@ -641,12 +754,31 @@ section {
   &.__small .section--item {
     width: 24.5%;
 
+    .item--head {
+      .item--label {
+        padding: 10px 15px;
+      }
+    }
     .item--info {
-
       .item--name {
         font-size: 18px;
       }
+    }
 
+    @media screen and (max-width: $main_width + 2*15px) {
+      text-align: center;
+
+      .item--info {
+        padding: 20px 10px;
+      }
+      .item--footer {
+        flex-flow: column;
+        align-items: center;
+
+        .item--btn {
+          margin-top: 10px;
+        }
+      }
     }
 
     @media (max-width: $tablet) {
@@ -758,6 +890,43 @@ footer {
 /* ===============
    APPLICATION
    =============== */
+
+/* No Script */
+noscript {
+  text-align: center;
+  font-weight: 400;
+  color: $grey_3;
+
+  // /* Font Awesome */
+  // &:before {
+  //   display: block;
+  //   width: 90%;
+  //   margin: 0 auto 12px;
+  //
+  //   color: $grey_3;
+  //   text-align: center;
+  //   font-family: "Font Awesome 6 Pro";
+  //   font-size: 54px;
+  //   font-weight: 300;
+  //   content: "\f5a4";
+  // }
+  // div { padding: 0 15px }
+
+  /* Image Background */
+  div {
+    padding: 0 30px;
+    span {
+      display: block;
+      margin: 0 auto 21px;
+      width: 55px;
+      height: 55px;
+      background: url('logo-orange.png') top center no-repeat;
+      background-size: 55px auto;
+      opacity: .3;
+      filter: grayscale(100%);
+    }
+  }
+}
 
 /* Notifications */
 .app_error {
