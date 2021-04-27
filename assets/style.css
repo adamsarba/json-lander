@@ -167,53 +167,52 @@ header {
     width: 100%;
     max-width: 1164px;
     margin: 0 auto; }
+  header #header--links {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 10px; }
+    header #header--links a.header--logo {
+      display: block;
+      width: 55px;
+      height: 55px;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      header #header--links a.header--logo.logo__orange {
+        background-image: url("img/logo-orange.png"); }
+      header #header--links a.header--logo.logo__white {
+        background-image: url("img/logo-white.png"); }
+      header #header--links a.header--logo:hover {
+        text-decoration: none; }
+    header #header--links a.header--back_to_store {
+      color: #fff; }
+    @media screen and (max-width: 768px) {
+      header #header--links {
+        padding-top: 15px; }
+        header #header--links a.header--logo {
+          width: 27px;
+          height: 27px; } }
   header #header--content {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     height: 100%;
-    margin-top: -85px; }
+    margin-top: -85px;
+    /* Default styling */
+    color: #fff;
+    text-shadow: 0 3px 5px #FF9600, 0 5px 15px #FF9600; }
     @media screen and (max-width: 768px) {
       header #header--content {
         margin-top: -52px; } }
-
-#header--links {
-  padding: 20px 0 10px;
-  display: flex;
-  justify-content: space-between; }
-  @media screen and (max-width: 768px) {
-    #header--links {
-      padding-top: 15px; } }
-  #header--links a.header--logo {
-    display: block;
-    width: 55px;
-    height: 55px;
-    background-size: cover;
-    background-repeat: no-repeat; }
-    #header--links a.header--logo.logo__orange {
-      background-image: url("img/logo-orange.png"); }
-    #header--links a.header--logo.logo__white {
-      background-image: url("img/logo-white.png"); }
-    @media screen and (max-width: 768px) {
-      #header--links a.header--logo {
-        width: 27px;
-        height: 27px; } }
-  #header--links a.header--back_to_store {
-    color: #fff; }
-
-#header--content {
-  /* Default styling */
-  color: #fff;
-  text-shadow: 0 3px 5px #FF9600, 0 5px 15px #FF9600; }
-  #header--content h1 {
-    text-transform: uppercase; }
-  #header--content h1, #header--content h2, #header--content h3, #header--content h4 {
-    text-shadow: 0 1px 0 #FFD90D, 0 3px 5px #FF9600, 0 3px 15px #FF9600;
-    margin-top: .2em;
-    margin-bottom: .2em; }
-  #header--content p {
-    color: #fff; }
+    header #header--content h1 {
+      text-transform: uppercase; }
+    header #header--content h1, header #header--content h2, header #header--content h3, header #header--content h4 {
+      text-shadow: 0 1px 0 #FFD90D, 0 3px 5px #FF9600, 0 3px 15px #FF9600;
+      margin-top: .2em;
+      margin-bottom: .2em; }
+    header #header--content p {
+      color: #fff; }
 
 /* ==========
 * PAGE NAVIGATION

@@ -74,7 +74,7 @@ $(document).ready(function() {
 
     // Mount header
     $('#header--links').append(`
-      <a href="/" rel="nofollow" class="header--logo">&nbsp;</a>
+      <a href="/" rel="nofollow" class="header--logo" title="${BACK_TO_STORE}">&nbsp;</a>
       <a href="/" rel="nofollow" class="header--back_to_store">
         ${BACK_TO_STORE} <i class="fad fa-store"></i>
       </a>
