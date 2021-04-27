@@ -11,35 +11,35 @@
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Light.woff") format("woff");
+  src: url("fonts/CamphorPro-Light.woff2") format("woff");
   font-weight: 300; }
 .txt__regular {
   font-weight: 400; }
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Regular.woff") format("woff");
+  src: url("fonts/CamphorPro-Regular.woff2") format("woff");
   font-weight: 400; }
 .txt__medium {
   font-weight: 600; }
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Medium.woff") format("woff");
+  src: url("fonts/CamphorPro-Medium.woff2") format("woff");
   font-weight: 600; }
 .txt__bold, strong {
   font-weight: 700; }
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Bold.woff") format("woff");
+  src: url("fonts/CamphorPro-Bold.woff2") format("woff");
   font-weight: 700; }
 .txt__heavy {
   font-weight: 900; }
 
 @font-face {
   font-family: 'CamphorPro';
-  src: url("//mi-home.pl/themes/mi/fonts/camphor_pro/CamphorPro-Heavy.woff") format("woff");
+  src: url("fonts/CamphorPro-Heavy.woff2") format("woff");
   font-weight: 900; }
 /* ===============
    GENERAL STYLING
