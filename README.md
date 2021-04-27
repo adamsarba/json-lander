@@ -64,7 +64,7 @@ Set the basic settings and information about the new page in *index.html* before
 Option | Type | Default | Description
 ---- | ---- | ---- | ----------
 contentUrl | string | '' | Direct link to *content.json*. Cache cleaning recommended after updating those files
-pageUrl | string | '' | Page directory name
+pageUrl | string | '' | Page directory name. Sets body ID for custom styling.
 utmTags | string | '' | SEO UTM tags attached to every item's link (can be turned off for selected items in *content.json*)
 header.content | array | [] | Array of objects (texts) mounted in the header
 header.contentAlign | string | center | Align of  content in the header

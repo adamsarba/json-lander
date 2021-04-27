@@ -10,8 +10,7 @@
  var lang           = document.documentElement.lang.replace('-', '_')
  var langShort      = lang.substring(0, 2)
  var contentUrl     = settings.contentUrl
- var pageUrl        = settings.pageUrl
- var pageId         = pageUrl.replace('-', '_')
+ var pageUrl        = settings.pageUrl // var pageId = pageUrl.replace('-', '_')
  var utmTags        = settings.utmTags
  var redirect       = settings.redirect
  var pageMenu       = settings.menu
@@ -46,7 +45,7 @@ if (develop && develop == true) {
 * ==========*/
 $(document).ready(function() {
 
-  document.body.id = pageId
+  document.body.id = pageUrl
 
   // Better solution for jQuery getScript ?
   // jQuery.loadScript = function (url, callback) {
@@ -89,7 +88,7 @@ $(document).ready(function() {
     }
 
     // Mount side buttons
-    $('#side_btns').html(` <a href="#${pageId}" target="_blank" rel="nofollow" class="btn--top">&nbsp;</a> `)
+    $('#side_btns').html(` <a href="#${pageUrl}" target="_blank" rel="nofollow" class="btn--top">&nbsp;</a> `)
     if (instagramUrl !== null && instagramUrl !== '') {
       $('#side_btns').prepend(` <a href="${instagramUrl}" target="_blank" rel="nofollow" class="btn--ig">&nbsp;</a> `)
     }
