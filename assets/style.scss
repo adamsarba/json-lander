@@ -681,11 +681,14 @@ section {
       }
 
       .item--btn {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         border-radius: 24px;
         color: #fff;
         background: $orange_3;
-        padding: 10px 25px;
+        padding: 10px 25px 8px;
 
         text-align: center;
         font-size: 16px;
@@ -704,7 +707,7 @@ section {
           max-width: 148px;
           width: 100%;
           margin-top: 1em;
-          padding: 10px 5px;
+          padding: 10px 5px 8px;
           // font-size: 14px;
           align-self: center;
         }
