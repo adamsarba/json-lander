@@ -67,13 +67,13 @@ $(document).ready(function() {
     $('#content').append(`<div id="page_loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>`)
 
     // Mount footer
-    $('footer').html( `Copyright 2021 &copy; ${copyrights}` )
+    $('footer').html( `Copyright 2021 &copy; ${COPYRIGHTS}` )
 
     // Mount header
     $('#header--links').append(`
       <a href="/" rel="nofollow" class="header--logo">&nbsp;</a>
       <a href="/" rel="nofollow" class="header--back_to_store">
-        ${back_to_store} <i class="fad fa-store"></i>
+        ${BACK_TO_STORE} <i class="fad fa-store"></i>
       </a>
     `)
     $('.header--logo').addClass('logo__' + settings.logo)
@@ -211,7 +211,7 @@ $(document).ready(function() {
                     <div class="item--footer">
                       <div class="item--price"></div>
                       <a href="" class="item--btn" target="_blank">
-                        ${check_it_out}
+                        ${CHECK_IT_OUT}
                       </a>
                     </div>
                   </div>
@@ -295,12 +295,12 @@ $(document).ready(function() {
                       if (item.price.regular && item.price.promo) {
                         item.discount = item.price.regular - item.price.promo
                         $(itemElId + ' .item--price').html(`
-                          ${item.price.promo}<small> ${currency}</small>
-                          <span class="__crossed">${item.price.regular} ${currency}</span>
+                          ${item.price.promo}<small> ${CURRENCY}</small>
+                          <span class="__crossed">${item.price.regular} ${CURRENCY}</span>
                         `)
                         if (item.price.from) {
-                          $(itemElId + ' .item--price').prepend(`<small>${price_from} </small>`)
-                          $(itemElId + ' .item--price .__crossed').prepend(`${price_from} `)
+                          $(itemElId + ' .item--price').prepend(`<small>${PRICE_FROM} </small>`)
+                          $(itemElId + ' .item--price .__crossed').prepend(`${PRICE_FROM} `)
                         }
 
                         // Mount discount
@@ -313,27 +313,27 @@ $(document).ready(function() {
                         if (!item.price.percent || item.price.percent === false) {
                           itemBenefits.append(`<div class="item--discount"></div>`)
                           $(itemElId + ' .item--discount').append(`
-                            <span class="benefit--title">${discount_title}</span>
-                            <strong>${itemDiscount}<small> ${currency}</small></strong>
+                            <span class="benefit--title">${SAVE}</span>
+                            <strong>${itemDiscount}<small> ${CURRENCY}</small></strong>
                           `)
                           if (item.price.discount) {
-                            $(itemElId + ' .item--discount strong').html(`<small>${up_to} </small>${item.price.discount}<small> ${currency}</small>`)
+                            $(itemElId + ' .item--discount strong').html(`<small>${UP_TO} </small>${item.price.discount}<small> ${CURRENCY}</small>`)
                           }
                         } else {
                           itemBenefits.append(`<div class="item--discount"></div>`)
                           $(itemElId + ' .item--discount').append(`
-                            <span class="benefit--title">${discount_title}</span>
+                            <span class="benefit--title">${SAVE}</span>
                             <strong>${itemPercentDiscount}<small>%</small></strong>
                           `)
                           if (item.price.discount) {
-                            $(itemElId + ' .item--discount strong').html(`<small>${up_to} </small>${item.price.discount}<small>%</small>`)
+                            $(itemElId + ' .item--discount strong').html(`<small>${UP_TO} </small>${item.price.discount}<small>%</small>`)
                           }
                         }
 
                       } else if (!item.price.promo) {
-                        $(itemElId + ' .item--price').html(`${item.price.regular}<small> ${currency}</small>`)
+                        $(itemElId + ' .item--price').html(`${item.price.regular}<small> ${CURRENCY}</small>`)
                         if (item.price.from) {
-                          $(itemElId + ' .item--price').prepend(`<small>${price_from} </small>`)
+                          $(itemElId + ' .item--price').prepend(`<small>${PRICE_FROM} </small>`)
                         }
                       }
 
@@ -343,7 +343,7 @@ $(document).ready(function() {
                     if (item.gift) {
                       var itemBenefits = $(itemElId + ' .item--benefits')
                       var itemGiftEl   = `<div class="item--gift">
-                                            <a href="${item.gift.url}" target="_blank" title="${item.gift.name} ${included}">
+                                            <a href="${item.gift.url}" target="_blank" title="${item.gift.name} ${INCLUDED}">
                                               <img src="${item.gift.img}" />
                                             </a>
                                             <span class="benefit--title">+ ${item.gift.name}</span>
@@ -370,14 +370,14 @@ $(document).ready(function() {
                 if (item.soldOut === true ) {
                   setTimeout(() => {
                     $(itemElId).addClass('item__sold_out')
-                    $(itemElId + ' .item--footer a').html(sold_out)
+                    $(itemElId + ' .item--footer a').html(SOLD_OUT)
                   }, 0)
                 }
                 // Check if Soon
                 if (item.soon === true ) {
                   setTimeout(() => {
                     $(itemElId).addClass('item__soon')
-                    $(itemElId + ' .item--footer a').html(soon)
+                    $(itemElId + ' .item--footer a').html(SOON)
                   }, 0)
                 }
 
@@ -402,7 +402,7 @@ $(document).ready(function() {
               var imgMobileEl  = '<img src="' + section.img.mobile + '"  class="img__mobile">'
 
               if (section.url) {
-                $(sectionContent).html(` <a href="${section.url}" target="_blank" title="${find_out}"></a> `)
+                $(sectionContent).html(` <a href="${section.url}" target="_blank" title="${FIND_OUT}"></a> `)
                 $(sectionContent + ' a').html( imgDesktopEl + imgMobileEl )
                 if(section.img.mobile === undefined) { $(sectionContent + ' a').html( imgMobileEl ) }
               } else {

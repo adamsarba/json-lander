@@ -1,34 +1,34 @@
 /**
 *
-*  App Localizations
+*  App Localization Settings
 *
 **/
 
 var pagesUrl        = 'https://mi-home.com/event/'
-var facebookUrl     = ''
+var facebookUrl     = 'https://www.facebook.com/XiaomiGlobal/'
 var instagramUrl    = 'https://www.instagram.com/xiaomi.global/'
 
-var currency        = 'USD'
+var CURRENCY        = 'USD'
 
-var back_to_store   = 'Back to store'
+var BACK_TO_STORE   = 'Back to store'
 
-var price_from      = 'from'
-var up_to           = 'up to'
+var PRICE_FROM      = 'from'
+var UP_TO           = 'up to'
 
-var add_to_cart     = 'Add to cart'
-var available       = 'Available'
-var not_available   = 'Not available'
-var sold_out        = 'Sold out'
-var soon            = 'Soon'
-var sign_in         = 'Sign in'
+var ADD_TO_CART     = 'Add to cart'
+var AVAILABLE       = 'Available'
+var NOT_AVAILABLE   = 'Not available'
+var SOLD_OUT        = 'Sold out'
+var SOON            = 'Soon'
+var SIGN_IN         = 'Sign in'
 
-var discount_title  = 'Save'
-var gift            = 'Gift'
-var included        = 'included'
+var SAVE            = 'Save'
+var GIFT            = 'Gift'
+var INCLUDED        = 'included'
 
-var check_it_out    = 'Check it out'
-var more            = 'More'
-var show_more       = 'Show more'
-var find_out        = 'Find out more'
+var CHECK_IT_OUT    = 'Check it out'
+var MORE            = 'More'
+var SHOW_MORE       = 'Show more'
+var FIND_OUT        = 'Find out more'
 
-var copyrights      = 'Mi-Home.com. All Rights Reserved.'
+var COPYRIGHTS      = 'Mi-Home.com. All Rights Reserved.'

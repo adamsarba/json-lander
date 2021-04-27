@@ -1,6 +1,6 @@
 /**
 *
-*  App Localizations
+*  App Localization Settings
 *
 **/
 
@@ -8,27 +8,27 @@ var pagesUrl        = 'https://mi-home.pl/event/'
 var facebookUrl     = 'https://www.facebook.com/mihomepl'
 var instagramUrl    = 'https://www.instagram.com/mihomepl'
 
-var currency        = 'zł'
+var CURRENCY        = 'zł'
 
-var back_to_store   = 'Wróć do sklepu'
+var BACK_TO_STORE   = 'Wróć do sklepu'
 
-var price_from      = 'od'
-var up_to           = 'do'
+var PRICE_FROM      = 'od'
+var UP_TO           = 'do'
 
-var add_to_cart     = 'Dodaj do koszyka'
-var available       = 'Dostępny'
-var not_available   = 'Niedostępny'
-var sold_out        = 'Wyprzedane'
-var soon            = 'Wkrótce'
-var sign_in         = 'Zapisz się'
+var ADD_TO_CART     = 'Dodaj do koszyka'
+var AVAILABLE       = 'Dostępny'
+var NOT_AVAILABLE   = 'Niedostępny'
+var SOLD_OUT        = 'Wyprzedane'
+var SOON            = 'Wkrótce'
+var SIGN_IN         = 'Zapisz się'
 
-var discount_title  = 'Oszczędź'
-var gift            = 'Prezent'
-var included        = 'w zestawie'
+var SAVE            = 'Oszczędź'
+var GIFT            = 'Prezent'
+var INCLUDED        = 'w zestawie'
 
-var check_it_out    = 'Sprawdź'
-var more            = 'Więcej'
-var show_more       = 'Pokaż więcej'
-var find_out        = 'Dowiedz się więcej'
+var CHECK_IT_OUT    = 'Sprawdź'
+var MORE            = 'Więcej'
+var SHOW_MORE       = 'Pokaż więcej'
+var FIND_OUT        = 'Dowiedz się więcej'
 
-var copyrights      = 'Mi-Home.pl. All Rights Reserved.'
+var COPYRIGHTS      = 'Mi-Home.pl. All Rights Reserved.'
