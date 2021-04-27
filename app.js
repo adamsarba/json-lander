@@ -30,14 +30,17 @@ const itemsLocalUrl  = appUrl + 'locale/' + lang + '/items.json'
 var develop = settings.develop
 // if in Develop Mode
 if (develop && develop == true) {
-  console.log('\nYou are now in Develop Mode. Have fun! ;)\n\nCurrent page language: ' + langShort + ' (' + lang + ')\n\n')
+  console.warn('\nYou are now in Develop Mode. Have fun! ;)\n\nCurrent page language: ' + langShort + ' (' + lang + ')\n\n')
   // console.log('Server Time: ', getServerTime()); console.log('Locale Time: ', new Date(getServerTime()));
-  console.log('Loading files:')
-  console.log(contentUrl)
-  console.log(appLocaleUrl)
-  console.log(itemsGlobalUrl)
-  console.log(itemsLocalUrl)
-  console.log('\n')
+  console.groupCollapsed('Loading files...')
+  console.log(contentUrl + '\n' + appLocaleUrl + '\n' + itemsGlobalUrl + '\n' + itemsLocalUrl); console.groupEnd()
+  console.groupCollapsed('Loading window locations...');
+  console.log(
+    'Current URL:  ' + window.location.href + '\n' +
+    'Protol:       ' + window.location.protocol + '\n' +
+    'Host domain:  ' + window.location.hostname + '\n' +
+    'Current path: ' + window.location.pathname + '\n'
+  ); console.groupEnd();
 } // end if Develop Mode
 
 /* ==========
@@ -156,13 +159,15 @@ $(document).ready(function() {
               // Mount section Title attr
               if (section.title) {
                 var sectionTitle = document.createElement( 'h2' )
-                sectionTitle.innerHTML = section.title;
+                sectionTitle.innerHTML = section.title
+                $('.section--header h2')/*.attr('data-aos', 'fade-up')*/
                 sectionHeader.appendChild( sectionTitle )
               }
               // Mount section Text attr
               if (section.text) {
                 var sectionText = document.createElement( 'p' )
-                sectionText.innerHTML = section.text;
+                sectionText.innerHTML = section.text
+                $('.section--header p')/*.attr('data-aos', 'fade-up')*/
                 sectionHeader.appendChild( sectionText )
               }
             }
@@ -215,7 +220,7 @@ $(document).ready(function() {
                       </a>
                     </div>
                   </div>
-                ` )
+                ` )/*.attr('data-aos', 'fade-up')*/
 
                 // Mount unique ID to item element
                 itemIndx = itemIndx+1
@@ -489,6 +494,12 @@ $(document).ready(function() {
     } // end if contentUrl exists
 
   }) // end getScript (App Localizations)
+
+  // AOS
+  // AOS.init({
+  //   once: true,
+  //   startEvent: 'load',
+  // });
 
 }) // end APP
 

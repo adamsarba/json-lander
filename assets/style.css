@@ -539,7 +539,11 @@ section {
         flex-flow: wrap; }
         .content__items.__featured .section--item .item--head,
         .content__items.__featured .section--item .item--info {
-          width: 100%; } }
+          width: 100%; }
+        .content__items.__featured .section--item .item--head img {
+          width: auto;
+          max-width: 90%;
+          max-height: 302px; } }
     @media screen and (max-width: 640px) {
       .content__items.__featured .section--item .item--footer {
         flex-flow: row nowrap;

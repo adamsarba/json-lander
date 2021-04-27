@@ -8,7 +8,7 @@ var pagesUrl        = 'https://mi-home.com/event/'
 var facebookUrl     = 'https://www.facebook.com/XiaomiGlobal/'
 var instagramUrl    = 'https://www.instagram.com/xiaomi.global/'
 
-var CURRENCY        = 'USD'
+var CURRENCY        = '$'
 
 var BACK_TO_STORE   = 'Back to store'
 
