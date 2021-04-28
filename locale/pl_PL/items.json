@@ -30,6 +30,36 @@
         "desc": "Flagowe doświadczenie z potężnym procesorem Qualcomm® Snapdragon™ 865"
     },
     {
+        "id": "mi-11",
+        "url": "https://mi-home.pl/mi-11",
+        "category": "Smartfon",
+        "desc": "null"
+    },
+    {
+        "id": "mi-11-lite-4g",
+        "url": "https://mi-home.pl/mi-11-lite-4g",
+        "category": "Smartfon",
+        "desc": "Minimalistyczny, estetyczny design. Możliwości flagowca w ultralekkiej obudowie."
+    },
+    {
+        "id": "mi-11-lite-5g",
+        "url": "https://mi-home.pl/mi-11-lite-5g",
+        "category": "Smartfon",
+        "desc": "Superlekka konstrukcja, wyjątkowe osiągi wspomagane prędkością łączności 5G."
+    },
+    {
+        "id": "mi-11-ultra-5g",
+        "url": "https://mi-home.pl/mi-11-ultra",
+        "category": "Smartfon",
+        "desc": "Nowatorskie rozwiązania. Dwa ekrany, reżyserski aparat, silikonowa bateria."
+    },
+    {
+        "id": "mi-11i-5g",
+        "url": "https://mi-home.pl/mi-11i",
+        "category": "Smartfon",
+        "desc": "Prawdziwy krak. Powalająca prędkość Snapdragona 888 teraz na ekranie 120Hz."
+    },
+    {
         "id": "mi-4k-laser-projector-150",
         "url": "https://mi-home.pl/wideo/mi-4k-laser-projector-150",
         "category": "Projektor",
@@ -126,6 +156,12 @@
         "desc": "null"
     },
     {
+        "id": "mi-band-6",
+        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-band-6",
+        "category": "Inteligentna opaska",
+        "desc": "6 odsłona legendy. Większy ekran, wygodniejsza obsługa, przyjemniejszy trening."
+    },
+    {
         "id": "mi-body-composition-scale-2",
         "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-body-composition-scale-2",
         "category": "Inteligentna waga łazienkowa",
@@ -208,6 +244,12 @@
         "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-handheld-vacuum-cleaner-g10",
         "category": "Odkurzacz bezprzewodowy",
         "desc": "null"
+    },
+    {
+        "id": "mi-handheld-cleaner-light",
+        "url": "https://mi-home.pl/inteligentne-urzadzenia/xiaomi-mi-handheld-vacuum-cleaner-light",
+        "category": "Odkurzacz bezprzewodowy",
+        "desc": "Poczuj pełną swobodę sprzątania dzięki niesamowicie lekkiej wadze 1.2 kg."
     },
     {
         "id": "mi-home-security-camera-1080p-magnetic",
@@ -375,7 +417,7 @@
         "id": "mi-smart-compact-projector",
         "url": "https://mi-home.pl/wideo/mi-smart-compact-projector",
         "category": "Projektor",
-        "desc": "Wielki obraz 200\u0026quot; zapewni niesamowite wizualne wrażenia, a rozbudowany system dźwięku dopełni immersji podczas wieczornych seansów."
+        "desc": "Wielki obraz 200\u0026quot; zapewni niesamowite wrażenia podczas wieczornych seansów."
     },
     {
         "id": "mi-smart-home-hub",
@@ -406,6 +448,12 @@
         "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-wi-fi-power-plug",
         "category": "Inteligentne gniazdko",
         "desc": "Zgodność z aplikacją mobilną i bezpieczeństwo dzięki kontroli przepływu prądu."
+    },
+    {
+        "id": "mi-smart-projector-2-pro",
+        "url": "https://mi-home.pl/wideo/mi-smart-projector-2-pro",
+        "category": "Projektor",
+        "desc": "Ekran o przekątnej do 200 cali, dźwięk stereo. Kinowe doznania w Twoim domu."
     },
     {
         "id": "mi-smart-scale-2",
@@ -532,6 +580,12 @@
         "url": "https://mi-home.pl/poco-x3-nfc",
         "category": "Smartfon",
         "desc": "Niespotykana moc procesora Snapdragon™ 732G godna prawdziwego flagowca."
+    },
+    {
+        "id": "poco-x3-pro",
+        "url": "null",
+        "category": "Smartfon",
+        "desc": "Błyskawiczne odświeżanie ekranu wspierane mocarnym, ośmiordzeniowym procesorem."
     },
     {
         "id": "redmi-8a",

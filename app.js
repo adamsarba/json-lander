@@ -82,21 +82,21 @@ $(document).ready(function() {
     $('.header--logo').addClass('logo__' + settings.logo)
     if (settings.header.content) {
       var headerAlign    = settings.header.contentAlign
-      $('#header--content').addClass('__' + headerAlign).append(` <div class="content--wrapper"></div> `)
+      $('#header--content').addClass('__' + headerAlign).append( `<div class="content--wrapper"></div>` )
       $.each(settings.header.content, function () {
-        if (this.headerTitle)    { $('.content--wrapper').append(` <h1 class="header--title">${this.headerTitle}</h1> `) }
-        if (this.headerSubtitle) { $('.content--wrapper').append(` <h2 class="header--sub_title">${this.headerSubtitle}</h2> `) }
-        if (this.headerText)     { $('.content--wrapper').append(` <p class="header--text">${this.headerText}</p> `) }
+        if (this.headerTitle)    { $('.content--wrapper').append( `<h1 class="header--title">${this.headerTitle}</h1>` ) }
+        if (this.headerSubtitle) { $('.content--wrapper').append( `<h2 class="header--sub_title">${this.headerSubtitle}</h2>` ) }
+        if (this.headerText)     { $('.content--wrapper').append( `<p class="header--text">${this.headerText}</p>` ) }
       })
     }
 
     // Mount side buttons
-    $('#side_btns').html(` <a href="#${pageUrl}" target="_blank" rel="nofollow" class="btn--top">&nbsp;</a> `)
+    $('#side_btns').html( `<a href="#${pageUrl}" target="_blank" rel="nofollow" class="btn--top">&nbsp;</a>` )
     if (instagramUrl !== null && instagramUrl !== '') {
-      $('#side_btns').prepend(` <a href="${instagramUrl}" target="_blank" rel="nofollow" class="btn--ig">&nbsp;</a> `)
+      $('#side_btns').prepend( `<a href="${instagramUrl}" target="_blank" rel="nofollow" class="btn--ig">&nbsp;</a>` )
     }
     if (facebookUrl !== null && facebookUrl !== '') {
-      $('#side_btns').prepend(` <a href="${facebookUrl}" target="_blank" rel="nofollow" class="btn--fb">&nbsp;</a> `)
+      $('#side_btns').prepend( `<a href="${facebookUrl}" target="_blank" rel="nofollow" class="btn--fb">&nbsp;</a>` )
     }
 
     // RUN CONTENT BUILDER if ! contentUrl exists
@@ -224,7 +224,7 @@ $(document).ready(function() {
 
                 // Mount unique ID to item element
                 itemIndx = itemIndx+1
-                var itemId = 'item_' + itemIndx + '-' + item.id
+                var itemId = 'item_' + sectionId + '-' + itemIndx + '-' + item.id
                 singleItemEl.id = itemId // Adds itemId to singleItemEl
                 var itemElId = '.section--item' + '#' + itemId
 
@@ -257,12 +257,11 @@ $(document).ready(function() {
                     var itemName = item.name
                     itemName     = itemName.replaceAll('(', '<span class="name--label">')
                     itemName     = itemName.replaceAll(')', '</span>')
-                    itemNameEl   = $(itemElId + ' .item--name').html(` <span class="item--category">${item.category}</span>${itemName} `)
                     if (item.editName === undefined) {
-                      itemNameEl
+                      $(itemElId + ' .item--name').html(`<span class="item--category">${item.category}</span>${itemName}`)
                     } else if (item.editName) {
                       itemName = item.editName
-                      itemNameEl
+                      $(itemElId + ' .item--name').html(`<span class="item--category">${item.category}</span>${itemName}`)
                     }
 
                     // Mount additional nameLabel
@@ -270,9 +269,7 @@ $(document).ready(function() {
                       var itemNameLabel = item.nameLabel
                       itemNameLabel     = itemNameLabel.replaceAll('(', '<span class="name--label">')
                       itemNameLabel     = itemNameLabel.replaceAll(')', '</span>')
-                      $(itemElId + ' .item--name').append(`
-                        ${itemNameLabel}
-                      `)
+                      $(itemElId + ' .item--name').append( ` ${itemNameLabel}` )
                     }
 
                     // Mount item description
@@ -407,7 +404,7 @@ $(document).ready(function() {
               var imgMobileEl  = '<img src="' + section.img.mobile + '"  class="img__mobile">'
 
               if (section.url) {
-                $(sectionContent).html(` <a href="${section.url}" target="_blank" title="${FIND_OUT}"></a> `)
+                $(sectionContent).html( `<a href="${section.url}" target="_blank" title="${FIND_OUT}"></a>` )
                 $(sectionContent + ' a').html( imgDesktopEl + imgMobileEl )
                 if(section.img.mobile === undefined) { $(sectionContent + ' a').html( imgMobileEl ) }
               } else {
@@ -466,7 +463,7 @@ $(document).ready(function() {
         .fail(function( getContent, textStatus, error ) {
           if (develop && develop == true) {
             console.log( 'Content Request Failed: ' + textStatus + ', ' + error )
-            $('#page_loader').remove(); $('#content').append(` <div class="app_error">&#10060; Error found while generating Content. Check console for more information.</div> `)
+            $('#page_loader').remove(); $('#content').append( `<div class="app_error">&#10060; Error found while generating Content. Check console for more information.</div>` )
           }
 
         })

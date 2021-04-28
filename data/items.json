@@ -25,6 +25,31 @@
         "name": "Mi 10T Pro"
     },
     {
+        "id": "mi-11",
+        "img": "null",
+        "name": "Mi 11"
+    },
+    {
+        "id": "mi-11-lite-4g",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-11-lite-4g.png",
+        "name": "Mi 11 Lite"
+    },
+    {
+        "id": "mi-11-lite-5g",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-11-lite-5g.png",
+        "name": "Mi 11 Lite 5G"
+    },
+    {
+        "id": "mi-11-ultra-5g",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-11-ultra-5g.png",
+        "name": "Mi 11 Ultra"
+    },
+    {
+        "id": "mi-11i-5g",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-11i-5g.png",
+        "name": "Mi 11i"
+    },
+    {
         "id": "mi-4k-laser-projector-150",
         "img": "https://mi-home.pl/img/cms/json-lander/mi-4k-laser-projector-150.png",
         "name": "Mi 4K Laser Projector 150\u0026quot;"
@@ -105,6 +130,11 @@
         "name": "Mi Smart Band 5 Strap (3-pack) (Blue, Yellow, Green)"
     },
     {
+        "id": "mi-band-6",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-band-6.png",
+        "name": "Mi Smart Band 6"
+    },
+    {
         "id": "mi-body-composition-scale-2",
         "img": "https://mi-home.pl/img/cms/json-lander/mi-body-composition-scale-2.png",
         "name": "Mi Body Composition Scale 2"
@@ -173,6 +203,11 @@
         "id": "mi-handheld-cleaner-g10",
         "img": "https://mi-home.pl/img/cms/json-lander/mi-handheld-cleaner-g10.png",
         "name": "Mi Handheld Vacuum Cleaner G10"
+    },
+    {
+        "id": "mi-handheld-cleaner-light",
+        "img": "null",
+        "name": "Mi Handheld Vacuum Cleaner Light"
     },
     {
         "id": "mi-home-security-camera-1080p-magnetic",
@@ -340,6 +375,11 @@
         "name": "Mi Smart Plug (Wi-Fi)"
     },
     {
+        "id": "mi-smart-projector-2-pro",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-smart-projector-2-pro_.png",
+        "name": "Mi Smart Projector 2 Pro"
+    },
+    {
         "id": "mi-smart-scale-2",
         "img": "https://mi-home.pl/img/cms/json-lander/mi-smart-scale-2.png",
         "name": "Mi Smart Scale 2"
@@ -443,6 +483,11 @@
         "id": "poco-x3-nfc",
         "img": "https://mi-home.pl/img/cms/json-lander/poco-x3-nfc.png",
         "name": "POCO X3 NFC"
+    },
+    {
+        "id": "poco-x3-pro",
+        "img": "https://mi-home.pl/img/cms/json-lander/poco-x3-pro.png",
+        "name": "POCO X3 Pro"
     },
     {
         "id": "redmi-8a",
