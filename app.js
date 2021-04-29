@@ -80,7 +80,7 @@ $(document).ready(function() {
       </a>
     `)
     $('.header--logo').addClass('logo__' + settings.logo)
-    if (settings.header.content) {
+    if (settings.header) {
       var headerAlign    = settings.header.contentAlign
       $('#header--content').addClass('__' + headerAlign).append( `<div class="content--wrapper"></div>` )
       $.each(settings.header.content, function () {
@@ -160,14 +160,14 @@ $(document).ready(function() {
               if (section.title) {
                 var sectionTitle = document.createElement( 'h2' )
                 sectionTitle.innerHTML = section.title
-                $('.section--header h2')
+                $('.section--header h2').addClass('js-aos')
                 sectionHeader.appendChild( sectionTitle )
               }
               // Mount section Text attr
               if (section.text) {
                 var sectionText = document.createElement( 'p' )
                 sectionText.innerHTML = section.text
-                $('.section--header p')
+                $('.section--header p').addClass('js-aos')
                 sectionHeader.appendChild( sectionText )
               }
             }
@@ -521,23 +521,23 @@ if (settings.menu) {
 }
 
 // Animations
-function checkElementLocation() {
-  var $window = $(window);
-  var bottom_of_window = $window.scrollTop() + $window.height();
-
-  $('.js-aos').each(function(i) {
-    var $item = $(this);
-    var bottom_of_object = $item.position().top - $item.outerHeight();
-
-    //if element is in viewport, add the animate class
-    if (bottom_of_window > bottom_of_object) {
-      $(this).addClass('fade-up');
-    }
-  });
-}
-$(window).on('load scroll', function() {
-  checkElementLocation();
-});
+// function checkElementLocation() {
+//   var $window = $(window);
+//   var bottom_of_window = $window.scrollTop() + $window.height();
+//
+//   $('.js-aos').each(function(i) {
+//     var $item = $(this);
+//     var bottom_of_object = $item.position().top - $item.outerHeight();
+//
+//     //if element is in viewport, add the animate class
+//     if (bottom_of_window > bottom_of_object) {
+//       $(this).addClass('fade-up');
+//     }
+//   });
+// }
+// $(window).on('load scroll', function() {
+//   checkElementLocation();
+// });
 
 // Images Error [Test]
 // $('img').on('error', function() {

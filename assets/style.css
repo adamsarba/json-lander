@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  *
- * JSON Lander CSS 0.1
+ * JSON Lander CSS 1.0
  * Copyright © Mi-Home.pl
  * Date: 2021-04-21
  *
@@ -691,46 +691,45 @@ noscript {
    =============== */
 header.js-aos {
   animation-name: fade-in;
-  -webkit-animation-name: fade-in;
-  transition-duration: 600ms; }
+  -webkit-animation-name: fade-in; }
 
-.js-aos {
-  opacity: 0;
-  transition-property: opacity, transform;
-  transition-duration: 800ms;
-  transition-timing-function: ease-in; }
+.section--header p.js-aos {
+  transition-delay: 0.15s !important; }
 
 /* Fade Up */
 .fade-up {
-  opacity: 1;
   animation-name: fade-up;
   -webkit-animation-name: fade-up;
-  animation-duration: 800ms;
   animation-fill-mode: both;
-  -webkit-animation-duration: 800ms;
   -webkit-animation-fill-mode: both; }
 
 @keyframes fade-up {
   from {
+    opacity: 0;
     transform: translate3d(0, 100px, 0); }
   to {
-    transform: translate3d(0, 0, 0); } }
-@-webkit-keyframes fade-up {
-  from {
-    transform: translate3d(0, 100px, 0); }
-  to {
+    opacity: 1;
     transform: translate3d(0, 0, 0); } }
 /* Fade In */
 @keyframes fade-in {
   from {
+    opacity: 0;
     transform: translate3d(0, 0, 0); }
   to {
+    opacity: 1;
     transform: translate3d(0, 0, 0); } }
-@-webkit-keyframes fade-in {
-  from {
-    transform: translate3d(0, 0, 0); }
-  to {
-    transform: translate3d(0, 0, 0); } }
+.section--item.js-aos {
+  transition-delay: 0; }
+
+.section--item.js-aos:nth-of-type(2n) {
+  transition-delay: .15s; }
+
+.__small .section--item.js-aos:nth-of-type(n+3) {
+  transition-delay: .30s; }
+
+.__small .section--item.js-aos:nth-of-type(n+4) {
+  transition-delay: .45s; }
+
 /* Loading animation */
 #page_loader {
   margin: 100px auto 0;
