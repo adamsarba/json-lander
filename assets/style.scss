@@ -1000,6 +1000,52 @@ noscript {
   font-weight: 600
 }
 
+/* ===============
+   ANIMATIONS
+   =============== */
+
+header.js-aos {
+  animation-name: fade-in;
+    -webkit-animation-name: fade-in;
+  transition-duration: 600ms;
+}
+
+.js-aos {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 800ms;
+  transition-timing-function: ease-in;
+}
+
+/* Fade Up */
+.fade-up {
+    opacity: 1;
+    animation-name: fade-up;
+      -webkit-animation-name: fade-up;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+      -webkit-animation-duration: 800ms;
+      -webkit-animation-fill-mode: both
+}
+@keyframes fade-up {
+  from { transform: translate3d(0,100px,0) }
+  to { transform: translate3d(0,0,0) }
+}
+@-webkit-keyframes fade-up {
+  from { transform: translate3d(0,100px,0) }
+  to { transform: translate3d(0,0,0) }
+}
+
+/* Fade In */
+@keyframes fade-in {
+  from { transform: translate3d(0,0,0) }
+  to { transform: translate3d(0,0,0) }
+}
+@-webkit-keyframes fade-in {
+  from { transform: translate3d(0,0,0) }
+  to { transform: translate3d(0,0,0) }
+}
+
 /* Loading animation */
 #page_loader {
   margin: 100px auto 0;

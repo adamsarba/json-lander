@@ -160,14 +160,14 @@ $(document).ready(function() {
               if (section.title) {
                 var sectionTitle = document.createElement( 'h2' )
                 sectionTitle.innerHTML = section.title
-                $('.section--header h2')/*.attr('data-aos', 'fade-up')*/
+                $('.section--header h2')
                 sectionHeader.appendChild( sectionTitle )
               }
               // Mount section Text attr
               if (section.text) {
                 var sectionText = document.createElement( 'p' )
                 sectionText.innerHTML = section.text
-                $('.section--header p')/*.attr('data-aos', 'fade-up')*/
+                $('.section--header p')
                 sectionHeader.appendChild( sectionText )
               }
             }
@@ -220,7 +220,7 @@ $(document).ready(function() {
                       </a>
                     </div>
                   </div>
-                ` )/*.attr('data-aos', 'fade-up')*/
+                ` ).addClass('js-aos')
 
                 // Mount unique ID to item element
                 itemIndx = itemIndx+1
@@ -492,12 +492,6 @@ $(document).ready(function() {
 
   }) // end getScript (App Localizations)
 
-  // AOS
-  // AOS.init({
-  //   once: true,
-  //   startEvent: 'load',
-  // });
-
 }) // end APP
 
 /* ==========
@@ -525,6 +519,25 @@ if (settings.menu) {
     }
   })
 }
+
+// Animations
+function checkElementLocation() {
+  var $window = $(window);
+  var bottom_of_window = $window.scrollTop() + $window.height();
+
+  $('.js-aos').each(function(i) {
+    var $item = $(this);
+    var bottom_of_object = $item.position().top - $item.outerHeight();
+
+    //if element is in viewport, add the animate class
+    if (bottom_of_window > bottom_of_object) {
+      $(this).addClass('fade-up');
+    }
+  });
+}
+$(window).on('load scroll', function() {
+  checkElementLocation();
+});
 
 // Images Error [Test]
 // $('img').on('error', function() {

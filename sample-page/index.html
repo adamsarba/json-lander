@@ -15,8 +15,8 @@
 	<meta property="og:url" 				content="Direct URL to the page">
 	<meta property="og:image" 			content="Direct URL to Mobile & SM preview of the page">
 
-  <!-- Page Settings -->
   <script>
+    // Page Settings
     const settings = {
       contentUrl: "/json-lander/sample-page/content.json",
       pageUrl: "sample-page",
@@ -38,13 +38,12 @@
     }
   </script>
 
-  <!-- JSON Lander -->
-  <link rel="shortcut icon" href="/json-lander/assets/img/lander.png" type="image/x-icon" />
-  <link rel="stylesheet"    href="/json-lander/assets/style.css" />
-  <!-- <link rel="stylesheet"    href="/json-lander/assets/aos/2.3.4/aos.css" /> -->
+  <link   href="/json-lander/assets/img/lander.png" rel="shortcut icon" type="image/x-icon" />
+  <link   href="/json-lander/assets/style.css" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="/json-lander/app.js"></script>
-  <!-- <script src="/json-lander/assets/aos/2.3.4/aos.js"></script> -->
+  <!-- <link   href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 
   <script src="https://kit.fontawesome.com/49488b20df.js" crossorigin="anonymous"></script>
 
@@ -61,7 +60,7 @@
 <body>
 
   <div id="side_btns"></div>
-  <header>
+  <header class="js-aos">
     <div id="header--links"></div>
     <div id="header--content"></div>
   </header>
