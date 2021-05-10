@@ -2,7 +2,7 @@
  *
  * JSON Lander v0.2-alpha
  * Copyright © Mi-Home.pl
- * Date: 2021-04-21
+ * Date: 2021-04-30
  *
  */
 
