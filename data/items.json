@@ -25,8 +25,8 @@
         "name": "Mi 10T Pro"
     },
     {
-        "id": "mi-11",
-        "img": "null",
+        "id": "mi-11-5g",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-11-5g.png",
         "name": "Mi 11"
     },
     {
@@ -142,7 +142,7 @@
     {
         "id": "mi-box-s",
         "img": "https://mi-home.pl/img/cms/json-lander/mi-box-s.png",
-        "name": "null"
+        "name": "Mi Box S"
     },
     {
         "id": "mi-dash-cam-1s",
@@ -206,7 +206,7 @@
     },
     {
         "id": "mi-handheld-cleaner-light",
-        "img": "null",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-handheld-cleaner-light.png",
         "name": "Mi Handheld Vacuum Cleaner Light"
     },
     {
@@ -292,7 +292,22 @@
     {
         "id": "mi-power-bank-3-10000mah-18w",
         "img": "https://mi-home.pl/img/cms/json-lander/mi-power-bank-3-10000mah-18w.png",
-        "name": "Mi Power Bank 3 10000mAh 18W"
+        "name": "Mi Power Bank 3 (10000mAh) (18W)"
+    },
+    {
+        "id": "mi-power-bank-3-pro-20000mah",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-power-bank-3-pro-20000mah.png",
+        "name": "Mi Power Bank 3 Pro (20000mAh)"
+    },
+    {
+        "id": "mi-power-bank-3-ultra-compact-10000mah",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-power-bank-3-ultra-compact-10000mah.png",
+        "name": "Mi Power Bank 3 Ultra Compact (10000mAh)"
+    },
+    {
+        "id": "mi-power-bank-flashlight",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-power-bank-flashlight.png",
+        "name": "Mi Power Bank Flashlight (3250mAh)"
     },
     {
         "id": "mi-robot-vacuum-essential",
@@ -376,7 +391,7 @@
     },
     {
         "id": "mi-smart-projector-2-pro",
-        "img": "https://mi-home.pl/img/cms/json-lander/mi-smart-projector-2-pro_.png",
+        "img": "https://mi-home.pl/img/cms/json-lander/mi-smart-projector-2-pro.png",
         "name": "Mi Smart Projector 2 Pro"
     },
     {
@@ -467,7 +482,7 @@
     {
         "id": "mi-wireless-power-bank-10000",
         "img": "https://mi-home.pl/img/cms/json-lander/mi-wireless-power-bank-10000-black.png",
-        "name": "Mi Wireless Power Bank 10000mAh"
+        "name": "Mi Wireless Power Bank (10000mAh)"
     },
     {
         "id": "poco-f2-pro",
@@ -567,12 +582,12 @@
     {
         "id": "redmi-power-bank-10000",
         "img": "https://mi-home.pl/img/cms/json-lander/redmi-power-bank-10000-white.png",
-        "name": "Redmi Power Bank 10000mAh"
+        "name": "Redmi Power Bank (10000mAh)"
     },
     {
         "id": "redmi-power-bank-20000",
         "img": "https://mi-home.pl/img/cms/json-lander/redmi-power-bank-20000-white.png",
-        "name": "Redmi Fast Charge Power Bank 20000mAh (18W)"
+        "name": "Redmi Fast Charge Power Bank (20000mAh) (18W)"
     },
     {
         "id": "yeelight-portable-led-desk-lamp",
