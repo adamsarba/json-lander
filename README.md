@@ -1,5 +1,5 @@
 # json-lander
-![version](https://img.shields.io/badge/version-0%2e2_alpha-green.svg)
+![version](https://img.shields.io/badge/version-0%2e2%2e1_alpha-green.svg)
 
 Simple JavaScript application that mounts content written in JSON into static HTML file.
 
@@ -20,7 +20,6 @@ Easy way to distribute and manage light static sales webpages.
 * No SQL database needed
 
 ### To do
-* Global CSS
 * Combine only items required by the *content.json*
 
 ### In future updates
@@ -30,31 +29,35 @@ Easy way to distribute and manage light static sales webpages.
 
 ## Directory Tree
 ```
-json-lander
-  |—- app.js
-  |-- app.min.js
+/event/libs/json-lander
   |—- assets
-  |  |—- style.css
-  |  |-- style.scss
+  |  |—- img
   |—- data
   |  |—- items.json
+  |-- dist
+  |  |-- 0.0.0
+  |  |  |—- app.js
+  |  |  |-- app.min.js
+  |  |  |—- style.css
+  |  |  |-- style.scss
   |—- locale
   |  |—- en_US
   |  |  |—- app.json
   |  |  |—- items.json
-  |—- sample-page
-  |  |—- index.html
-  |  |—- content.json
-  |  |—- custom
-  |  |  |—- style.css
-  |  |  |—- style.scss
-  |  |—- img
+/event/sample-page
+  |—- index.html
+  |—- content.json
+  |—- custom
+  |  |—- style.css
+  |  |—- style.scss
+  |—- img
 ```
 
 ## Setup
 Create a new directory for your page and attach link to the app in head element of *index.html*:
 ```html
-<script src="https://cdn.mi-home.pl/apps/json-lander/1.0.0/app.min.js"></script>
+<script src="//mi-home.pl/event/libs/json-lander/dist/0.2/app.min.js"></script>
+<link href="//mi-home.pl/event/libs/json-lander/dist/0.2.1/style.min.css" rel="stylesheet" />
 ```
 
 ## How to use it
@@ -70,6 +73,27 @@ header.content | array | [] | Array of objects (texts) mounted in the header
 header.contentAlign | string | center | Align of  content in the header
 logo | string | orange | Color variant of the logo. Available parameters: `orange`,  `white`
 menu | boolean | true | Toggles sections menu under the header
+
+Example:
+```javascript
+const settings = {
+  contentUrl: "content.json",
+  pageUrl: "sample-page",
+  utmTags: "?utm_source=mi-home&utm_medium=landing-page&utm_campaign=sample-page-2021",
+  header: {
+    content: [
+      { "headerTitle": "Sample header title" },
+      { "headerSubtitle": "Header Subtitle" },
+      { "headerText": "Lorem ipsum dolor sit amet, consectetur adipisicing elit." }
+    ],
+    contentAlign: "center"
+  },
+  logo: "white",
+  menu: true,
+  redirect: false,
+  develop: false
+}
+```
 
 ### Page Content Composer
 
@@ -106,7 +130,7 @@ Image Section Example:
     "desktop":"//yourpage.com/img-pc.jpg",
     "mobile":"//yourpage.com/img-m.jpg"
   },
-  "url":"//samplepage.com"
+  "url":"//yourpage.com/sample"
 }
 ```
 
