@@ -6,7 +6,7 @@
 
 var pagesUrl        = 'https://mi-home.pl/event/'
 var facebookUrl     = 'https://www.facebook.com/mihomepl'
-var instagramUrl    = 'https://www.instagram.com/mihomepl'
+var instagramUrl    = 'https://www.instagram.com/mihome.pl'
 
 var CURRENCY        = 'zł'
 

@@ -1,649 +1,745 @@
 [
     {
         "id": "mi-10",
-        "url": "https://mi-home.pl/mi-10",
+        "url": "/smartfony/mi/mi-10",
         "category": "Smartfon",
         "desc": "Poczuj pełną płynność wyświetlania dzięki odświeżaniu ekranu na poziomie 90 Hz!"
     },
     {
         "id": "mi-10-lite",
-        "url": "https://mi-home.pl/mi-10-lite",
+        "url": "/smartfony/mi/mi-10-lite",
         "category": "Smartfon",
-        "desc": "Krystaliczna jakość fotografii dzięki rewelacyjnemu aparatowi 48MP"
+        "desc": "Krystaliczna jakość fotografii dzięki rewelacyjnemu aparatowi 48MP."
     },
     {
         "id": "mi-10t",
-        "url": "https://mi-home.pl/mi-10t",
+        "url": "/smartfony/mi/mi-10t-5g",
         "category": "Smartfon",
-        "desc": "Czysta wydajność mobilnego gamingu oraz rewelacyjna płynność 144Hz"
+        "desc": "Czysta wydajność mobilnego gamingu oraz rewelacyjna płynność 144Hz."
     },
     {
         "id": "mi-10t-lite",
-        "url": "https://mi-home.pl/mi-10t-lite",
+        "url": "/smartfony/mi/mi-10t-lite",
         "category": "Smartfon",
-        "desc": "Poczwórny aparat SI 64MP, dzięki któremu uchwycisz każdą ulotną chwilę"
+        "desc": "Poczwórny aparat SI 64MP, dzięki któremu uchwycisz każdą ulotną chwilę."
     },
     {
         "id": "mi-10t-pro",
-        "url": "https://mi-home.pl/mi-10-pro",
+        "url": "/smartfony/mi/mi-10-pro",
         "category": "Smartfon",
-        "desc": "Flagowe doświadczenie z potężnym procesorem Qualcomm® Snapdragon™ 865"
+        "desc": "Flagowe doświadczenie z potężnym procesorem Qualcomm® Snapdragon™ 865."
     },
     {
         "id": "mi-11-5g",
-        "url": "https://mi-home.pl/mi-11",
+        "url": "/smartfony/mi/mi-11",
         "category": "Smartfon",
         "desc": "Wielka moc, lekka formia. Działaj bez ograniczeń z procesorem Snapdragon™ 888."
     },
     {
+        "id": "mi-11-5g-special-edition",
+        "url": "null",
+        "category": "Smartfon",
+        "desc": "Edycja specjalna. Kunsztowna, żeberkowa obudowa wykonana przez eksperta Lei Jun."
+    },
+    {
         "id": "mi-11-lite-4g",
-        "url": "https://mi-home.pl/mi-11-lite-4g",
+        "url": "/smartfony/mi/mi-11-lite-4g",
         "category": "Smartfon",
         "desc": "Minimalistyczny, estetyczny design. Możliwości flagowca w ultralekkiej obudowie."
     },
     {
         "id": "mi-11-lite-5g",
-        "url": "https://mi-home.pl/mi-11-lite-5g",
+        "url": "/smartfony/mi/mi-11-lite-5g",
         "category": "Smartfon",
         "desc": "Superlekka konstrukcja, wyjątkowe osiągi wspomagane prędkością łączności 5G."
     },
     {
         "id": "mi-11-ultra-5g",
-        "url": "https://mi-home.pl/mi-11-ultra",
+        "url": "/smartfony/mi/mi-11-ultra",
         "category": "Smartfon",
         "desc": "Nowatorskie rozwiązania. Dwa ekrany, reżyserski aparat, silikonowa bateria."
     },
     {
         "id": "mi-11i-5g",
-        "url": "https://mi-home.pl/mi-11i",
+        "url": "/smartfony/mi/mi-11i",
         "category": "Smartfon",
         "desc": "Prawdziwa gwiazda. Powalająca prędkość Snapdragona 888 teraz na ekranie 120Hz."
     },
     {
         "id": "mi-4k-laser-projector-150",
-        "url": "https://mi-home.pl/wideo/mi-4k-laser-projector-150",
+        "url": "/mi-4k-laser-projector-150",
         "category": "Projektor",
-        "desc": "Nieziemskie doznania audiowizualne. Obraz w jakości 4K wyświetlany w 150\u0026quot;."
+        "desc": "Nieziemskie doznania audiowizualne. Obraz w jakości 4K wyświetlany w 150\"."
     },
     {
         "id": "mi-air-purifier-2h",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-air-purifier-2h",
+        "url": "/mi-air-purifier-2h",
         "category": "Oczyszczacz powietrza",
         "desc": "Zmaksymalizowane bezpieczeństwo każdego oddechu."
     },
     {
         "id": "mi-air-purifier-3c",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-air-purifier-3c",
+        "url": "/mi-air-purifier-3c",
         "category": "Oczyszczacz powietrza",
         "desc": "Nowa jakość powietrza. Bezpieczeństwo i czystość w Twoim domu."
     },
     {
         "id": "mi-air-purifier-3h",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-air-purifier-3h",
+        "url": "/mi-air-purifier-3h",
         "category": "Oczyszczacz powietrza",
         "desc": "Praktyczny wyświetlacz i nieskazitelne powietrze."
     },
     {
         "id": "mi-air-purifier-antibacterial-filter",
-        "url": "https://mi-home.pl/akcesoria/xiaomi-mi-air-purifier-antibacterial-filter-cartridge",
+        "url": "/mi-air-purifier-antibacterial-filter-cartridge",
         "category": "Filtr do oczyszczacza",
         "desc": "Bezpieczeństwo i przyjemność płynące z każdego oddechu."
     },
     {
         "id": "mi-air-purifier-filter-hepa",
-        "url": "https://mi-home.pl/akcesoria/mi-air-purifier-hepa-filter-cartridge",
+        "url": "/mi-air-purifier-hepa-filter-cartridge",
         "category": "Filtr do oczyszczacza",
         "desc": "Filtr dający lekki oddech. Pochłania drobnoustroje, cząsteczki PM2.5 i zapachy."
     },
     {
         "id": "mi-air-purifier-formaldehyde-filter",
-        "url": "https://mi-home.pl/akcesoria/mi-air-purifier-formaldehyde-removal-filter",
+        "url": "/mi-air-purifier-formaldehyde-removal-filter-cartridge",
         "category": "Filtr do oczyszczacza",
         "desc": "Niezrównana skuteczność filtracji cząsteczek PM 2.5."
     },
     {
         "id": "mi-air-purifier-formaldehyde-filter-s1",
-        "url": "https://mi-home.pl/akcesoria/mi-air-purifier-formaldehyde-filter-s1",
+        "url": "/mi-air-purifier-formaldehyde-filter-s1",
         "category": "Filtr do oczyszczacza",
         "desc": "Trzywarstwowy filtr dający wielowymiarowy efekt. Poczuj czystość powietrza."
     },
     {
         "id": "mi-air-purifier-pro",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-air-purifier-pro",
+        "url": "/mi-air-purifier-pro",
         "category": "Oczyszczacz powietrza",
         "desc": "Bezkonkurencyjna moc oczyszczania w Twoim domu."
     },
     {
         "id": "mi-air-purifier-pro-h",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-air-purifier-pro-h",
+        "url": "/mi-air-purifier-pro-h",
         "category": "Oczyszczacz powietrza",
         "desc": "Zadbaj o swoje zdrowie z najwydajniejszym oczyszczaczem powietrza Xiaomi."
     },
     {
         "id": "mi-band-3-strap-orange",
-        "url": "https://mi-home.pl/akcesoria/mi-band-3-4-strap-pink",
+        "url": "/akcesoria/mi-smart-band-3-4-strap-orange",
         "category": "Wymienna opaska",
         "desc": "Wysoka elastyczność i wytrzymałość to gwarant trwałości opaski przez długi czas."
     },
     {
         "id": "mi-band-4",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/xiaomi-mi-band-4",
+        "url": "/mi-smart-band-4",
         "category": "Inteligentna opaska",
         "desc": "Kolorowy wyświetlacz AMOLED, śledzenie aktywności sportowych i snu."
     },
     {
         "id": "mi-band-4c",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-band-4c",
+        "url": "/mi-smart-band-4c",
         "category": "Inteligentna opaska",
         "desc": "Najwygodniejsze ładowanie. Poczuj pełną swobodę."
     },
     {
         "id": "mi-band-5",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-band-5",
+        "url": "/mi-smart-band-5",
         "category": "Inteligentna opaska",
         "desc": "Więcej możliwości. Wygodniejsze ładowanie, ergonomiczna konstrukcja. Bądź Fit!"
     },
     {
         "id": "mi-band-5-straps-1",
-        "url": "https://mi-home.pl/akcesoria/mi-smart-band-5-strap-3-pack-black-orange-cyan",
+        "url": "/mi-smart-band-5-strap-3-pack-black-orange-cyan",
         "category": "Zestaw wymiennych opasek",
         "desc": "Wygoda i styl, paski Mi Smart Band 5: pomarańczowy, czarny i cyjanowy."
     },
     {
         "id": "mi-band-5-straps-2",
-        "url": "https://mi-home.pl/akcesoria/mi-smart-band-5-strap-3-pack-blue-yellow-green",
+        "url": "/mi-smart-band-5-strap-3-pack-blue-yellow-green",
         "category": "Zestaw wymiennych opasek",
         "desc": "Niepowtarzalny wygląd. Paski Mi Smart Band 5: żółty, niebieski, zielony."
     },
     {
         "id": "mi-band-6",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-band-6",
+        "url": "/mi-smart-band-6",
         "category": "Inteligentna opaska",
         "desc": "6 odsłona legendy. Większy ekran, wygodniejsza obsługa, przyjemniejszy trening."
     },
     {
         "id": "mi-body-composition-scale-2",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-body-composition-scale-2",
+        "url": "/mi-body-composition-scale-2",
         "category": "Inteligentna waga łazienkowa",
         "desc": "Kompleksowa analiza sylwetki w Twoim smartfonie, dokładny pomiar co 50 gram."
     },
     {
         "id": "mi-box-s",
-        "url": "https://mi-home.pl/wideo/mi-box-s-4k-tv",
+        "url": "/mi-box-s-4k-tv",
         "category": "Odtwarzacz multimedialny 4K",
         "desc": "Dostęp w najwyższej jakości. Odtwarzacz multimedialny 4K UHD HDR przy 60kl/s."
     },
     {
+        "id": "mi-casual-daypack",
+        "url": "/lifestyle/plecaki-i-torby?Capacity=290",
+        "category": "Plecak",
+        "desc": "Zabierz ze sobą to, co najważniejsze!"
+    },
+    {
         "id": "mi-dash-cam-1s",
-        "url": "https://mi-home.pl/wideo/mi-dash-cam-1s",
+        "url": "/mi-dash-cam-1s",
         "category": "Wideorejestrator",
         "desc": "Idealny partner nocnych wojaży, pełne bezpieczeństwo podróży."
     },
     {
         "id": "mi-desktop-monitor-1c-24",
-        "url": "https://mi-home.pl/wideo/mi-desktop-monitor-1c-24",
+        "url": "/mi-desktop-monitor-1c-24",
         "category": "Monitor komputerowy",
         "desc": "Ekran IPS o rozdzielczości FullHD zamknięty w obudowie z super cienkimi ramkami."
     },
     {
+        "id": "mi-dual-driver-earphones-type-c",
+        "url": "/mi-dual-driver-earphones-type-c-black",
+        "category": "Słuchawki douszne",
+        "desc": "Słuchawki douszne z podwójnym sterownikiem dla niskich i wysokich tonów."
+    },
+    {
         "id": "mi-electric-kettle",
-        "url": "https://mi-home.pl/lifestyle/mi-electric-kettle",
+        "url": "/mi-electric-kettle",
         "category": "Czajnik elektryczny",
         "desc": "Elektryczny czajnik o pojemności 1.5L, obudowa nie nagrzewającą się powyżej 40°C."
     },
     {
         "id": "mi-electric-scooter-1s",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-electric-scooter-1s",
+        "url": "/mi-electric-scooter-1s",
         "category": "Hulajnoga elektryczna",
-        "desc": "Najlepszy kompan miejskiej komunikacji. Dotrzyj dalej, wygodniej."
+        "desc": "Daleki zasięg 30 km i maksymalna prędkość 25 km/h. Dotrzyj dalej, wygodniej."
+    },
+    {
+        "id": "mi-electric-scooter-essential",
+        "url": "/mi-electric-scooter-essential",
+        "category": "Hulajnoga elektryczna",
+        "desc": "Przemierzaj miasto w wielkim stylu, z prędkością do 20 km/h."
     },
     {
         "id": "mi-electric-scooter-pro-2",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-electric-scooter-pro-2",
+        "url": "/mi-electric-scooter-pro-2",
         "category": "Hulajnoga elektryczna",
-        "desc": "Pogromca korków i chodników. Wygoda, komfort i szybkość. "
+        "desc": "Najwygodniejsza jazda. Zasięg nawet 45km z olbrzymią baterią 12800mAh."
     },
     {
         "id": "mi-electric-scooter-pro-2-amg",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-electric-scooter-pro-2-mercedes-amg-petronas-f1-team-edition",
+        "url": "/mi-electric-scooter-pro-2-mercedes-amg-petronas-f1-team-edition",
         "category": "Hulajnoga elektryczna",
         "desc": "Kompan miejskiego podboju. Postaw na szybkość i wydajność. "
     },
     {
         "id": "mi-electric-shaver-s500",
-        "url": "https://mi-home.pl/lifestyle/mi-electric-shaver-s500",
+        "url": "/mi-electric-shaver-s500",
         "category": "Golarka elektryczna",
         "desc": "Doskonale zamortyzowane golenie."
     },
     {
         "id": "mi-electric-toothbrush-head-sensitive",
-        "url": "https://mi-home.pl/akcesoria/mi-electric-toothbrush-head-sensitive-3-pack",
+        "url": "/mi-electric-toothbrush-head-sensitive-3-pack",
         "category": "Końcówki do szczoteczki",
         "desc": "Zestaw trzech końcówek dedykowanych dla osób z delikatnymi dziąsłami."
     },
     {
         "id": "mi-electric-toothbrush-t500",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-electric-toothbrush-t500",
+        "url": "/mi-electric-toothbrush-t500",
         "category": "Szczoteczka soniczna",
         "desc": "Wydajny silnik, wodoodporna obudowa IPX7 i aż do 18 dni pracy na ładowaniu."
     },
     {
         "id": "mi-handheld-cleaner",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-handheld-vacuum-cleaner",
+        "url": "/mi-handheld-vacuum-cleaner",
         "category": "Odkurzacz bezprzewodowy",
         "desc": "Sprzątaj szybko i wygodnie dzięki poręcznej konstrukcji i dużej mocy!"
     },
     {
         "id": "mi-handheld-cleaner-1c",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-handheld-vacuum-cleaner-1c",
+        "url": "/mi-handheld-vacuum-cleaner-1c",
         "category": "Odkurzacz bezprzewodowy",
         "desc": "Wydajny silnik bezszczotkowy, duża moc, pewne czyszczenie."
     },
     {
         "id": "mi-handheld-cleaner-g10",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-handheld-vacuum-cleaner-g10",
+        "url": "/mi-handheld-vacuum-cleaner-g10",
         "category": "Odkurzacz bezprzewodowy",
         "desc": "Inteligentny dobór mocy. Twój asystent domowych porządków. "
     },
     {
         "id": "mi-handheld-cleaner-light",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/xiaomi-mi-handheld-vacuum-cleaner-light",
+        "url": "/mi-handheld-vacuum-cleaner-light",
         "category": "Odkurzacz bezprzewodowy",
         "desc": "Poczuj pełną swobodę sprzątania dzięki niesamowicie lekkiej wadze 1.2 kg."
     },
     {
         "id": "mi-home-security-camera-1080p-magnetic",
-        "url": "https://mi-home.pl/wideo/mi-home-security-camera-1080p-magnetic-mount",
+        "url": "/mi-home-security-camera-1080p-magnetic-mount",
         "category": "Kamera IP",
         "desc": "Wysokiej jakości nagrania i wszechstronny montaż dzięki magnetycznej podstawie."
     },
     {
+        "id": "mi-home-security-camera-2k",
+        "url": "/mi-360-home-security-camera-2k",
+        "category": "Kamera IP",
+        "desc": "Zabezpiecz swój dom z kamerą IP o widoku 360°."
+    },
+    {
+        "id": "mi-home-security-camera-2k-pro",
+        "url": "/mi-360-home-security-camera-2k-pro",
+        "category": "Kamera IP",
+        "desc": "Kamera IP z wbudowanym trybem nocnym rejestruje obraz oraz dźwięk."
+    },
+    {
         "id": "mi-ionic-hair-dryer",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-ionic-hair-dryer",
+        "url": "/mi-ionic-hair-dryer",
         "category": "Suszarka do włosów",
         "desc": "Zdrowe i piękne włosy wzbogacone odmładzającymi jonami."
     },
     {
         "id": "mi-laser-projector-screen-100",
-        "url": "https://mi-home.pl/wideo/akcesoria-wideo/mi-laser-projector-light-resistant-screen-100",
+        "url": "/mi-laser-projector-light-resistant-screen-100",
         "category": "Ekran dla projektora",
         "desc": "Widowisko pełne głębi. 100\" ekran projektora z obsługą laserowych konstrukcji."
     },
     {
+        "id": "mi-lcd-writing-tablet",
+        "url": "/mi-lcd-writing-tablet-13",
+        "category": "Tablet graficzny",
+        "desc": "Ciesz się wygodą tworzenia, gdziekolwiek zechcesz!"
+    },
+    {
         "id": "mi-led-smart-bulb-warm-white",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-led-smart-bulb-warm-white",
+        "url": "/mi-led-smart-bulb-warm-white",
         "category": "Inteligentna żarówka",
         "desc": "Rozświetl otoczenie z inteligentną żarówką, o ciepłej białej barwie. "
     },
     {
         "id": "mi-led-smart-bulb-white-color-2-pack",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-led-smart-bulb-white-color-2-pack",
+        "url": "/mi-led-smart-bulb-white-color-2-pack",
         "category": "Inteligentne żarówki",
         "desc": "Zdalnie sterowane żarówki z szeroką gamą inteligentnej regulacji."
     },
     {
         "id": "mi-led-tv-4a-32",
-        "url": "https://mi-home.pl/mi-tv/mi-led-tv-4a-32",
+        "url": "/mi-led-tv-4a-32",
         "category": "Smart TV",
         "desc": "Wysoka jakość obrazu z Android TV."
     },
     {
         "id": "mi-led-tv-4s-43",
-        "url": "https://mi-home.pl/mi-tv/mi-led-tv-4s-43",
+        "url": "/mi-led-tv-4s-43",
         "category": "Smart TV",
         "desc": "Perfekcja odtwarzanego obrazu na każdej płaszczyźnie."
     },
     {
         "id": "mi-led-tv-4s-55",
-        "url": "https://mi-home.pl/mi-tv/mi-led-tv-4s-55",
+        "url": "/mi-led-tv-4s-55",
         "category": "Smart TV",
         "desc": "Przenieś się do świata perfekcyjnego obrazu 4K, przepełnionego żywymi barwami!"
     },
     {
         "id": "mi-led-tv-4s-65",
-        "url": "https://mi-home.pl/mi-tv/mi-led-tv-4s-65",
+        "url": "/mi-led-tv-4s-65",
         "category": "Smart TV",
-        "desc": "Dołącz do wciągającego świata kina dzięki niesamowitemu ekranowi 65\u0026quot;"
+        "desc": "Dołącz do wciągającego świata kina dzięki niesamowitemu ekranowi 65\"."
     },
     {
         "id": "mi-luggage-classic-20",
-        "url": "https://mi-home.pl/lifestyle/mi-luggage-classic-20-black",
+        "url": "/mi-luggage-classic-20-black",
         "category": "Walizka podróżna",
         "desc": "Funkcjonalność i dbałość o każdy detal. Walizka na małe i duże podróże. "
     },
     {
         "id": "mi-metal-carry-on-luggage-20",
-        "url": "https://mi-home.pl/lifestyle/mi-90-points-metal-luggage-20-silver",
+        "url": "/mi-metal-carry-on-luggage-20-silver",
         "category": "Walizka podróżna",
         "desc": "Moc i bezpieczeństwo, połączone dla ochrony Twoich najważniejszych przedmiotów. "
     },
     {
         "id": "mi-note-10",
-        "url": "https://mi-home.pl/mi-note-10",
+        "url": "/smartfony/mi/mi-note-10",
         "category": "Smartfon",
         "desc": "Odkryj zupełnie nieznaną stronę fotografii dzięki zaawansowanej optyce 108MP!"
     },
     {
         "id": "mi-note-10-lite",
-        "url": "https://mi-home.pl/mi-note-10-lite",
+        "url": "/smartfony/mi/mi-note-10-lite",
         "category": "Smartfon",
-        "desc": "Zakrzywiony AMOLED 6,47\u0026quot; i doskonałe zdjęcia z poczwórnym aparatem 64MP."
+        "desc": "Zakrzywiony AMOLED 6,47\" i doskonałe zdjęcia z poczwórnym aparatem 64MP."
     },
     {
         "id": "mi-note-10-pro",
-        "url": "https://mi-home.pl/mi-note-10",
+        "url": "/smartfony/mi/mi-note-10",
         "category": "Smartfon",
         "desc": "Odkryj zupełnie nieznaną stronę fotografii dzięki zaawansowanej optyce 108MP!"
     },
     {
+        "id": "mi-portable-bt-speaker-16w",
+        "url": "/mi-portable-bluetooth-speaker-16w-black",
+        "category": "Głośnik bezprzewodowy",
+        "desc": "Zabierz go, gdzie tylko zechcesz, pojemność baterii pozwoli ci na 13h muzyki!"
+    },
+    {
         "id": "mi-portable-electric-air-pump",
-        "url": "https://mi-home.pl/akcesoria/mi-portable-electric-air-pump",
+        "url": "/mi-portable-electric-air-pump",
         "category": "Przenośna pompka",
         "desc": "Ratunek w trasie i na boisku. Pompka automatycznie dostosowująca ciśnienie. "
     },
     {
         "id": "mi-portable-photo-printer",
-        "url": "https://mi-home.pl/mi-portable-photo-printer",
+        "url": "/mi-portable-photo-printer",
         "category": "Drukarka foto",
         "desc": "Drukuj niesamowite fotografie gdziekolwiek jesteś!"
     },
     {
-        "id": "mi-power-bank-3-10000mah-18w",
-        "url": "https://mi-home.pl/akcesoria/mi-power-bank-3-10000mah-18w-silver",
+        "id": "mi-power-bank-3-10000-18w",
+        "url": "/mi-power-bank-3-10000mah-18w-black",
         "category": "Powerbank",
         "desc": "Noś przy sobie moc, która wystarczy na długo."
     },
     {
-        "id": "mi-power-bank-3-pro-20000mah",
-        "url": "https://mi-home.pl/akcesoria/mi-power-bank-3-pro-20000mah",
+        "id": "mi-power-bank-3-pro-20000",
+        "url": "/mi-power-bank-3-pro-20000mah",
         "category": "Powerbank",
         "desc": "Szybki powrót do akcji, nie pozwól sobie na brak energii!"
     },
     {
-        "id": "mi-power-bank-3-ultra-compact-10000mah",
-        "url": "https://mi-home.pl/akcesoria/mi-power-bank-3-ultra-compact-10000mah",
+        "id": "mi-power-bank-3-ultra-compact-10000",
+        "url": "/mi-power-bank-3-ultra-compact-10000mah",
         "category": "Powerbank",
         "desc": "Energia zawsze tam, gdzie jej potrzebujesz. Kompaktowy powerbank Xiaomi."
     },
     {
         "id": "mi-power-bank-flashlight",
-        "url": "https://mi-home.pl/akcesoria/mi-power-bank-3250mah-flashlight",
+        "url": "/mi-power-bank-3250mah-flashlight",
         "category": "Powerbank",
         "desc": "Rzuć światło na nowe możliwości. Wielozadaniowy powerbank, zawsze pod ręką."
     },
     {
         "id": "mi-robot-vacuum-essential",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-robot-vacuum-mop-essential",
+        "url": "/mi-robot-vacuum-mop-essential",
         "category": "Odkurzacz autonomiczny",
         "desc": "Co masz odkurzyć dziś, zleć swojemu robotowi. Ogromna siła, zero wysiłku."
     },
     {
         "id": "mi-robot-vacuum-mop",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-robot-vacuum-mop",
+        "url": "/mi-robot-vacuum-mop",
         "category": "Odkurzacz autonomiczny",
         "desc": "Odkurzaj i mopuj nawet najbardziej zabrudzone powierzchnie!"
     },
     {
         "id": "mi-robot-vacuum-mop-pro",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-robot-vacuum-mop-pro-black",
+        "url": "/mi-robot-vacuum-mop-pro-black",
         "category": "Odkurzacz autonomiczny",
         "desc": "Laserowy system skanowania pomieszczeń, mnogość sensorów."
     },
     {
         "id": "mi-router-4a",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-router-4a",
+        "url": "/mi-router-4a",
         "category": "Router Wi-Fi",
         "desc": "Poczuj dwuzakresową prędkość 1167 Mb/s podyktowaną 4 wydajnymi antenami."
     },
     {
         "id": "mi-router-4a-giga",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-router-4a-giga-version",
+        "url": "/mi-router-4a-giga-version",
         "category": "Router Wi-Fi",
         "desc": "Stabilne połączenie, silniejszy sygnał. Obsługa sieci 2.4 i 5GHz i pamięć 128 MB."
     },
     {
         "id": "mi-router-4c",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-router-4c",
+        "url": "/mi-router-4c",
         "category": "Router Wi-Fi",
         "desc": "Domowy komfort użytkowania. Silny sygnał, błyskawiczna transmisja."
     },
     {
         "id": "mi-router-ac2350",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-aiot-router-ac2350",
+        "url": "/mi-aiot-router-ac2350",
         "category": "Router Wi-Fi 6",
         "desc": "Odkryj nową jakość zasięgu działania i silniejszy sygnał."
     },
     {
         "id": "mi-router-ax1800",
-        "url": "https://mi-home.pl/mi-router-ax1800",
+        "url": "/mi-router-ax1800",
         "category": "Router Wi-Fi 6",
         "desc": "Najniższa cena za najwyższą jakość. Obsługa Wi-Fi 6. 256 MB pamięci RAM"
     },
     {
         "id": "mi-router-ax3600",
-        "url": "https://mi-home.pl/mi-aiot-router-ax3600",
+        "url": "/mi-aiot-router-ax3600",
         "category": "Router Wi-Fi 6",
         "desc": "Gigant o prędkości Wi-Fi do 2976 Mb/s. Pionierskie urządzenie w erze 5G."
     },
     {
         "id": "mi-smart-antibacterial-humidifier",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-antibacterial-humidifier",
+        "url": "/mi-smart-antibacterial-humidifier",
         "category": "Nawilżacz",
         "desc": "Wysoki poziom nawilżenia i pełna skuteczność filtracji wody z systemem UV-C."
     },
     {
         "id": "mi-smart-compact-projector",
-        "url": "https://mi-home.pl/wideo/mi-smart-compact-projector",
+        "url": "/mi-smart-compact-projector",
         "category": "Projektor",
-        "desc": "Wielki obraz 200\u0026quot; zapewni niesamowite wrażenia podczas wieczornych seansów."
+        "desc": "Wielki obraz 200\" zapewni niesamowite wrażenia podczas wieczornych seansów."
     },
     {
         "id": "mi-smart-home-hub",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/sensory-i-czujniki/mi-smart-home-hub",
+        "url": "/mi-smart-home-hub",
         "category": "Gateway",
         "desc": "Regulacja mocy oraz temperatury barwowej dla zmaksymalizowania wygody."
     },
     {
-        "id": "mi-smart-kettle",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-kettle",
+        "id": "Kamera IP z wbudowanym trybem nocnym rejestruje obraz oraz dźwięk.",
+        "url": "/mi-smart-kettle",
         "category": "Inteligentny czajnik",
         "desc": "Zagotuj wodę w niecałe 5 minut dzięki 1800W czystej mocy!"
     },
     {
+        "id": "mi-smart-kettle-pro",
+        "url": "/mi-smart-kettle-pro",
+        "category": "Inteligentny czajnik",
+        "desc": "Inteligentny czajnik stworzony z myślą o najlepszej szklance herbaty."
+    },
+    {
         "id": "mi-smart-led-ceiling-light",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-led-ceiling-light",
+        "url": "/mi-smart-led-ceiling-light",
         "category": "Lampa sufitowa",
         "desc": "Smart plafon o szerokości 450mm. Łączność z Apple Home Kit oraz aplikacją Xiaomi."
     },
     {
         "id": "mi-smart-led-desk-lamp-pro",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-led-desk-lamp-pro",
+        "url": "/mi-smart-led-desk-lamp-pro",
         "category": "Lampka biurkowa",
         "desc": "Szybkie zarządzanie czujnikami i akcesoriami Xiaomi w jednym miejscu."
     },
     {
         "id": "mi-smart-power-plug-wi-fi",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-wi-fi-power-plug",
+        "url": "/mi-smart-wi-fi-power-plug",
         "category": "Inteligentne gniazdko",
         "desc": "Zgodność z aplikacją mobilną i bezpieczeństwo dzięki kontroli przepływu prądu."
     },
     {
         "id": "mi-smart-projector-2-pro",
-        "url": "https://mi-home.pl/wideo/mi-smart-projector-2-pro",
+        "url": "/mi-smart-projector-2-pro",
         "category": "Projektor",
         "desc": "Ekran o przekątnej do 200 cali, dźwięk stereo. Kinowe doznania w Twoim domu."
     },
     {
         "id": "mi-smart-scale-2",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-scale-2",
+        "url": "/mi-smart-scale-2",
         "category": "Inteligentna waga łazienkowa",
         "desc": "Już teraz zadbaj o swoją sylwetkę. Analiza zmian co każde 50g."
     },
     {
         "id": "mi-smart-sensor-set",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-sensor-set",
+        "url": "/mi-smart-sensor-set",
         "category": "Zestaw czujników",
         "desc": "Gigant dla najbardziej wymagających. Pionierskie urządzenie ery 5G. "
     },
     {
         "id": "mi-smart-space-heater-s",
-        "url": "https://mi-home.pl/mi-smart-space-heater-s",
+        "url": "/mi-smart-space-heater-s",
         "category": "Grzejnik",
         "desc": "Przenośne ciepło, które będzie zawsze przy Tobie!"
     },
     {
         "id": "mi-smart-standing-fan-1c",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-smart-standing-fan-1c",
+        "url": "/mi-smart-standing-fan-1c",
         "category": "Wentylator",
         "desc": "Idealne rozwiązanie na letnie upały."
     },
     {
         "id": "mi-temperature-humidity-monitor-2",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-temperature-humidity-monitor-2",
+        "url": "/mi-temperature-humidity-monitor-2",
         "category": "Miernik temperatury i wilgotności",
         "desc": "Monitoruj warunki swojego otoczenia. Temperatura i wilgoć pod kontrolą. "
     },
     {
+        "id": "mi-tv-p1-32",
+        "url": "/mi-tv-p1-32",
+        "category": "Smart TV",
+        "desc": "Odkryj najlepsze efekty wizualne z najnowszą serią Smart TV Xiaomi!"
+    },
+    {
+        "id": "mi-tv-p1-43",
+        "url": "/mi-tv-p1-43",
+        "category": "Smart TV",
+        "desc": "Poczuj kinową jakość w swoim domu!"
+    },
+    {
+        "id": "mi-tv-p1-55",
+        "url": "/mi-tv-p1-55",
+        "category": "Smart TV",
+        "desc": "55\" najdoskonalszego obrazu dostępne dla Ciebie już teraz."
+    },
+    {
+        "id": "mi-tv-stick",
+        "url": "/mi-tv-stick",
+        "category": "Smart hub",
+        "desc": "Uzyskaj dostęp do możliwości Smart TV z kompaktowym Mi TV Stick!"
+    },
+    {
         "id": "mi-tw-earbuds-basic-2",
-        "url": "https://mi-home.pl/audio/mi-true-wireless-earbuds-basic-2",
+        "url": "/mi-true-wireless-earbuds-basic-2",
         "category": "Słuchawki bezprzewodowe",
-        "desc": "Pełny komfort bezprzewodowego odtwarzania ulubionej muzyki nawet przez 12h"
+        "desc": "Pełny komfort bezprzewodowego odtwarzania ulubionej muzyki nawet przez 12h."
     },
     {
         "id": "mi-tw-earphones",
-        "url": "https://mi-home.pl/audio/mi-true-wireless-earphones",
+        "url": "/mi-true-wireless-earphones",
         "category": "Słuchawki bezprzewodowe",
         "desc": "Minimalistyczny design, sterowanie na słuchawce."
     },
     {
         "id": "mi-tw-earphones-2",
-        "url": "https://mi-home.pl/audio/mi-true-wireless-earphones-2",
+        "url": "/mi-true-wireless-earphones-2",
         "category": "Słuchawki bezprzewodowe",
         "desc": "Wygoda i jakość w minimalistycznej formie. Wzmocniony bas, intuicyjny system."
     },
     {
         "id": "mi-tw-earphones-2-basic",
-        "url": "https://mi-home.pl/audio/mi-true-wireless-earphones-2-basic",
+        "url": "/mi-true-wireless-earphones-2-basic",
         "category": "Słuchawki bezprzewodowe",
-        "desc": "Bezprzewodowe słuchawki o wysokiej jakości dźwięku wyposażone w Bluetooth 5.0"
+        "desc": "Bezprzewodowe słuchawki o wysokiej jakości dźwięku wyposażone w Bluetooth 5.0."
     },
     {
         "id": "mi-tw-earphones-lite",
-        "url": "https://mi-home.pl/audio/mi-true-wireless-earphones-lite",
+        "url": "/mi-true-wireless-earphones-lite",
         "category": "Słuchawki bezprzewodowe",
         "desc": "Wyciszenie szumu tła. Skupienie na najwyższej jakości dźwięku."
     },
     {
         "id": "mi-vacuum-cleaner-mini",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-vacuum-cleaner-mini",
+        "url": "/mi-vacuum-cleaner-mini",
         "category": "Odkurzacz przenośny",
         "desc": "Najwygodniejsze sprzątanie niewygodnych zakamarków, ergonomiczna konstrukcja."
     },
     {
         "id": "mi-watch",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-watch-black",
+        "url": "/mi-watch-black",
         "category": "Smartwatch",
         "desc": "Podtrzymaj ducha rywalizacji. 117 trybów sportowych i nieograniczone możliwości."
     },
     {
         "id": "mi-watch-lite",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-watch-black",
+        "url": "/mi-watch-lite",
         "category": "Smartwatch",
         "desc": "Poręczność Mi Smart Band wzbogacona kolorowym ekranem 1.4\". Mierz swoje postępy."
     },
     {
         "id": "mi-wi-fi-range-extender-pro",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/mi-wi-fi-range-extender-pro",
+        "url": "/mi-wi-fi-range-extender-pro",
         "category": "Wzmacniacz sygnału Wi-Fi",
         "desc": "Wzmocnij sygnał i zwiększ wydajność swojego łącza!"
     },
     {
         "id": "mi-wiha-8-in-1",
-        "url": "https://mi-home.pl/akcesoria/mi-wiha-8-in-1-precision-screwdriver",
+        "url": "/mi-wiha-8-in-1-precision-screwdriver",
         "category": "Zestaw wkrętaków",
         "desc": "Niezbędnik każdego majsterkowicza. 8 najpopularniejszych bitów, wygodna rączka."
     },
     {
         "id": "mi-wireless-car-charger",
-        "url": "https://mi-home.pl/akcesoria/mi-wireless-car-charger",
+        "url": "/mi-wireless-car-charger-20w",
         "category": "Samochodowa ładowarka bezprzewodowa",
         "desc": "Błyskawiczne ładowanie Qi lub przewodowo, komfortowa podróż."
     },
     {
         "id": "mi-wireless-charging-pad",
-        "url": "https://mi-home.pl/akcesoria/powerbanki-i-ladowarki/mi-wireless-charging-pad",
+        "url": "/mi-wireless-charging-pad",
         "category": "Ładowarka Qi",
         "desc": "Ładuj bezprzewodowo! Opcja ładowania standardowego lub szybkiego."
     },
     {
         "id": "mi-wireless-power-bank-10000",
-        "url": "https://mi-home.pl/akcesoria/mi-wireless-power-bank-10000mah-black",
-        "category": "Powerbank",
+        "url": "/mi-wireless-power-bank-10000mah-black",
+        "category": "Powerbank Qi",
         "desc": "Wygoda szybkiego ładowania Fast Charge, gdziekolwiek jesteś."
     },
     {
+        "id": "mi-wireless-power-bank-essential-10000",
+        "url": "/mi-wireless-power-bank-essential-10000mah-black",
+        "category": "Powerbank Qi",
+        "desc": "Szybkie i bezprzewodowe ładowanie z mocą 18W dostępne w każdym miejscu i czasie!"
+    },
+    {
         "id": "poco-f2-pro",
-        "url": "https://mi-home.pl/poco-f2-pro",
+        "url": "/smartfony/poco/poco-f2-pro",
         "category": "Smartfon",
         "desc": "Potężne narzędzie do walki z flagowcami, którego zapas mocy wystarczy na długo!"
     },
     {
+        "id": "poco-f3-5g",
+        "url": "/smartfony/poco/poco-f3-5g",
+        "category": "Smartfon",
+        "desc": "Poznaj bestię napędzaną najszybszym procesorem Qualcomm® Snapdragon™ 870!"
+    },
+    {
         "id": "poco-m3",
-        "url": "https://mi-home.pl/poco-m3",
+        "url": "/smartfony/poco/poco-m3",
         "category": "Smartfon",
         "desc": "Snapdragon 662 i 6000 mAh zamknięte w wyjątkowej, ponadczasowej obudowie."
     },
     {
         "id": "poco-x3-nfc",
-        "url": "https://mi-home.pl/poco-x3-nfc",
+        "url": "/smartfony/poco/poco-x3-nfc",
         "category": "Smartfon",
         "desc": "Niespotykana moc procesora Snapdragon™ 732G godna prawdziwego flagowca."
     },
     {
         "id": "poco-x3-pro",
-        "url": "https://mi-home.pl/poco-x3-pro",
+        "url": "/smartfony/poco/poco-x3-pro",
         "category": "Smartfon",
         "desc": "Błyskawiczne odświeżanie ekranu wspierane mocarnym, ośmiordzeniowym procesorem."
     },
     {
         "id": "redmi-8a",
-        "url": "https://mi-home.pl/redmi-8a",
+        "url": "/smartfony/redmi/redmi-8a",
         "category": "Smartfon",
         "desc": "5000mAh to pojemność baterii, dzięki której ani na moment nie zwolnisz tempa!"
     },
     {
         "id": "redmi-9",
-        "url": "https://mi-home.pl/redmi-9",
+        "url": "/smartfony/redmi/redmi-9",
         "category": "Smartfon",
-        "desc": "Eksplozja doznań z olbrzymim wyświetlaczem 6,53\u0026quot; i baterią 5020mAh."
+        "desc": "Eksplozja doznań z olbrzymim wyświetlaczem 6,53\" i baterią 5020mAh."
     },
     {
         "id": "redmi-9a",
-        "url": "https://mi-home.pl/redmi-9a",
+        "url": "/smartfony/redmi/redmi-9a",
         "category": "Smartfon",
-        "desc": "Moc wszechstronności, która wystarcza na długo dzięki potężnej baterii 5000mAh"
+        "desc": "Moc wszechstronności, która wystarcza na długo dzięki potężnej baterii 5000mAh."
     },
     {
         "id": "redmi-9c-nfc",
-        "url": "https://mi-home.pl/redmi-9c",
+        "url": "/smartfony/redmi/redmi-9c",
         "category": "Smartfon",
         "desc": "Niespotykana funkcjonalność, która pozwala na więcej niż się spodziewasz."
     },
     {
         "id": "redmi-9t",
-        "url": "https://mi-home.pl/redmi-9t",
+        "url": "/smartfony/redmi/redmi-9t",
         "category": "Smartfon",
         "desc": "Pełna moc do codziennych wyzwań ośmiordzeniowego układu Snapdragon 662."
     },
     {
         "id": "redmi-note-10-4g",
-        "url": "https://mi-home.pl/redmi-note-10",
+        "url": "/smartfony/redmi/redmi-note-10",
         "category": "Smartfon",
         "desc": "Poznaj nieograniczony koloryt nowoczesnego ekranu AMOLED HDR10."
     },
     {
+        "id": "redmi-note-10-5g",
+        "url": "/smartfony/redmi/redmi-note-10-5g",
+        "category": "Smartfon",
+        "desc": "Poczuj szybkość 5G i korzystaj z wydajności procesora MediaTek Dimensity 700!"
+    },
+    {
         "id": "redmi-note-10-pro",
-        "url": "https://mi-home.pl/redmi-note-10-pro",
+        "url": "/smartfony/redmi/redmi-note-10-pro",
         "category": "Smartfon",
         "desc": "Odkryj każdy szczegół fotografii z zaawansowaną optyką 108MP SI."
     },
@@ -654,62 +750,68 @@
         "desc": "Specjalna limitowana edycja MFF legendarnego modelu Redmi Note 10."
     },
     {
+        "id": "redmi-note-10s",
+        "url": "/smartfony/redmi/redmi-note-10s",
+        "category": "Smartfon",
+        "desc": "Uchwyć najpiękniejsze chwile w niezwykłej jakości z Redmi Note 10S 6!"
+    },
+    {
         "id": "redmi-note-8",
-        "url": "https://mi-home.pl/redmi-note-8",
+        "url": "/smartfony/redmi/redmi-note-8",
         "category": "Smartfon",
         "desc": "Fenomen serii Redmi Note w najczystszej postaci. Filar średniej półki cenowej."
     },
     {
         "id": "redmi-note-8-pro",
-        "url": "https://mi-home.pl/redmi-note-8-pro",
+        "url": "/smartfony/redmi/redmi-note-8-pro",
         "category": "Smartfon",
         "desc": "Perfekcja mocy układu Helio G90T dla płynnych gamingowych wrażeń."
     },
     {
         "id": "redmi-note-8t",
-        "url": "https://mi-home.pl/redmi-note-8t",
+        "url": "/smartfony/redmi/redmi-note-8t",
         "category": "Smartfon",
         "desc": "Wygoda płatności zbliżeniowych NFC i niesamowita wydajność każdego dnia!"
     },
     {
         "id": "redmi-note-9",
-        "url": "https://mi-home.pl/redmi-note-9",
+        "url": "/smartfony/redmi/redmi-note-9",
         "category": "Smartfon",
         "desc": "Niesamowita moc procesora Helio G85 w najbardziej wymagających zastosowaniach!"
     },
     {
         "id": "redmi-note-9-pro",
-        "url": "https://mi-home.pl/redmi-note-9-pro",
+        "url": "/smartfony/redmi/redmi-note-9-pro",
         "category": "Smartfon",
         "desc": "Bezbłędne aparaty i moc, której nie poskromi żadna wymagająca aplikacja!"
     },
     {
         "id": "redmi-note-9s",
-        "url": "https://mi-home.pl/redmi-note-9s",
+        "url": "/smartfony/redmi/redmi-note-9s",
         "category": "Smartfon",
-        "desc": "Ogromna bateria 5020mAh, dzięki której prędko nie zabraknie Ci mocy"
+        "desc": "Ogromna bateria 5020mAh, dzięki której prędko nie zabraknie Ci mocy."
     },
     {
         "id": "redmi-note-9t",
-        "url": "https://mi-home.pl/redmi-note-9t-5g",
+        "url": "/smartfony/redmi/redmi-note-9t-5g",
         "category": "Smartfon",
         "desc": "Superwydajny procesor oraz szybka pamięć UFS dotrzymają Ci kroku podczas pracy!"
     },
     {
         "id": "redmi-power-bank-10000",
-        "url": "https://mi-home.pl/akcesoria/redmi-power-bank-10000mah-white",
+        "url": "/redmi-power-bank-10000mah-white",
         "category": "Powerbank",
         "desc": "Źródło bezpiecznej energii w kompaktowej formie."
     },
     {
         "id": "redmi-power-bank-20000",
-        "url": "https://mi-home.pl/akcesoria/redmi-18w-fast-charge-power-bank-20000mah",
+        "url": "/redmi-18w-fast-charge-power-bank-20000mah-white",
         "category": "Powerbank",
         "desc": "Potęga w klasycznym wydaniu. Szybkie ładowanie 18W. 2 wyjścia USB."
     },
     {
         "id": "yeelight-portable-led-desk-lamp",
-        "url": "https://mi-home.pl/inteligentne-urzadzenia/yeelight-portable-led-desk-lamp",
+        "url": "/yeelight-portable-led-desk-lamp",
         "category": "Lampka biurkowa",
         "desc": "Regulowana barwa i natężenie zawsze pod ręką!"
     }
