@@ -15,7 +15,7 @@
         "labelIcon": "fire",
         "editName": "Edited Mi Band 5 Name",
         "utmTags": false,
-        "editUrl": "https://mi-home.pl/akcesoria/mi-4k-action-camera-tripod?own-utm-tag",
+        "editUrl": "/mi-4k-action-camera-tripod?own-utm-tag",
         "text": "<i class='fad fa-rocket-launch'></i> Additional paragraph under item description"
       },
       {
@@ -26,7 +26,7 @@
         },
         "gift": {
           "name": "Mi Watch Lite",
-          "img": "https://mi-home.pl/event/mff-2021/img/earbuds-basic-2-72px.png",
+          "img": "//media.mi-home.pl/products/pics/mi-watch-lite-black-144px.png",
           "url": "/"
         },
         "text": "NOW WITH GIFT!"
@@ -51,8 +51,8 @@
         "nameLabel": "(4+32GB)",
         "gift": {
           "name": "Gift Name",
-          "img": "img/earbuds-basic-2-72px.png",
-          "url": "../../gift-url"
+          "img": "//media.mi-home.pl/products/pics/mi-band-5-straps-1-144px",
+          "url": "/"
         }
       },
       {
@@ -68,8 +68,8 @@
         "name": "Manual Item Title",
         "category": "Manual Item Category",
         "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit (Manual Item Desc)",
-        "img": "https://mi-home.pl/img/cms/json-lander/mi-4k-laser-projector-150.png",
-        "url": "../../manual-url-1",
+        "img": "//media.mi-home.pl/products/pics/mi-band-6-alt.png",
+        "url": "/manual-url-1",
         "price": {
           "regular": 420,
           "percent": true,
@@ -183,8 +183,8 @@
     "id": "wide-banner-1",
     "type": "img",
     "img": {
-      "desktop": "https://mi-home.pl/event/mff-2021/img/phone-stand-banner.jpg",
-      "mobile": "https://mi-home.pl/event/mff-2021/img/mobile-preview-pl.jpg"
+      "desktop": "//media.mi-home.pl/pages/homepage/event/OneStepAhead-Homepage-Banner-1164x120px.jpg",
+      "mobile": "//media.mi-home.pl/pages/homepage/event/OneStepAhead-Homepage-Banner-750x240px.jpg"
     },
     "url": "/",
     "text": "Hello World! I'm img type section 🙂 & I have mobile version of myself. Try under 768px."
