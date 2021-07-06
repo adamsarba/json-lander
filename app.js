@@ -16,9 +16,8 @@
  var pageMenu       = settings.menu
 
 // Temp-dev App Settings
-const appUrl         = '/json-lander/'
+const appUrl         = '/event/libs/json-lander/'
 const appLocaleUrl   = appUrl + 'locale/' + lang + '/app.js'
-
 const itemsGlobalUrl = appUrl + 'data/items.json'
 const itemsLocalUrl  = appUrl + 'locale/' + lang + '/items.json'
 
